@@ -3,7 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
         <style>
-		@media all and (max-width: 1023px) {
+        @media all and (max-width: 1023px) {
 			.mobile-only {
 				display: block;
 			}
@@ -176,20 +176,25 @@
                 font-size: 16px;
                 color: #FFFDFD;
                 text-decoration: none;
-                
+                background: #EDA272;
+                border-radius: 30px;
+                width: 72px;
+                height: 33px;
+                margin-top:37px;
             }
 
             .bottom{
                 width: 100%;
                 height: 171px;
-                left: 0px;
-                top: 2118px;
+                
+                
                 background: #BBC9C2;
             }
             .bottom-logo{
                 width: 199px;
                 padding-top: 38px;
-                margin-left: 88px;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .inline-center{
@@ -257,6 +262,7 @@
 
 			.desktop-only {
 				display: block;
+                width: 90%;
 			} 
 
             .laptop {
@@ -273,24 +279,25 @@
             h1{
                 text-align: left;
                 font-family: Noto Sans SC;
-                width: 680px;
+                width: calc(1024/1440*100%);
                 height: 49px;
                 font-weight: 500px;
                 font-size: 34px;
                 line-height: 49px;
-                margin-left: 214px;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             h2{
-                width: 551px;
+                width: calc(793/1440*100%);
                 height: 31px;
-                left: 348px;
-                top: 1421px;
                 font-family: Noto Sans SC;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 24px;
                 line-height: 35px;
+                margin-left: auto;
+                margin-right: auto;
                 }
             h3{
                 text-align: center;
@@ -309,7 +316,7 @@
             }
             p{
                 display: block;
-                width: 793px;
+                width: calc(793/1440*100%);
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -320,7 +327,7 @@
                 }
             
             video{
-                width: 973px;
+                width: calc(793/1440*100%);
                 display: inline-block;
                 text-align:center ;
                 margin-left: auto;
@@ -355,7 +362,7 @@
                 text-decoration: none;
             }
             .photo{
-                width: 927px;
+                width: calc(927/1440*100%);
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -388,19 +395,19 @@
             }
 
             .hero-img {
-                width: 927px;
+                width: calc(1024/1440*100%);
+                display: flex;
 		    }
 
             .half-img {
-                height: 350px;               
-                display: flex;
-                margin-left: 0px;
-                display: inline-block;
-                
+                width:calc(920/1440*100%);
+                margin-right: 50px;
+                margin-bottom: 50px;
+                float: left;
 		    }
 
             .article{
-                width: 793px;
+                
                 font-family: Noto Sans SC;
                 font-style: normal;
                 font-weight: 500px;
@@ -411,15 +418,15 @@
                 margin-right: auto;
             }
             .half-article{
-                width: 350px;
+                width: calc(1000/1440*100%);
                 font-family: Noto Sans SC;
                 font-style: normal;
                 font-weight: 500px;
                 font-size: 18px;
                 line-height: 26px;
                 color: #313131;
-                margin-left: auto;
-                margin-right: auto;
+                margin-left: 0px;
+                margin-right: 0px;
                 text-align: left;
                 display: inline-block;
             }
@@ -721,15 +728,15 @@
 
             <div style="height:114px">
                 <div style="margin-left:31px">
-                    <div class="tag inline-center">
-                        <a class="tag-word" href="https://www.w3schools.com">#動保</a>
-                    </div>
-                    <div class="tag inline-center">
-                        <a class="tag-word" href="https://www.w3schools.com">#野保法</a>
-                    </div>
-                    <div class="tag inline-center">
-                        <a class="tag-word" href="https://www.w3schools.com">#收容</a>
-                    </div>
+                    
+                        <a class="tag-word inline-center" href="https://www.w3schools.com">#動保</a>
+                    
+                    
+                        <a class="tag-word inline-center" href="https://www.w3schools.com">#野保法</a>
+                    
+                    
+                        <a class="tag-word inline-center" href="https://www.w3schools.com">#收容</a>
+                    
                 </div>
             </div>
         <div style="background-color:#FFFFFF;height: 890px;">
@@ -781,24 +788,29 @@
             </div>
             <div>
                 <h1>
-                    <p>人道收容然後呢？　野生動物保育難題</p>
+                    人道收容然後呢？　野生動物保育難題
                     </h1>
             </div>
             
             
             <div>
-                <p style="color: #838383;width: 736px;height: 22px;font-size: 16px;line-height: 23px;margin-left: 214px;">專題記者／孫佾妘、劉雨婷、林傑立、何家璇、陶怡軒綜合報導</p>
+                <p style="color: #838383;width: calc(1024/1440*100%);height: 22px;font-size: 16px;line-height: 23px;">專題記者／孫佾妘、劉雨婷、林傑立、何家璇、陶怡軒綜合報導</p>
             </div>
-            <div class="photo">
+            <div>
                 <img class="hero-img" src="main.jpg">
             </div>
             <div class="article">
-                <p style="display: inline-block;">獅虎阿彪剛進收容中心時，還只是襁褓中的幼獸。如今阿彪九歲，成為收容中心認養大使，為與牠同住在收容中心的動物爭取民間捐助經費。</p>
+                <p style="width: calc(1024/1440*100%);">獅虎阿彪剛進收容中心時，還只是襁褓中的幼獸。如今阿彪九歲，成為收容中心認養大使，為與牠同住在收容中心的動物爭取民間捐助經費。</p>
+           
+            </div>
+            <!--靠右-->
+            <div style="margin-left: calc(100/1440*100%);">
+            <div class="article">
                 <p>台灣動物社會研究會辦公室主任林岱瑾說明，收容中心的成立，與《野生動物保育法》（以下簡稱《野保法》）修法禁止保育類動物飼養、繁殖、買賣有關，當時許多私人飼養的保育類野生動物需要安置，促使政府成立收容中心。農委會陸續設立七家野生動物收容中心，並建立相關救傷機制。
                 </p>
             </div>
             <div style="text-align:center;">
-                <video width=927px  controls>
+                <video   controls>
                     <source src="阿彪.mp4" type="video/mp4">
                     
                 </video>
@@ -809,17 +821,23 @@
             <div class="article">
                 <p>2004年轉由林務局承接野保業務，原先的七間收容中心，中興大學獸醫教學醫院於今年因人力缺乏無法負荷，停止收容業務，僅由生命科學系負責爬蟲類之收容暫養業務；成大鯨豚研究中心、海生館及澎湖海龜救護收容工作站則轉為海洋委員會管轄。</p>
                 <p>目前林務局委辦四處救傷及收容單位，包含台北市立動物園、屏科大保育類野生動物收容中心、中興大學生命科學系及位於南投的特有生物研究保育中心，負責收容全台因受傷、走私，而不在其原生棲地的野生保育動物。</p>
-                <p>裴家騏表示，當單位接收本土野生動物，首要目標一定是將牠們送回被發現的地方，其次是短期照養再放回野外。在中心人員細心照顧及訓練下，恢復動物野外求生能力，盡可能幫助牠們回歸自然。</p>                                     ​                         
+                                                     ​                         
             </div>
-            <div class="center">
-                <div class="photo taiwan-picture">
-                    <img class="half-img" src="taiwan.jpg">
+
+            <div class="photo">
+                <img  class="half-img"src="taiwan.jpg">
+                <div style="font-size: 18px;
+                line-height: 26px;
+                color: #313131">
+                    <span>裴家騏表示，當單位接收本土野生動物，首要目標一定是將牠們送回被發現的地方，其次是短期照養再放回野外。在中心人員細心照顧及訓練下，恢復動物野外求生能力，盡可能幫助牠們回歸自然。</span>
+                    <br><br> <span>屏科大目前收容95種、共1485隻動物。這當中有許多動物因不同原因無法野放。例如阿彪即因異種雜交導致先天基因缺陷、脊椎變形；或像外來種的紅毛猩猩同樣無法野放。這些動物終其一生只能留在收容中心，牠們的第二個家。</span>                                      ​                    
+                    <br><br><span>為了讓這些動物得到妥善照顧，必須要有一定經費，除了購買動物所需的一切，更是要雇用專業人力照顧牠們。不過裴家騏表示，自2009年開始，政府整體野生動物保育預算便不斷下降，如今全台所有收容中心都面臨經費減少問題，影響動物照護品質。</span>
                 </div>
-                <div class="half-article">
-                    <p style="width: 350px;">屏科大目前收容95種、共1485隻動物。這當中有許多動物因不同原因無法野放。例如阿彪即因異種雜交導致先天基因缺陷、脊椎變形；或像外來種的紅毛猩猩同樣無法野放。這些動物終其一生只能留在收容中心，牠們的第二個家。</p>                                        ​                    
-                    <p style="width: 350px;">為了讓這些動物得到妥善照顧，必須要有一定經費，除了購買動物所需的一切，更是要雇用專業人力照顧牠們。不過裴家騏表示，自2009年開始，政府整體野生動物保育預算便不斷下降，如今全台所有收容中心都面臨經費減少問題，影響動物照護品質。</p>
-                </div>
+
             </div>
+
+            </div>
+            <div style="margin-left: calc(100/1440*100%);">
             <div style="background-color:#BAD7AE ;" >
                 <div class="article">
                     <h2 style="padding-top: 50px;">預算連年刪　衝擊動物照護品質</h2>
@@ -827,7 +845,7 @@
                     <p>裴家騏以屏科大為例，動物野放有諸多考慮與限制，收容數量逐年增加，加上動物成年後照護需求和幼年時期有差異，整體經費只升不減。屏科大自1992年開始野生動物救傷和收容工作以來，直至2007年預算都有配合逐漸調高。然而在2008年以後，年度預算卻開始減少，最多曾減少一半的預算，最少也降低了20%的預算。</p>
                 </div>
                 <div style="text-align:center;">
-                    <video width=927px autoplay muted loop>
+                    <video  autoplay muted loop>
                         <source src="Comp 1_1.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -862,21 +880,20 @@
                     <p style="color: rgb(0,43,13);">國際合作經費是最早被刪減的預算，導致2009年後至今的合作案數，只佔歷年來案件數總和的1%。</p>
                     <p>經費刪減也影響到硬體設備，如本可每隔3至4個月即重新布置動物收容環境，因經費減少，屏科大只好進行較小幅度的更新。而較大規模收容的籠舍，需等上一到兩年才能更新設施，動物照養品質明顯受到影響。​</p>
                 </div>
-                <div class="center">
-                    
-                        <div class="taiwan-picture photo">
-                            <div class="taiwan-picture photo">
-                                <video style="width: 530px;" class="half-img"autoplay muted loop>
-                                    <source src="Comp 4_1.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                        <div class="half-article" >                            
-                            <p style="width: 350px;">「雖然只剩三千多萬，但我們還是把預算中的絕大部分給收容中心，因為我們知道動物活著最基本的需求就是要吃。」對於預算被刪，林務局野生物保育科科長許曉華無奈表示，由於每年會固定刪減各單位10~20%的基本維持費用，林務局野生物保育總經費便是其中之一。</p>
-                            <p style="width: 350px;">許曉華透露，由於林務局的野保預算逐年被刪減，導致該筆預算漸以支應收容中心的人力與維持費為主。至於其他費用，包含場地修繕和環境豐富化等，則由林務局另外規劃，符合國土生態保育綠色網絡建置計畫，爭取經費來支持。</p>    
-                        
+             
+                <div class="photo">
+                    <video class="half-img"autoplay muted loop>
+                        <source src="Comp 4_1.mp4" type="video/mp4">
+                    </video>
+                    <div style="font-size: 18px;
+                    line-height: 26px;
+                    color: #313131">
+                        <span>「雖然只剩三千多萬，但我們還是把預算中的絕大部分給收容中心，因為我們知道動物活著最基本的需求就是要吃。」對於預算被刪，林務局野生物保育科科長許曉華無奈表示，由於每年會固定刪減各單位10~20%的基本維持費用，林務局野生物保育總經費便是其中之一。</span>
+                        <br><span>許曉華透露，由於林務局的野保預算逐年被刪減，導致該筆預算漸以支應收容中心的人力與維持費為主。至於其他費用，包含場地修繕和環境豐富化等，則由林務局另外規劃，符合國土生態保育綠色網絡建置計畫，爭取經費來支持。</span> 
                     </div>
+    
                 </div>
+                <!--新的-->
                 <div class="article" style="padding-bottom: 50px;">
                     <p >日前行政院長蘇貞昌在巡視屏科大後，明確指示野保預算不應遵循慣例，自明年開始將固定編列五千萬。「雖然這種新聞會讓我們有壓力，外界跟長官都會來關切，但好處是可以明確告知大家基本的動物照養費，該維持還是要維持。」許曉華坦言。</p>
                 </div>
@@ -885,7 +902,7 @@
                     <h2>動物回不了家　收容需求居高不下</h2>
                 </div>
                 <div style="text-align:center;">
-                    <video width=927px  autoplay muted loop>
+                    <video  autoplay muted loop>
                         <source src="Comp 3.mp4" type="video/mp4">                       
                     </video>
                 </div>
@@ -915,7 +932,7 @@
                 </div>
                 
                 <div style="text-align:center;">
-                    <video width=560  controls>
+                    <video  controls>
                         <source src="猛禽.mp4" type="video/mp4">
                         
                             
@@ -945,6 +962,8 @@
                     <p>王若禪補充，若收到無法野放，但卻適合飼養的外來種與非保育本土生物，因應中興大學規模不大的收容腹地，他們會詢問民眾是否有飼養意願，以減輕收容中心負擔。必須收容的保育類與具攻擊性之外來種，則留在校內由獸醫系工讀生照料，和調度教學醫院的醫師進行義務支援。</p>
                 </div>   
             </div>  
+            </div>
+            <div style="margin-left: calc(100/1440*100%);">
             <div class="article">
                 <h2>收容應是下下策　前端保育方為關鍵</h2>
                 <p>「採取收容可能就是一生。」林岱瑾認為，野生動物不似犬貓，自然環境終究是最適合野生動物生存的環境，收容不該是野生動物保育的第一考量。在收容中心預算不足的問題面前，更該思考如何降低動物收容數量。</p>
@@ -984,6 +1003,7 @@
                 <p>近年政府經費逐年刪減，動物收容需求未見減少，導致收容空間、經費及人力都不足以應付現況。若要解決野生動物收容困境，根本解決之道是加強前端保育工作，終結買賣、打擊走私以及加強野保觀念，才能讓野生動物永續生活在自然棲地，不讓收容中心成為他們最後的家。</p>
             </div>
 
+
             <div class="tag-block">
                 <div>
                     <div class="tag inline-center">
@@ -997,6 +1017,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!--靠右結束-->
             <div style="background-color:#FFFFFF; height: 433px;">
                 <h3>
                     <p style="padding-top: 38px;">延伸閱讀</p>
