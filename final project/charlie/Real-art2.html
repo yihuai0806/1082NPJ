@@ -1,0 +1,941 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+                display: block;
+            }
+
+            .desktop-only {
+                display: none;
+            }
+
+            .iphone8 {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                margin-left: 23px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                color: #000000;
+            }
+
+
+            h2 {
+                width: calu(320/375*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 17px;
+                line-height: 25px;
+
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                padding-top: 25px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            video {
+                width: calc(324/375*100%);
+                display: inline-block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+
+            iframe {
+                width: 100%;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .reporter {
+                width: calc(313/375*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #838383;
+                margin-left: 27px;
+            }
+
+            .logo {
+                width: 147px;
+                height: 26px;
+                margin-left: 23px;
+                display: inline-block;
+            }
+
+            .photo {
+                width: calc(324/375*100%);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 30%;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 30%;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 4px;
+            }
+
+            .hero-img {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: 50%;
+                display: flex;
+            }
+
+            .article {
+                width: calc(324/375*100%);
+                top: 488px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 16px;
+                line-height: 155%;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(324/375*100%);
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 18px;
+            }
+
+            .white-block {
+                width: 320px;
+                height: 126px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                height: 33px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 100px;
+                height: 33px;
+                margin-top: 37px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 171px;
+
+
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 199px;
+                padding-top: 38px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+                width: calc(324/375*100%);
+
+            }
+
+            .read-more {
+
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 33px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 200px;
+                margin-top: 33px;
+
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 63px;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .social-media {
+                width: 23.4px;
+                padding-left: 7.25px;
+                padding-right: 7.25px;
+
+            }
+
+            ul {
+                display: none;
+                list-style-type: none;
+            }
+
+            label {
+
+                display: inline-block;
+                width: 30px;
+                text-align: end;
+                position: absolute;
+                right: calc(20/375*100%);
+            }
+
+            .burger-link {
+                text-decoration: none;
+                color: #000;
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+
+            }
+
+            #burger:checked+ul {
+                display: inline-block;
+                position: absolute;
+                text-align: end;
+                right: calc(20/375*100%);
+                top: calc(22/375*100%)
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+            }
+
+
+
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-only {
+                display: none;
+            }
+
+            .desktop-only {
+                display: block;
+                width: 100%;
+            }
+
+            .laptop {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+                width: 100%;
+
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                text-align: left;
+                font-family: Noto Sans SC;
+                width: calc(1024/1440*100%);
+                height: 49px;
+                font-weight: 500px;
+                font-size: 34px;
+                line-height: 49px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h2 {
+                width: calc(793/1440*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: calc(200/1440*100%);
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            h3>p{
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 25px;
+                line-height: 29px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            p {
+                display: block;
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            video {
+                width: calc(793/1440*100%);
+                display: inline-block;
+                text-align: center;
+                margin-right: auto;
+                margin-left: calc(200/1440*100%);
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .logo {
+                display: inline-block;
+                width: 380px;
+                height: 68px;
+                margin-left: 65px;
+                margin-top: 44px;
+            }
+
+            .bar-block {
+                display: inline-block;
+                width: calc(800/1440*100%);
+                text-align: end;
+                margin-top: 44px;
+            }
+
+            .bar {
+                display: inline-block;
+                width: 96px;
+                height: 35px;
+                text-align: end;
+                color: #000000;
+                text-decoration: none;
+                position: absolute;
+                margin-top: 70px;
+            }
+
+            .photo {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .taiwan-picture {
+                display: inline-block;
+                width: 600px;
+
+
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 200px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 40px;
+                padding-right: 40px;
+                width: 180px;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 10px;
+            }
+
+            .hero-img {
+                width: calc(1024/1440*100%);
+                display: flex;
+            }
+
+            .hero-img-down {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: calc(920/1440*100%);
+                margin-right: 50px;
+                margin-bottom: 50px;
+                float: left;
+                margin-left: 0px;
+            }
+
+            .article {
+
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .half-article {
+                width: calc(1000/1440*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                display: inline-block;
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 30px;
+            }
+
+            .white-block {
+                width: 792px;
+                height: 144px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag-block {
+                width: 793px;
+                height: 114px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 72px;
+                height: 33px;
+                margin-top: 37px;
+                margin-right: 5px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 307px;
+                left: 0px;
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 219px;
+                padding-top: 73px;
+                margin-left: 0 auto;
+            }
+
+            .bottom-word {
+                width: 359px;
+                padding-top: 36px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .read-more {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                margin-top: 39px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                object-fit: cover;
+
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 126px;
+                margin: 44px;
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .target {
+                position: sticky;
+                display: inline-block;
+                width: 70px;
+                top: 200px;
+                padding-left: calc(220/1024*100%);
+
+            }
+
+            .sticky-icon {
+                width: 45px;
+                padding: 14px;
+
+            }
+
+            .slogan {
+                width: 481px;
+                height: auto;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 41px;
+                margin-left: 195px;
+                margin-right: 42px;
+                color: black;
+
+
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+
+            }
+
+            .blockquote {
+                width:100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body style="margin:0px">
+    <div class="iphone8 mobile-only">
+        <div style="display: inline-block;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <label for="burger">☰</label>
+            <input type="checkbox" id="burger" style="display: none;">
+            <ul>
+                <li class="burger-link"><a class="burger-link" href="#test">數位專題</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1>
+                <p>《番肉考》重現食番肉歷史　揭清代原客衝突</p>
+            </h1>
+        </div>
+        <div>
+            <p class="reporter">政大大學報／記者范莛威 桃園報導</p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-1024x683.jpg">
+            <div class="blockquote">〈番肉考〉影片中開場的一幕，藉由在叢林中擺放一顆人頭骨，象徵被吃掉的原住民。　圖／范莛威攝</div>
+        </div>
+
+
+
+
+        <div class="article">
+            <p>影片以茂綠的叢林作為開場，畫面卻僅有孤零零的一只人頭骨，旁白用客語口述清朝時期客家人食番肉的情況，背景則以生肉塊與骨頭代表食人肉的意象。為還原過去原客衝突的歷史背景，就讀國立台北藝術大學藝術跨域研究所梁廷毓舉辦《番肉考》個展，以考究客家人食番肉為主題，自10月27日起在桃園市众藝術展出。
+            </p>
+            <p>梁廷毓說：「客家人對於死無全屍一事非常的痛恨，因此他們很難理解原住民出草獵人頭的行為。」他表示兩個族群之間的價值觀完全不同，因此經常在各地出現衝突。梁廷毓也提到，曾在新竹的部落聽原住民耆老講述，原住民被客家人殺頭生吃的事件，耆老推測是原住民出草過了頭，而被祖靈懲罰。
+            </p>
+            <p>〈番肉考〉以長達近30分鐘的影片，講解客家人抓到一位「生番」後，如何從頭到腳將人生吞活剝，梁廷毓解釋，他鉅細靡遺地描寫怎麼料理「番人」的情節只是虛構，「客家人吃人不只是為了吃，而是有報復的含義在。」</p>
+            <p>一個個厚厚的黑色文件夾擺在牆上，裡頭卻只有零星幾張紙，〈食人文件〉藉由整理客家人的口述歷史文件和訪問音檔，描述橫山、石門等地區所發生客家人食番肉的事件。梁廷毓說：「我想藉由文件夾的厚度，和裡面薄薄的文件做對比，表達這些歷史的文件記錄已經少之又少，只能透過口述所傳達。」
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/7d0665438e81d8eceb98c1e31fca80c1-33-1024x683.jpg">
+            <div class="blockquote">數多個黑色的文件夾，裡頭的紙數卻不成比例，藝術家藉此暗示著可考究文獻的稀少。　圖／范莛威攝</div>
+        </div>
+
+        <div class="article">
+            <p>觀展民眾陳秀鳳說：「在展覽中看到客家人吃人肉，好像是一件不太正常的事情。」梁廷毓解釋，客家人的部落中有個迷信，相信吃了原住民的肉後，就不會被原住民出草。梁廷毓補充：「其實除了迷信、報仇，還有另一個少見的觀點是，那個年代沒什麼東西可以吃，有人肉的話就要吃啊。」
+            </p>
+            <p>
+                曾擔任原住民委員會講師、本身為泰雅族的劉芝芳解釋，原住民出草獵人頭，不單只是為了報復，背後還有很多原因。「除了復仇，我們泰雅族也常常為了祈求豐收、成年儀式等行為組團出草。」
+            </p>
+            <p>
+                「食番肉已經是我阿太（曾祖父）的阿公那一輩的故事，有這麼多輩的間隔，我覺得彼此對於仇恨其實不會那麼在意了。」梁廷毓表示，透過文件、影片和口述歷史，希望能讓更多人了解原客衝突背後的意義，未來也將蒐集原住民的資料，以另一個角度觀看這段歷史。
+            </p>
+
+
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/751d31dd6b56b26b29dac2c0e1839e34-44-1024x683.jpg">
+            <div class="blockquote">藝術家梁廷毓於現場翻閱著自己的作品，身為客家人的他，希望更多人重視這議題。　圖／范莛威攝</div>
+        </div>
+
+
+
+        <div style="height:114px">
+            <div style="margin-left:31px">
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#原住民</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#客家人</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#泰雅族</a>
+
+            </div>
+        </div>
+        <div style="background-color:#FFFFFF;height: 890px;">
+            <h3>
+                <p>延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art3.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg">
+                        <a class="a-read-more" href="./Real-art3.html">大選開票亂象多 公民監票盼落實程序正義</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art4.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg">
+                        <a class="a-read-more" href="./Real-art4.html">靈魂間的相遇和療癒 家族治療與心理師</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art5.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4c34acca40402e11f4d306a8edc6ee5d.jpg">
+                        <a class="a-read-more" href="Real-art5.html">被遺忘的驛站——轉型中的坪林如何永飄茶香？</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <div style="text-align: center;">
+                <div style="margin: 32.7px;">
+                <img class="social-media inline-center" src="../asset/Icon_Facebook.png">
+                <img class="social-media inline-center" src="../asset/icon-ins.png">
+                <img class="social-media inline-center" src="../asset/icon-line.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="laptop desktop-only">
+        <div style="position: relative;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <a class="bar" style="right: calc(385/1024*100%) "href="https://www.w3schools.com">數位專題</a>
+            <a class="bar" style="right: calc(305/1024*100%) "href="https://www.w3schools.com">即時新聞</a>
+            <a class="bar" style="right: calc(225/1024*100%) "href="https://www.w3schools.com">捐款贊助</a>
+            <a class="bar" style="right: calc(145/1024*100%) "href="https://www.w3schools.com">關於我們</a>
+        </div>
+        <div>
+            <h1>
+                《番肉考》重現食番肉歷史　揭清代原客衝突
+            </h1>
+        </div>
+
+
+        <div>
+            <p
+                style="color: #838383;width: calc(1024/1440*100%);height: 22px;font-size: 16px;line-height: 23px;margin-right: auto;margin-left: auto;">
+                政大大學報／記者范莛威 桃園報導</p>
+        </div>
+        <div>
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-1024x683.jpg">
+            <div class="blockquote" style="width: calc(1024/1440*100%);">
+                〈番肉考〉影片中開場的一幕，藉由在叢林中擺放一顆人頭骨，象徵被吃掉的原住民。　圖／范莛威攝</div>
+        </div>
+        <!--sticky-->
+        <div class="target" style="bottom: 3000px;">
+            <img class="sticky-icon" src="../asset/Icon_Facebook.png">
+            <img class="sticky-icon" src="../asset/icon-ins.png">
+            <img class="sticky-icon" src="../asset/icon-line.png">
+        </div>
+        
+
+
+
+        <!--靠右-->
+
+        <div class="article" style="margin-top: -225px;">
+            <p>影片以茂綠的叢林作為開場，畫面卻僅有孤零零的一只人頭骨，旁白用客語口述清朝時期客家人食番肉的情況，背景則以生肉塊與骨頭代表食人肉的意象。為還原過去原客衝突的歷史背景，就讀國立台北藝術大學藝術跨域研究所梁廷毓舉辦《番肉考》個展，以考究客家人食番肉為主題，自10月27日起在桃園市众藝術展出。
+            </p>
+        </div>
+
+        <div class="article">
+
+            <p>梁廷毓說：「客家人對於死無全屍一事非常的痛恨，因此他們很難理解原住民出草獵人頭的行為。」他表示兩個族群之間的價值觀完全不同，因此經常在各地出現衝突。梁廷毓也提到，曾在新竹的部落聽原住民耆老講述，原住民被客家人殺頭生吃的事件，耆老推測是原住民出草過了頭，而被祖靈懲罰。
+            </p>
+            <p>〈番肉考〉以長達近30分鐘的影片，講解客家人抓到一位「生番」後，如何從頭到腳將人生吞活剝，梁廷毓解釋，他鉅細靡遺地描寫怎麼料理「番人」的情節只是虛構，「客家人吃人不只是為了吃，而是有報復的含義在。」</p>
+            <p>一個個厚厚的黑色文件夾擺在牆上，裡頭卻只有零星幾張紙，〈食人文件〉藉由整理客家人的口述歷史文件和訪問音檔，描述橫山、石門等地區所發生客家人食番肉的事件。梁廷毓說：「我想藉由文件夾的厚度，和裡面薄薄的文件做對比，表達這些歷史的文件記錄已經少之又少，只能透過口述所傳達。」
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/7d0665438e81d8eceb98c1e31fca80c1-33-1024x683.jpg">
+            <div class="blockquote">數多個黑色的文件夾，裡頭的紙數卻不成比例，藝術家藉此暗示著可考究文獻的稀少。　圖／范莛威攝</div>
+        </div>
+        <div class="article">
+            <p>觀展民眾陳秀鳳說：「在展覽中看到客家人吃人肉，好像是一件不太正常的事情。」梁廷毓解釋，客家人的部落中有個迷信，相信吃了原住民的肉後，就不會被原住民出草。梁廷毓補充：「其實除了迷信、報仇，還有另一個少見的觀點是，那個年代沒什麼東西可以吃，有人肉的話就要吃啊。」
+            </p>
+            <p>
+                曾擔任原住民委員會講師、本身為泰雅族的劉芝芳解釋，原住民出草獵人頭，不單只是為了報復，背後還有很多原因。「除了復仇，我們泰雅族也常常為了祈求豐收、成年儀式等行為組團出草。」
+            </p>
+            <p>
+                「食番肉已經是我阿太（曾祖父）的阿公那一輩的故事，有這麼多輩的間隔，我覺得彼此對於仇恨其實不會那麼在意了。」梁廷毓表示，透過文件、影片和口述歷史，希望能讓更多人了解原客衝突背後的意義，未來也將蒐集原住民的資料，以另一個角度觀看這段歷史。
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/751d31dd6b56b26b29dac2c0e1839e34-44-1024x683.jpg">
+            <div class="blockquote">藝術家梁廷毓於現場翻閱著自己的作品，身為客家人的他，希望更多人重視這議題。　圖／范莛威攝</div>
+        </div>
+
+
+        <div class="inline-center">
+            <div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#原住民</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#客家人</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#泰雅族</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="laptop desktop-only">
+        <!--靠右結束-->
+        <div style="background-color:#FFFFFF; height: 433px;">
+            <h3>
+                <p style="padding-top: 38px;margin-left: auto;">延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art3.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg">
+                        <a class="a-read-more" href="Real-art3.html">大選開票亂象多 公民監票盼落實程序正義</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art4.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg">
+                        <a class="a-read-more" href="Real-art4.html">靈魂間的相遇和療癒 家族治療與心理師</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art5.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4c34acca40402e11f4d306a8edc6ee5d.jpg">
+                        <a class="a-read-more" href="Real-art5.html">被遺忘的驛站——轉型中的坪林如何永飄茶香？</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <p class="bottom-word">一群整天跟爸媽哭窮、現在連做期末成品都想趁機向社會大眾要錢花的國家未來棟樑。</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

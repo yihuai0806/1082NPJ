@@ -1,0 +1,1209 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+                display: block;
+            }
+
+            .desktop-only {
+                display: none;
+            }
+
+            .iphone8 {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                margin-left: 23px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                color: #000000;
+            }
+
+
+            h2 {
+                width: calu(320/375*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 17px;
+                line-height: 25px;
+
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                padding-top: 25px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            video {
+                width: calc(324/375*100%);
+                display: inline-block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+
+            iframe {
+                width: 100%;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .reporter {
+                width: calc(313/375*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #838383;
+                margin-left: 27px;
+            }
+
+            .logo {
+                width: 147px;
+                height: 26px;
+                margin-left: 23px;
+                display: inline-block;
+            }
+
+            .photo {
+                width: calc(324/375*100%);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 30%;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 30%;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 4px;
+            }
+
+            .hero-img {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: 50%;
+                display: flex;
+            }
+
+            .article {
+                width: calc(324/375*100%);
+                top: 488px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 16px;
+                line-height: 155%;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(324/375*100%);
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 18px;
+            }
+
+            .white-block {
+                width: 320px;
+                height: 126px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                height: 33px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 100px;
+                height: 33px;
+                margin-top: 37px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 171px;
+
+
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 199px;
+                padding-top: 38px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+                width: calc(324/375*100%);
+
+            }
+
+            .read-more {
+
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 33px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 200px;
+                margin-top: 33px;
+
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 63px;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .social-media {
+                width: 23.4px;
+                padding-left: 7.25px;
+                padding-right: 7.25px;
+
+            }
+
+            ul {
+                display: none;
+                list-style-type: none;
+            }
+
+            label {
+
+                display: inline-block;
+                width: 30px;
+                text-align: end;
+                position: absolute;
+                right: calc(20/375*100%);
+            }
+
+            .burger-link {
+                text-decoration: none;
+                color: #000;
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+
+            }
+
+            #burger:checked+ul {
+                display: inline-block;
+                position: absolute;
+                text-align: end;
+                right: calc(20/375*100%);
+                top: calc(22/375*100%)
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+            }
+
+
+
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-only {
+                display: none;
+            }
+
+            .desktop-only {
+                display: block;
+                width: 100%;
+            }
+
+            .laptop {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+                width: 100%;
+
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                text-align: left;
+                font-family: Noto Sans SC;
+                width: calc(1024/1440*100%);
+                height: 49px;
+                font-weight: 500px;
+                font-size: 34px;
+                line-height: 49px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h2 {
+                width: calc(793/1440*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: calc(200/1440*100%);
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            h3>p{
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 25px;
+                line-height: 29px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            p {
+                display: block;
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            video {
+                width: calc(793/1440*100%);
+                display: inline-block;
+                text-align: center;
+                margin-right: auto;
+                margin-left: calc(200/1440*100%);
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .logo {
+                display: inline-block;
+                width: 380px;
+                height: 68px;
+                margin-left: 65px;
+                margin-top: 44px;
+            }
+
+            .bar-block {
+                display: inline-block;
+                width: calc(800/1440*100%);
+                text-align: end;
+                margin-top: 44px;
+            }
+
+            .bar {
+                display: inline-block;
+                width: 96px;
+                height: 35px;
+                text-align: end;
+                color: #000000;
+                text-decoration: none;
+                position: absolute;
+                margin-top: 70px;
+            }
+
+            .photo {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .taiwan-picture {
+                display: inline-block;
+                width: 600px;
+
+
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 200px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 40px;
+                padding-right: 40px;
+                width: 180px;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 10px;
+            }
+
+            .hero-img {
+                width: calc(1024/1440*100%);
+                display: flex;
+            }
+
+            .hero-img-down {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: calc(920/1440*100%);
+                margin-right: 50px;
+                margin-bottom: 50px;
+                float: left;
+                margin-left: 0px;
+            }
+
+            .article {
+
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .half-article {
+                width: calc(1000/1440*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                display: inline-block;
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 30px;
+            }
+
+            .white-block {
+                width: 792px;
+                height: 144px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag-block {
+                width: 793px;
+                height: 114px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 72px;
+                height: 33px;
+                margin-top: 37px;
+                margin-right: 5px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 307px;
+                left: 0px;
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 219px;
+                padding-top: 73px;
+                margin-left: 0 auto;
+            }
+
+            .bottom-word {
+                width: 359px;
+                padding-top: 36px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .read-more {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                margin-top: 39px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                object-fit: cover;
+
+            }
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 126px;
+                margin: 44px;
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .target {
+                position: sticky;
+                display: inline-block;
+                width: 70px;
+                top: 200px;
+                padding-left: calc(220/1024*100%);
+
+            }
+
+            .sticky-icon {
+                width: 45px;
+                padding: 14px;
+
+            }
+
+            .slogan {
+                width: 481px;
+                height: auto;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 41px;
+                margin-left: 195px;
+                margin-right: 42px;
+                color: black;
+
+
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body style="margin:0px">
+    <div class="iphone8 mobile-only">
+        <div style="display: inline-block;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <label for="burger">☰</label>
+            <input type="checkbox" id="burger" style="display: none;">
+            <ul>
+                <li class="burger-link"><a class="burger-link" href="#test">數位專題</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1>
+                <p>被遺忘的驛站——轉型中的坪林如何永飄茶香？</p>
+            </h1>
+        </div>
+        <div>
+            <p class="reporter">專題記者孫佾妘、劉雨婷、林傑立、何家璇、陶怡軒綜合報導</p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4c34acca40402e11f4d306a8edc6ee5d.jpg">
+            <div class="blockquote">坪林為台北到宜蘭必經之地，因位於翡翠水庫上游而保有良好水土環境，是文山包種茶的故鄉。（圖／白俊育提供）</div>
+        </div>
+
+        <div class="article">
+            <p>
+                新北市坪林區，文山包種茶的重要產地，茶園遍布，綠意盎然。位處北宜公路中繼，過去在台北通往宜蘭的交通要道上扮演驛站角色，老街人潮不絕。然而雪山隧道通車後，多數遊客不再駐足坪林，當地的觀光與茶業都面臨轉型的挑戰。
+            </p>
+
+        </div>
+        <div class="article">
+
+            <h2>
+                雪隧開通　昔日驛站風光不再
+            </h2>
+        </div>
+
+        <div class="article">
+            <p>
+                4月8日晚上，坪林老街上大部分的店都已打烊，然而巷口一間磚瓦牆店面，窗戶仍透著亮光。十多名青年圍著餐桌，討論六月好茶節活動。由坪林區公所結合在地青年推動組成的創生小組，希望成為地方創生的平台，推動坪林在地發展。
+            </p>
+            <p>
+                位於翡翠水庫上游的坪林地區，以生產文山包種茶聞名，老街過去為茶產業集散地，吸引許多喜愛茶葉的遊客慕名而來。順天茶行、阿樂師牛軋糖負責人陳忠鑠提到，1970年代國民旅遊興起，也是坪林茶產業最興盛的時期，當時街上有五、六十間茶行，茶葉外銷到歐美、日本等地。
+            </p>
+            <p>
+                在當時，北宜公路是前往東部的主要道路。由台北往返宜蘭、花蓮、台東等地的車潮，皆需經過坪林。車流帶來人潮，更為公路周邊攤販帶來營業商機。
+            </p>
+            <p>
+                「以前高速公路還沒開，坪林都會大塞車，假日中午店家都客滿，買東西還要排隊。」坪林茶農許明順回憶小時候曾和父親在公路旁搭帳棚賣橘子，當時遊客經過坪林，皆會以坪林為休息站，停在公路旁買茶梅、茶餅乾及茶酒等加工食品，店家甚至營業到晚上十二點，仍有客人前來消費。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/cd5f018db5128c559bf3aa2352e1a76b.png">
+            <div class="blockquote">1970年代，坪林地區為遊客前往宜蘭必經之地，當時一輛輛的遊客停靠北宜公路，為坪林地區帶來錢潮。（圖／坪林區公所提供）</div>
+        </div>
+
+
+
+        <div class="article">
+            <p>
+                不過2006年雪山隧道開通後，遊客可直達宜蘭，不再停留坪林。在地文史工作者、坪林茶莊負責人楊超銘說明，過去曾一天一萬多人次駐足坪林，如今僅餘一千多人次。
+            </p>
+            <p>
+                「經過的人減少滿多，現在都是周休二日嘛，大部分都是直接往宜蘭花蓮那邊過去。」許明順提起坪林現況，感嘆雪山隧道開通後，坪林失去作為中繼站的價值，沒人願意在坪林特別停留，只留下靜默的北宜公路。
+            </p>
+            <p>
+                熱鬧的老街如今也變得冷清，到了假日，只有四、五家店營業，稀疏遊客走在狹窄的巷道中。「假日最有人，而且要好天氣，但是你看（今天）沒下雨還是沒有什麼人。」老街上的小吃攤販老闆林群嘉無奈表示，因為人潮少，很多店家已停止營業，房屋轉為住宅使用。
+            </p>
+
+        </div>
+
+        <div class="article">
+            <h2>
+                曇花一現 低碳旅遊政策下的坪林觀光
+            </h2>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4cdef4058ff20147e4f03a500037a1a7-1024x683.jpg">
+            <div class="blockquote">榮獲多個茶比賽獎項的茶農許明順，經歷坪林的興衰。他感慨坪林種茶人口老化，茶產業不比以往。（圖／何家璇攝）</div>
+        </div>
+        <div class="article">
+            <p>
+                觀光客消失了，茶產業仍在繼續。但面對少子化與人口外流，青年人口漸漸離開坪林。「茶產量因為年輕人不做，以後會越來越少。坪林最年輕種茶也是40、50歲，有的60幾歲還在種。」漁光里里長白明堂提到，現在坪林茶農人口逐漸高齡化，讓茶業發展受到限制。
+            </p>
+            <p>
+                水源特定區諸多開發限制更讓坪林發展雪上加霜，由於位在翡翠水庫上游，為守護大台北地區水質，1984年政府將坪林列為台北水源特定區，限制當地土地利用，包括不能使用大型機具、農藥噴灑和施肥受限，讓茶業沒有足夠的發展空間。
+            </p>
+            <p>
+                但危機同時也是轉機，因位處水源保護區，坪林擁有良好的生態環境。以此為特色，政府於2008年推出低碳旅遊，提倡生態行程，提供免費低碳交通工具，提升民眾前來遊玩的意願，在兼顧生態的同時為坪林注入商機。
+            </p>
+            <p>
+                滴滴香茶行負責人陳耀璋提到，低碳旅遊由各店家親自帶民眾進行坪林地區導覽，「下午三點半到四點，到店家去喝茶，品茗、買伴手禮。」只要導覽得夠精彩，引起遊客對坪林茶葉的興趣，遊客多半會願意在店家消費。
+            </p>
+            <p>
+                陳耀璋表示，坪林以往依靠過路客維持生意，但民眾短暫停留便匆匆上路，消費金額並不高。而低碳旅遊帶來不同的消費型態，「遊客專程來坪林爬山健行，來這邊吃飯，把時間留在坪林一整天。」在低碳旅遊的帶動下，遊客在店家消費意願提高，因此陳耀璋認為低碳旅遊對於當地生意在短期內帶來一定程度幫助。
+            </p>
+            <p>
+                然而這項政策在2015年因為花費過大而終止，政府提供的補助突然消失，使當地籌備活動經費不足，坪林觀光對民眾吸引力降低，原本回流的人潮再次消逝。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/1a5147852dea5081210dbe27fe99fad0-1024x683.jpg">
+            <div class="blockquote">坪林老街的觀光人數減少，即便到假日店家也必須碰運氣，時而生意滿門、時而門可羅雀。（圖／陶怡軒攝</div>
+        </div>
+
+        <div class="article">
+            <h2>
+                青年投入地方創生　改變傳統經營模式
+            </h2>
+        </div>
+
+
+        <div class="article">
+            <p>
+                同一時間，地方上有一批青年致力活化坪林，包含返鄉的年輕二代，以及外地進駐的新創團隊。台灣藍鵲茶創辦人黃柏鈞提出他們的理念，希望讓坪林成為旅遊景點之一，而非只是前往宜蘭的中繼站。
+            </p>
+            <p>
+                「政府補貼是毒藥。」黃柏鈞指出低碳旅遊一時之間帶來了人潮，然而政府的補助專案停下來後，地方社區決定自行舉辦，成本提高導致商品收費拉抬數倍，遊客自然就流失了。
+            </p>
+            <p>
+                過去政府為復興坪林，投注不少經費補助低碳旅遊，一名旅客僅需支付二百元便可暢遊坪林。黃柏鈞認為這會損及坪林在消費者心中的價值，「價格太低的結果是讓消費者養壞胃口。」
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/dff339d1d8b4f3278eecfafa88a7137b-1024x769.jpg">
+            <div class="blockquote">由當地青年與區公所創立的地方創生小組自今年三月起開始運作，本次會議討論著六月即將到來的坪林好茶節。（圖／孫佾妘攝）</div>
+        </div>
+
+        <div class="article">
+            <p>
+                地方創生團隊相繼與新北市觀光局和農業局合作，一改過去政府撥經費舉辦活動的模式，由民間自發舉辦數十場活動，與政府共同經營「小旅行」，並堅持不走低價策略，欲從頭建立使用者付費的概念。
+            </p>
+            <p>
+                不過滴滴香茶行業務經理、陳耀璋兒子陳偉毅提到，小旅行多半包含DIY體驗行程，但店家農閒時非茶葉產季，民眾無茶可採；產季時則忙碌於茶葉採收，需確保茶葉販賣品質，沒有多餘心力帶民眾體驗，因此店家對於參與小旅行的方案多半興致缺缺。
+            </p>
+            <p>
+                經營自家品牌「白青長茶作坊」的白俊育則表示，當地受限於水源保護特定區，車流量有管制，窄小的產業道路也不利於大型車進入。同時，儘管有導覽行程，卻不會帶入指定店家消費，間接減少了由茶行導覽產生的客源，甚至會造成搶客的誤解。
+            </p>
+            <p>
+                白俊育認為，茶行新進團隊與傳統產業性質不同，並不會發生搶生意的情形，反而帶入新思維和模式。「你一直喝自己做的茶，只懂自己的味道；你沒有喝過別人泡你的茶，也許風味不一樣。」他用製茶經驗比擬，自己身為在地人也需仰賴第三者的眼光評斷坪林發展的好壞。
+            </p>
+            <p>
+                茶農平均年齡在六十歲以上，近五年才逐漸有青年回流，目前約有三十多位。年輕人向長輩學習製茶技術，也帶入新的科學知識，控制濕度、溫度，讓茶農不再只是「看天做茶」。
+            </p>
+            <p>
+                「建立品牌」是許多坪林青年的共同理念，拓展網路行銷、設計精緻包裝，以增加銷售量。白俊育表示，改變原本銷售方式有時也造成世代間的爭執，「長輩覺得原本賣得好好的，為什麼要多花錢去做這些。」雙方溝通變得極為重要。
+            </p>
+            <p>
+                「要不斷的有故事發生，才能擾動（地方行動）。」黃柏鈞認為坪林地方創生最困難的是激發居民的行動，產生經濟價格的改變。此外，他肯定坪林製茶水準及發展精緻農業的潛力，有機會成為台灣之光。
+            </p>
+        </div>
+        <div class="article">
+            <h2>
+                以茶為本　打造坪林地方特色
+            </h2>
+        </div>
+        <div class="article">
+            <p>
+                為避免城鄉差距擴大，行政院將今年（2019年）訂為我國地方創生元年，引入日本推動「地方創生」概念，透過盤點地區既有的人、地、產業特色與優勢，並導入資源或企業，協助鄉鎮發展地方特色。坪林區公所區長施明慧表示，透過成立坪林地方創生小組，整合青年和國寶茶師，讓在地能農產業及觀光業並進發展。
+            </p>
+            <p>
+                然而，陳偉毅指出，由於坪林以茶產業為主，商家多販售茶葉與茶風味點心，此既定印象卻讓店家產品同質性過高，彼此競爭激烈，使在地陷入發展困境，「你就算沒有此意，別人也會認為你幹嘛故意跟我賣一樣的東西。」林群嘉也同意這個看法，「（大家）賣的東西差不多，茶鄉就是賣茶油、茶葉啦，或是像茶粿。」
+            </p>
+            <p>
+                除了商品競爭激烈，林群嘉也提到，帶遊客觀光的導覽員會因自身與特定店家較要好而導覽、推銷這些店家，讓其餘商店無法受惠，彼此間的關係更惡化。
+            </p>
+            <p>
+                陳耀璋認為，傳統茶行應轉型，「不是單純在這裡等客人上門，這樣業績一個月要有十萬都很難。」楊超銘則建議，每家店應要有不同特色，多元發展才能留住遊客，「陳列都一樣、賣的都一樣，那大家就覺得來過一次後就不用再來了。」
+            </p>
+            <p>
+                「大家來坪林逛，一定會經過老街和這邊的茶行，不可能都自駕去茶園找茶農買。」坪感覺負責人、先前為金瓜三號老闆蔡威德也認同店家轉型的看法，應積極吸引消費者上門。他以新開在老街上的商店坪感覺為例，提供在地食材製作的餐飲、邀請茶師現身說法、推廣當地茶品牌等，聯繫在地與遊客間的連結。他希望透過自己的嘗試，讓其他店家看見營運轉型的可能。
+            </p>
+            <p>
+                「坪林的特色就是茶，不過茶也有很多面向。」除了營運轉型外，蔡威德也提到可以用更多元的方式營造當地特色，像是茶產可以進行體驗經濟，分成飲食、娛樂、和產業知識三種等。他希望未來老街能成立組織，統合所有店家打造共同特色，及規劃各家店的市場區隔，「讓每個店家都好好介紹自己的東西，甚至讓更多店家開起來。」做出不論是否有政府補助、都能自行運作的系統，才是長遠之計。
+            </p>
+            <p>
+                「把坪林特有的（條件）放大到別的地方都學不來，那就是地方特色。」楊超銘建議，當地應回歸自身有利條件，思考未來如何發展、行銷，才能走出一片天。「將坪林所擁有的特色，包括產業、文化、環境等，依不同季節、不同客層、不同需求去安排，如此才能讓顧客一來再來。」
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/9ffabdb24076148d5fa44b62e88193fd-1024x683.jpg">
+            <div class="blockquote">
+                地方創生的概念為坪林注入新活水，如何利用茶與自然資源，發展成坪林無可取代的地方特色，將是坪林未來的課題。（圖／何家璇攝）
+            </div>
+        </div>
+
+        <div style="height:114px">
+            <div style="margin-left:31px">
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#地方創生</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#坪林</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#小旅行</a>
+
+            </div>
+        </div>
+        <div style="background-color:#FFFFFF;height: 890px;">
+            <h3>
+                <p>延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art6.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/751d31dd6b56b26b29dac2c0e1839e34-14.jpg">
+                        <a class="a-read-more" href="Real-art6.html">睽違七年　交大男排再度稱霸永信杯</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art7.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/c4ca4238a0b923820dcc509a6f75849b-14.jpg">
+                        <a class="a-read-more" href="Real-art7.html">專業工作選擇少　青年儲蓄方案成效存疑</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art1.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg">
+                        <a class="a-read-more" href="Real-art1.html">實驗劇剖析愛 演譯少女的不可定義</a>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <div style="text-align: center;">
+                <div style="margin: 32.7px;">
+                <img class="social-media inline-center" src="../asset/Icon_Facebook.png">
+                <img class="social-media inline-center" src="../asset/icon-ins.png">
+                <img class="social-media inline-center" src="../asset/icon-line.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="laptop desktop-only">
+        <div style="position: relative;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <a class="bar" style="right: calc(385/1024*100%) "href="https://www.w3schools.com">數位專題</a>
+            <a class="bar" style="right: calc(305/1024*100%) "href="https://www.w3schools.com">即時新聞</a>
+            <a class="bar" style="right: calc(225/1024*100%) "href="https://www.w3schools.com">捐款贊助</a>
+            <a class="bar" style="right: calc(145/1024*100%) "href="https://www.w3schools.com">關於我們</a>
+        </div>
+        <div>
+            <h1>
+                被遺忘的驛站——轉型中的坪林如何永飄茶香？
+            </h1>
+        </div>
+
+
+        <div>
+            <p
+                style="color: #838383;width: calc(1024/1440*100%);height: 22px;font-size: 16px;line-height: 23px;margin-right: auto;margin-left: auto;">
+                專題記者孫佾妘、劉雨婷、林傑立、何家璇、陶怡軒綜合報導</p>
+        </div>
+        <div>
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4c34acca40402e11f4d306a8edc6ee5d.jpg">
+            <div class="blockquote" style="width: calc(1024/1440*100%);">
+                坪林為台北到宜蘭必經之地，因位於翡翠水庫上游而保有良好水土環境，是文山包種茶的故鄉。（圖／白俊育提供）</div>
+        </div>
+        <!--sticky-->
+        <div class="target" style="bottom: 3000px;">
+            <img class="sticky-icon" src="../asset/Icon_Facebook.png">
+            <img class="sticky-icon" src="../asset/icon-ins.png">
+            <img class="sticky-icon" src="../asset/icon-line.png">
+        </div>
+    
+        <!--靠右-->
+
+        <div class="article" style="margin-top: -225px;">
+            <p>新北市坪林區，文山包種茶的重要產地，茶園遍布，綠意盎然。位處北宜公路中繼，過去在台北通往宜蘭的交通要道上扮演驛站角色，老街人潮不絕。然而雪山隧道通車後，多數遊客不再駐足坪林，當地的觀光與茶業都面臨轉型的挑戰。
+            </p>
+        </div>
+
+        <div class="article">
+
+            <h2>
+                雪隧開通　昔日驛站風光不再
+            </h2>
+        </div>
+
+        <div class="article">
+            <p>
+                4月8日晚上，坪林老街上大部分的店都已打烊，然而巷口一間磚瓦牆店面，窗戶仍透著亮光。十多名青年圍著餐桌，討論六月好茶節活動。由坪林區公所結合在地青年推動組成的創生小組，希望成為地方創生的平台，推動坪林在地發展。
+            </p>
+            <p>
+                位於翡翠水庫上游的坪林地區，以生產文山包種茶聞名，老街過去為茶產業集散地，吸引許多喜愛茶葉的遊客慕名而來。順天茶行、阿樂師牛軋糖負責人陳忠鑠提到，1970年代國民旅遊興起，也是坪林茶產業最興盛的時期，當時街上有五、六十間茶行，茶葉外銷到歐美、日本等地。
+            </p>
+            <p>
+                在當時，北宜公路是前往東部的主要道路。由台北往返宜蘭、花蓮、台東等地的車潮，皆需經過坪林。車流帶來人潮，更為公路周邊攤販帶來營業商機。
+            </p>
+            <p>
+                「以前高速公路還沒開，坪林都會大塞車，假日中午店家都客滿，買東西還要排隊。」坪林茶農許明順回憶小時候曾和父親在公路旁搭帳棚賣橘子，當時遊客經過坪林，皆會以坪林為休息站，停在公路旁買茶梅、茶餅乾及茶酒等加工食品，店家甚至營業到晚上十二點，仍有客人前來消費。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/cd5f018db5128c559bf3aa2352e1a76b.png">
+            <div class="blockquote">1970年代，坪林地區為遊客前往宜蘭必經之地，當時一輛輛的遊客停靠北宜公路，為坪林地區帶來錢潮。（圖／坪林區公所提供）</div>
+        </div>
+
+
+
+        <div class="article">
+            <p>
+                不過2006年雪山隧道開通後，遊客可直達宜蘭，不再停留坪林。在地文史工作者、坪林茶莊負責人楊超銘說明，過去曾一天一萬多人次駐足坪林，如今僅餘一千多人次。
+            </p>
+            <p>
+                「經過的人減少滿多，現在都是周休二日嘛，大部分都是直接往宜蘭花蓮那邊過去。」許明順提起坪林現況，感嘆雪山隧道開通後，坪林失去作為中繼站的價值，沒人願意在坪林特別停留，只留下靜默的北宜公路。
+            </p>
+            <p>
+                熱鬧的老街如今也變得冷清，到了假日，只有四、五家店營業，稀疏遊客走在狹窄的巷道中。「假日最有人，而且要好天氣，但是你看（今天）沒下雨還是沒有什麼人。」老街上的小吃攤販老闆林群嘉無奈表示，因為人潮少，很多店家已停止營業，房屋轉為住宅使用。
+            </p>
+
+        </div>
+
+        <div class="article">
+            <h2>
+                曇花一現 低碳旅遊政策下的坪林觀光
+            </h2>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4cdef4058ff20147e4f03a500037a1a7-1024x683.jpg">
+            <div class="blockquote">榮獲多個茶比賽獎項的茶農許明順，經歷坪林的興衰。他感慨坪林種茶人口老化，茶產業不比以往。（圖／何家璇攝）</div>
+        </div>
+        <div class="article">
+            <p>
+                觀光客消失了，茶產業仍在繼續。但面對少子化與人口外流，青年人口漸漸離開坪林。「茶產量因為年輕人不做，以後會越來越少。坪林最年輕種茶也是40、50歲，有的60幾歲還在種。」漁光里里長白明堂提到，現在坪林茶農人口逐漸高齡化，讓茶業發展受到限制。
+            </p>
+            <p>
+                水源特定區諸多開發限制更讓坪林發展雪上加霜，由於位在翡翠水庫上游，為守護大台北地區水質，1984年政府將坪林列為台北水源特定區，限制當地土地利用，包括不能使用大型機具、農藥噴灑和施肥受限，讓茶業沒有足夠的發展空間。
+            </p>
+            <p>
+                但危機同時也是轉機，因位處水源保護區，坪林擁有良好的生態環境。以此為特色，政府於2008年推出低碳旅遊，提倡生態行程，提供免費低碳交通工具，提升民眾前來遊玩的意願，在兼顧生態的同時為坪林注入商機。
+            </p>
+            <p>
+                滴滴香茶行負責人陳耀璋提到，低碳旅遊由各店家親自帶民眾進行坪林地區導覽，「下午三點半到四點，到店家去喝茶，品茗、買伴手禮。」只要導覽得夠精彩，引起遊客對坪林茶葉的興趣，遊客多半會願意在店家消費。
+            </p>
+            <p>
+                陳耀璋表示，坪林以往依靠過路客維持生意，但民眾短暫停留便匆匆上路，消費金額並不高。而低碳旅遊帶來不同的消費型態，「遊客專程來坪林爬山健行，來這邊吃飯，把時間留在坪林一整天。」在低碳旅遊的帶動下，遊客在店家消費意願提高，因此陳耀璋認為低碳旅遊對於當地生意在短期內帶來一定程度幫助。
+            </p>
+            <p>
+                然而這項政策在2015年因為花費過大而終止，政府提供的補助突然消失，使當地籌備活動經費不足，坪林觀光對民眾吸引力降低，原本回流的人潮再次消逝。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/1a5147852dea5081210dbe27fe99fad0-1024x683.jpg">
+            <div class="blockquote">坪林老街的觀光人數減少，即便到假日店家也必須碰運氣，時而生意滿門、時而門可羅雀。（圖／陶怡軒攝</div>
+        </div>
+
+        <div class="article">
+            <h2>
+                青年投入地方創生　改變傳統經營模式
+            </h2>
+        </div>
+
+
+        <div class="article">
+            <p>
+                同一時間，地方上有一批青年致力活化坪林，包含返鄉的年輕二代，以及外地進駐的新創團隊。台灣藍鵲茶創辦人黃柏鈞提出他們的理念，希望讓坪林成為旅遊景點之一，而非只是前往宜蘭的中繼站。
+            </p>
+            <p>
+                「政府補貼是毒藥。」黃柏鈞指出低碳旅遊一時之間帶來了人潮，然而政府的補助專案停下來後，地方社區決定自行舉辦，成本提高導致商品收費拉抬數倍，遊客自然就流失了。
+            </p>
+            <p>
+                過去政府為復興坪林，投注不少經費補助低碳旅遊，一名旅客僅需支付二百元便可暢遊坪林。黃柏鈞認為這會損及坪林在消費者心中的價值，「價格太低的結果是讓消費者養壞胃口。」
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/dff339d1d8b4f3278eecfafa88a7137b-1024x769.jpg">
+            <div class="blockquote">由當地青年與區公所創立的地方創生小組自今年三月起開始運作，本次會議討論著六月即將到來的坪林好茶節。（圖／孫佾妘攝）</div>
+        </div>
+
+        <div class="article">
+            <p>
+                地方創生團隊相繼與新北市觀光局和農業局合作，一改過去政府撥經費舉辦活動的模式，由民間自發舉辦數十場活動，與政府共同經營「小旅行」，並堅持不走低價策略，欲從頭建立使用者付費的概念。
+            </p>
+            <p>
+                不過滴滴香茶行業務經理、陳耀璋兒子陳偉毅提到，小旅行多半包含DIY體驗行程，但店家農閒時非茶葉產季，民眾無茶可採；產季時則忙碌於茶葉採收，需確保茶葉販賣品質，沒有多餘心力帶民眾體驗，因此店家對於參與小旅行的方案多半興致缺缺。
+            </p>
+            <p>
+                經營自家品牌「白青長茶作坊」的白俊育則表示，當地受限於水源保護特定區，車流量有管制，窄小的產業道路也不利於大型車進入。同時，儘管有導覽行程，卻不會帶入指定店家消費，間接減少了由茶行導覽產生的客源，甚至會造成搶客的誤解。
+            </p>
+            <p>
+                白俊育認為，茶行新進團隊與傳統產業性質不同，並不會發生搶生意的情形，反而帶入新思維和模式。「你一直喝自己做的茶，只懂自己的味道；你沒有喝過別人泡你的茶，也許風味不一樣。」他用製茶經驗比擬，自己身為在地人也需仰賴第三者的眼光評斷坪林發展的好壞。
+            </p>
+            <p>
+                茶農平均年齡在六十歲以上，近五年才逐漸有青年回流，目前約有三十多位。年輕人向長輩學習製茶技術，也帶入新的科學知識，控制濕度、溫度，讓茶農不再只是「看天做茶」。
+            </p>
+            <p>
+                「建立品牌」是許多坪林青年的共同理念，拓展網路行銷、設計精緻包裝，以增加銷售量。白俊育表示，改變原本銷售方式有時也造成世代間的爭執，「長輩覺得原本賣得好好的，為什麼要多花錢去做這些。」雙方溝通變得極為重要。
+            </p>
+            <p>
+                「要不斷的有故事發生，才能擾動（地方行動）。」黃柏鈞認為坪林地方創生最困難的是激發居民的行動，產生經濟價格的改變。此外，他肯定坪林製茶水準及發展精緻農業的潛力，有機會成為台灣之光。
+            </p>
+        </div>
+        <div class="article">
+            <h2>
+                以茶為本　打造坪林地方特色
+            </h2>
+        </div>
+        <div class="article">
+            <p>
+                為避免城鄉差距擴大，行政院將今年（2019年）訂為我國地方創生元年，引入日本推動「地方創生」概念，透過盤點地區既有的人、地、產業特色與優勢，並導入資源或企業，協助鄉鎮發展地方特色。坪林區公所區長施明慧表示，透過成立坪林地方創生小組，整合青年和國寶茶師，讓在地能農產業及觀光業並進發展。
+            </p>
+            <p>
+                然而，陳偉毅指出，由於坪林以茶產業為主，商家多販售茶葉與茶風味點心，此既定印象卻讓店家產品同質性過高，彼此競爭激烈，使在地陷入發展困境，「你就算沒有此意，別人也會認為你幹嘛故意跟我賣一樣的東西。」林群嘉也同意這個看法，「（大家）賣的東西差不多，茶鄉就是賣茶油、茶葉啦，或是像茶粿。」
+            </p>
+            <p>
+                除了商品競爭激烈，林群嘉也提到，帶遊客觀光的導覽員會因自身與特定店家較要好而導覽、推銷這些店家，讓其餘商店無法受惠，彼此間的關係更惡化。
+            </p>
+            <p>
+                陳耀璋認為，傳統茶行應轉型，「不是單純在這裡等客人上門，這樣業績一個月要有十萬都很難。」楊超銘則建議，每家店應要有不同特色，多元發展才能留住遊客，「陳列都一樣、賣的都一樣，那大家就覺得來過一次後就不用再來了。」
+            </p>
+            <p>
+                「大家來坪林逛，一定會經過老街和這邊的茶行，不可能都自駕去茶園找茶農買。」坪感覺負責人、先前為金瓜三號老闆蔡威德也認同店家轉型的看法，應積極吸引消費者上門。他以新開在老街上的商店坪感覺為例，提供在地食材製作的餐飲、邀請茶師現身說法、推廣當地茶品牌等，聯繫在地與遊客間的連結。他希望透過自己的嘗試，讓其他店家看見營運轉型的可能。
+            </p>
+            <p>
+                「坪林的特色就是茶，不過茶也有很多面向。」除了營運轉型外，蔡威德也提到可以用更多元的方式營造當地特色，像是茶產可以進行體驗經濟，分成飲食、娛樂、和產業知識三種等。他希望未來老街能成立組織，統合所有店家打造共同特色，及規劃各家店的市場區隔，「讓每個店家都好好介紹自己的東西，甚至讓更多店家開起來。」做出不論是否有政府補助、都能自行運作的系統，才是長遠之計。
+            </p>
+            <p>
+                「把坪林特有的（條件）放大到別的地方都學不來，那就是地方特色。」楊超銘建議，當地應回歸自身有利條件，思考未來如何發展、行銷，才能走出一片天。「將坪林所擁有的特色，包括產業、文化、環境等，依不同季節、不同客層、不同需求去安排，如此才能讓顧客一來再來。」
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/9ffabdb24076148d5fa44b62e88193fd-1024x683.jpg">
+            <div class="blockquote">
+                地方創生的概念為坪林注入新活水，如何利用茶與自然資源，發展成坪林無可取代的地方特色，將是坪林未來的課題。（圖／何家璇攝）
+            </div>
+        </div>
+
+
+
+        <div class="inline-center">
+            <div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#地方創生</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#坪林</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#小旅行</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="laptop desktop-only">
+        <!--靠右結束-->
+        <div style="background-color:#FFFFFF; height: 433px;">
+            <h3>
+                <p style="padding-top: 38px;margin-left: auto;">延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art6.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/751d31dd6b56b26b29dac2c0e1839e34-14.jpg">
+                        <a class="a-read-more" href="Real-art6.html">睽違七年　交大男排再度稱霸永信杯</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art7.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/c4ca4238a0b923820dcc509a6f75849b-14.jpg">
+                        <a class="a-read-more" href="Real-art7.html">專業工作選擇少　青年儲蓄方案成效存疑</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art1.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg">
+                        <a class="a-read-more" href="Real-art1.html">實驗劇剖析愛 演譯少女的不可定義</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <p class="bottom-word">一群整天跟爸媽哭窮、現在連做期末成品都想趁機向社會大眾要錢花的國家未來棟樑。</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

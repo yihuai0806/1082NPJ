@@ -1,0 +1,1267 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+                display: block;
+            }
+
+            .desktop-only {
+                display: none;
+            }
+
+            .iphone8 {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                margin-left: 23px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                color: #000000;
+            }
+
+
+            h2 {
+                width: calu(320/375*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 17px;
+                line-height: 25px;
+
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                padding-top: 25px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            video {
+                width: calc(324/375*100%);
+                display: inline-block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+
+            iframe {
+                width: 100%;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .reporter {
+                width: calc(313/375*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #838383;
+                margin-left: 27px;
+            }
+
+            .logo {
+                width: 147px;
+                height: 26px;
+                margin-left: 23px;
+                display: inline-block;
+            }
+
+            .photo {
+                width: calc(324/375*100%);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 30%;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 30%;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 4px;
+            }
+
+            .hero-img {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: 50%;
+                display: flex;
+            }
+
+            .article {
+                width: calc(324/375*100%);
+                top: 488px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 16px;
+                line-height: 155%;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(324/375*100%);
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 18px;
+            }
+
+            .white-block {
+                width: 320px;
+                height: 126px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                height: 33px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 100px;
+                height: 33px;
+                margin-top: 37px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 171px;
+
+
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 199px;
+                padding-top: 38px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+                width: calc(324/375*100%);
+
+            }
+
+            .read-more {
+
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 33px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 200px;
+                margin-top: 33px;
+
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 63px;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .social-media {
+                width: 23.4px;
+                padding-left: 7.25px;
+                padding-right: 7.25px;
+
+            }
+
+            ul {
+                display: none;
+                list-style-type: none;
+            }
+
+            label {
+
+                display: inline-block;
+                width: 30px;
+                text-align: end;
+                position: absolute;
+                right: calc(20/375*100%);
+            }
+
+            .burger-link {
+                text-decoration: none;
+                color: #000;
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+
+            }
+
+            #burger:checked+ul {
+                display: inline-block;
+                position: absolute;
+                text-align: end;
+                right: calc(20/375*100%);
+                top: calc(22/375*100%)
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+            }
+
+
+
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-only {
+                display: none;
+            }
+
+            .desktop-only {
+                display: block;
+                width: 100%;
+            }
+
+            .laptop {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+                width: 100%;
+
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                text-align: left;
+                font-family: Noto Sans SC;
+                width: calc(1024/1440*100%);
+                height: 49px;
+                font-weight: 500px;
+                font-size: 34px;
+                line-height: 49px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h2 {
+                width: calc(793/1440*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: calc(200/1440*100%);
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            h3>p{
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 25px;
+                line-height: 29px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            p {
+                display: block;
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            video {
+                width: calc(793/1440*100%);
+                display: inline-block;
+                text-align: center;
+                margin-right: auto;
+                margin-left: calc(200/1440*100%);
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .logo {
+                display: inline-block;
+                width: 380px;
+                height: 68px;
+                margin-left: 65px;
+                margin-top: 44px;
+            }
+
+            .bar-block {
+                display: inline-block;
+                width: calc(800/1440*100%);
+                text-align: end;
+                margin-top: 44px;
+            }
+
+            .bar {
+                display: inline-block;
+                width: 96px;
+                height: 35px;
+                text-align: end;
+                color: #000000;
+                text-decoration: none;
+                position: absolute;
+                margin-top: 70px;
+            }
+
+            .photo {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .taiwan-picture {
+                display: inline-block;
+                width: 600px;
+
+
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 200px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 40px;
+                padding-right: 40px;
+                width: 180px;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 10px;
+            }
+
+            .hero-img {
+                width: calc(1024/1440*100%);
+                display: flex;
+            }
+
+            .hero-img-down {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: calc(920/1440*100%);
+                margin-right: 50px;
+                margin-bottom: 50px;
+                float: left;
+                margin-left: 0px;
+            }
+
+            .article {
+
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .half-article {
+                width: calc(1000/1440*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                display: inline-block;
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 30px;
+            }
+
+            .white-block {
+                width: 792px;
+                height: 144px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag-block {
+                width: 793px;
+                height: 114px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 72px;
+                height: 33px;
+                margin-top: 37px;
+                margin-right: 5px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 307px;
+                left: 0px;
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 219px;
+                padding-top: 73px;
+                margin-left: 0 auto;
+            }
+
+            .bottom-word {
+                width: 359px;
+                padding-top: 36px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .read-more {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                margin-top: 39px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                object-fit: cover;
+
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 126px;
+                margin: 44px;
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .target {
+                position: sticky;
+                display: inline-block;
+                width: 70px;
+                top: 200px;
+                padding-left: calc(220/1024*100%);
+
+            }
+
+            .sticky-icon {
+                width: 45px;
+                padding: 14px;
+
+            }
+
+            .slogan {
+                width: 481px;
+                height: auto;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 41px;
+                margin-left: 195px;
+                margin-right: 42px;
+                color: black;
+
+
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body style="margin:0px">
+    <div class="iphone8 mobile-only">
+        <div style="display: inline-block;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <label for="burger">☰</label>
+            <input type="checkbox" id="burger" style="display: none;">
+            <ul>
+                <li class="burger-link"><a class="burger-link" href="#test">數位專題</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1>
+                <p>靈魂間的相遇和療癒 家族治療與心理師</p>
+            </h1>
+        </div>
+        <div>
+            <p class="reporter">專題記者徐卉馨、吳佩容、范莛威、林莉庭綜合報導</p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg">
+            <div class="blockquote">家庭成員一同聚在諮商室，透過心理師的引導，找出解決家庭困難的方法。　圖／范莛威攝</div>
+        </div>
+
+        <div class="article">
+            <p>
+                「其實我覺得家族治療（如附註）四個字，就是讓我的媽媽爸爸能夠有效溝通，這樣就好，很簡單的。」許多家庭在面臨問題時，選擇隱忍或逃避，而非坐下來一起面對。家族治療以解決伴侶、夫妻、家庭成員之間的困難為主，陳家子女因擔心母親無法與家裡成員溝通，選擇全家一起來諮商，希望透過諮商心理師（以下簡稱心理師）的引導，慢慢築起他們與母親的橋樑。
+            </p>
+            <p><i>
+                    註：以往諮商與心理治療各理論派別皆以個人為治療對象，家族治療（Family
+                    Therapy）是以當事人所屬的整個家族系統為治療核心，並探討其家庭成員彼此的互動模式。資訊來源：社團法人華人伴侶與家族治療協會網站http://www.acft.org.tw/qSynopsis.asp
+                </i>
+            </p>
+
+        </div>
+        <div class="article">
+
+            <h2>
+                「心裡的話還是要一個出口。」
+            </h2>
+        </div>
+
+        <div class="article">
+            <p>
+                陳家有四個孩子，為改善父母關係選擇接受家族治療，他們在諮商過程中，發現母親長期以來不表達自身的想法，與父親性格有關，「主要是因為父親比較保守，是大男人主義。」陳三弟感受到母親並不快樂，希望透過溝通，讓母親逐漸願意敞開心房。
+            </p>
+            <p>
+                陳家在進行過兩次諮商後，不僅處理夫妻關係，也談及親子關係，「他會用激將法的方式去迫使你成長。」陳大哥回想，父親過去採用體罰的方式教育孩子，較少給予孩子鼓勵與稱讚，連帶形塑他成人後的處事態度。陳三弟補充，透過心理師引導，孩子坦白說出對父親的感受，而父親在發覺自己的教養方式對孩子的影響後，便當場落淚，陳二姐說：「所以我說是和解了！」
+            </p>
+            <p>
+                「我覺得很感動就是這次促進了這麼多的對話。」陳三弟坦言，家庭成員在諮商過程得以互相釋放情緒、闡述壓抑許久的想法。而對陳二姐來說，家人坐下來好好溝通，也解開原先親子關係存在的心結，「畢竟有時候心結這件事情可能不是只有A和B的事情，而是全部的人一起的事情。」
+            </p>
+            <p>
+                婚姻、伴侶的諮商也是家族治療的其中一個領域，共享親密關係的伴侶若遇到相處上的阻礙，也會尋求家族治療。芒果（化名）和小真（化名）兩人便透過家族治療，更互相了解而決定踏入婚姻，「那時候彼此都有心理準備，也許做完（伴侶諮商）就和平分手。」小真坦言，其實家族治療是為讓案主之間建立有效、良好的溝通，雖說最終目標是修復關係，但和平分手也是一種溝通結果。
+            </p>
+            <p>
+                而在諮商過程中，芒果開始意識到他在這段關係的責任，他不再將爭吵的原因完全歸咎到對方或某一特定事件，他藉由諮商聽到小真內心的感受，並選擇尊重對方，而非強迫對方改變。小真則表示，伴侶諮商使他更了解芒果，「去體會到他背後的顧慮，或是比較真實的感受。」
+            </p>
+            <p>
+                「他（心理師）永遠不會只關注在一個人的內在情緒多麽無助、傷心、憤怒，而是這個憤怒會怎麼影響到兩個人的關係。」芒果解釋，家族治療和個別諮商差異在於，心理師著重案主們的關係和溝通情況，而不同於個別諮商注重個人，芒果說：「伴侶諮商的目的其實就是，幫助兩個人有力量回去自己解決問題。」
+            </p>
+            <p>
+                接受過伴侶諮商的小蓉（化名）表示，當時與交往十年的伴侶發生衝突，其實也牽涉到父母不認可這段感情。在接受諮商後，紓解了彼此緊張的關係，他說：「會對跟他（伴侶）一起組織家庭比較有信心。」他也提及未來若雙方家庭遇到溝通問題，願意進一步嘗試邀請家人一同諮商。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/a2eda25e9bd2d4a4a1a182cb4d59c16a.jpg">
+            <div class="blockquote">小真(圖上)和芒果(圖下)，兩人大學都修讀心理輔導相關學系，也曾一同接受伴侶諮商。　圖／徐卉馨攝</div>
+        </div>
+
+
+
+        <div class="article">
+            <h2>
+                引導出新角度 理清家人互動的千絲萬縷
+            </h2>
+            <p>
+                個別諮商著重個人的深沉感受，當一位案主說出一段話時，無法體現這段話在「關係」中的意義。家族治療是一種對話的練習，也是溝通的功課，關注以案主為核心的家庭成員，以系統的觀點來分析家庭成員關係，並釐清衝突背後的脈絡，而普遍的形式為家庭成員或伴侶一同與心理師會診，注重彼此的溝通、互動模式。
+            </p>
+            <p>
+                當嫌隙與爭執磨損親密的伴侶或家庭關係，溝通的橋樑未能搭建起來，關係便無從改善，此時家族治療可作為尋求關係改善的一項管道。中華民國諮商心理師公會全國聯合會副理事長、心理師羅惠群說：「要轉彎才能避開情緒。」心理師會轉換說法，以紓解家人間互相究責、羞愧的情緒。
+            </p>
+            <p>
+                心理師進行家族治療時，也需同時分別觀察家庭成員的表情、肢體動作，以及成員之間的互動。芒果指出，進行家族治療的心理師需同理各成員心中的疑慮與憂心，並在言談間協助成員理解彼此內心的真實情緒。
+            </p>
+            <p>
+                盼心理諮商所所長、心理師呂伯杰也說明，心理師要顧及不同人的感受，並隨時觀察這段關係的動向，當發現對話無法繼續進行，心理師應試圖點出卡關原因，以提供案主新的視角與觀點，避免在看似無解的狀態裡停滯不前。社團法人華人伴侶與家族治療協會（以下簡稱華家）理事長、心理師徐森杰解釋心理師的角色，「去協助這個家庭看到他們真正想要的是什麼。」心理師經由適時引導，能讓案主摸索出合適的互動方式，並能共同面對彼此的關係。
+            </p>
+            <p>
+                徐森杰坦言，家族治療實為創造出一個溝通平台，「家族裡面的人可以彼此交流內心話，改變對彼此的看法。」華家副秘書長、心理師黃子銘也認為，家族治療提供家庭聚在一起討論事情的契機，使家庭關係變得更緊密，他說：「我覺得家庭諮商有點像是開家庭會議，大家一起來看家裡發生什麼事情，然後我們一起來想辦法。」
+            </p>
+            <p>
+                在親密關係中，人們反而更控制不住宣洩情緒、說出傷人的話語，對話過程不免產生衝突。呂伯杰將家族治療的現場比喻為菜市場，與個別諮商相比，家庭成員之間更常出現語言衝突的情形，心理師需依狀況適時介入家人的對話。呂伯杰舉例，曾有一對前來諮商的夫妻，妻子保持沉默，而丈夫激動時會以情緒性語彙攻擊對方，他便適時提醒案主對話已落入動彈不得的瓶頸。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/e45ee7ce7e88149af8dd32b27f9512ce.jpg">
+                <div class="blockquote">
+                    徐森杰為社團法人華人伴侶與家族治療協會的理事長，除提供諮商服務外，同時也培訓新的心理師。　圖／范莛威攝
+                </div>
+        </div>
+
+        <div class="article">
+            <h2>
+                把自己顧好再去顧別人 心理師的家庭作業
+            </h2>
+
+            <p>
+                黃子銘自身接受過伴侶諮商，「那時候印象很深刻，我以為我講得很清楚，結果沒有想到我太太完全誤解。」在兩人對話沒有共識時，心理師慢慢說服雙方耐心聆聽與思索，再說出自己的理解，讓兩人意識到彼此的誤解。
+            </p>
+            <p>
+                談及接受諮商的感受，黃子銘說：「我的感受是覺得被理解、被聽懂、被看見，是很溫暖的。」他也認為諮商過程像樂器調音，是調整跟修復的功夫，心理師用陪伴慢慢調整案主的思考方向，並協助案主修復內心的創傷，「是一個靈魂跟另外一個靈魂相遇。」
+            </p>
+
+        </div>
+
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/a2ef406e2c2351e0b9e80029c909242d.jpg">
+            <div class="blockquote">心理師在關係中也會遇上困難，黃子銘在婚前與伴侶一同接受過諮商。　圖／范莛威攝</div>
+        </div>
+
+        <div class="article">
+            <p>
+                黃子銘認為心理師是帶著傷的療癒者，心理師在養成過程中必須先梳理自身的生命議題，亦會被師長鼓勵要有接受諮商的經驗，在充分了解自我後，才得以在為他人諮商的過程中，隨時覺察自己的心靈狀態。華家理事、心理師蔡春美也說：「家庭工作者一定要先做個人工作。」他認為心理師須擁有成熟的自覺與修復能力，才能與案主的經歷共感。
+            </p>
+            <p>
+                「我們就要回到生活裡去吃苦。」呂伯杰將諮商工作比作健身，要慢慢鍛鍊承受、處理情緒的能力，藉由自我鍛鍊，學習給予案主安全、舒適的諮商感受，也能使案主更有信心進行後續的治療，他說：「不想讓案主感覺沒有被好好理解，或被隨便評價。」國立政治大學身心健康中心約用心理師、心理師沈欣葦也說：「Self
+                care（自我照護）才是對別人的尊重，把自己顧好再去顧別人，那才有品質。」
+            </p>
+            <p>
+                而若案主的經歷觸及心理師的個人創傷，心理師可向督導（如附註）尋求幫助，在結案後與督導討論諮商的過程，除可獲取專業建議，也能沉澱情緒、整理自我的生命經驗。沈欣葦以自身為例，曾在處理案主喪父的案例時，心情頗受觸動，當下仍穩住情緒到諮商結束，直到跟督導對談時，才漸漸意識並整理自身的真實感受。
+            </p>
+            <p>
+                <i>
+                    註：在心理師之間，督導制度並不具強制性，但通常在心理師的養成過程中，師長會鼓勵學生尋找資深的心理師擔任自己的督導。心理師可與督導討論結案的感受、心得，以持續精進專業能力，也可藉此梳理自身的生命議題。
+                </i>
+            </p>
+            <h2>
+                不了解家族治療 難以在社會推動
+            </h2>
+            <p>
+                針對家族治療推行的現況，呂伯杰分析，主動尋求家族治療的伴侶或家庭寥寥無幾，案主多半經由心理師、輔導老師或社工轉介才接觸到家族治療。蔡春美也指出，目前各大心理諮商中心都有相關資源，心理師也會提供轉介管道，但若民眾對家族治療不了解，則不會主動尋求，那麼管道多寡其實並非影響推行的重點。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/d72d187df41e10ea7d9fcdc7f5909205.jpg">
+            <div class="blockquote">呂伯杰為盼心理諮商所的所長，認為民眾對於家族治療還不了解，故較少向外尋求協助。　圖／范莛威攝</div>
+        </div>
+
+        <div class="article">
+
+            <p>
+                「通常從個別諮商開始，透過心理師轉介，依照家庭的狀態去找適合的心理師。」沈欣葦解釋，心理師通常會先進行個別諮商了解狀況後，再嘗試鼓勵案主邀請家人。華家執行秘書許雅萱則說明，協會中許多案主是經由輔導老師和社工師轉介，許多參與課程的學員也會口耳相傳介紹案例前來諮商。
+            </p>
+            <p>
+                然而對案主而言，進入家族治療後，又是一條難關重重的路途。沈欣葦說：「第一個是時間，第二個是費用。」在現實條件考量之下，家族治療通常需協調家人同時在場，收費也相較個別諮商高。而若案主的家人存有疑慮，參與諮商的意願則更為低落，呂伯杰舉例，許多人會請假逃避，他便常碰上排斥、拒絕聆聽的情況。
+            </p>
+            <p>
+                當前有些人不願接觸家族治療，更遑論自發尋求協助。而追溯大眾對家族治療抗拒的原因，可發現源於顧慮他人的眼光，社會風氣也仍無法適應向外人講述家庭私事，沈欣葦分析，案家會礙於親族的目光，不敢尋求諮商，「別人怎麼看我們啊，厝邊頭尾、鄰居、親戚啊。」服務於財團法人華人心理治療研究發展基金會的家族治療師（如附註）林麗純也說：「抗拒當然很大啊！如果不是到了萬不得已，誰願意向外人揭露家中隱私呢！」
+            </p>
+            <p>
+                <i>
+                註：台灣現行的心理師證照制度，並未發給家族治療師的證照，但從事家族治療工作的心理師，仍通稱為家族治療師。
+                </i>
+            </p>
+            <h2>
+                缺乏教育資源 培養心理師的難處
+            </h2>
+            <p>
+                台灣現行制度下，心理師分為臨床心理師與諮商心理師，根據《專門職業及技術人員高等考試心理師考試規則》，心理師首先必須在諮商心理所、系、組或相關心理研究所主修諮商心理，且實習至少一年、成績及格，並具有碩士以上的學位，才能參加心理師考試，而通過考試後，將由衛生福利部發放證照。
+            </p>
+            <p>
+                而只要取得心理師的證照，便能進行家族治療，但許多心理師缺乏家族治療實務經驗。林麗純分析，獲取證照的心理師不一定具備執行家族治療的能力，心理師考試引導了教學，現今有些大學開設家族治療相關課程，「可是這是選修的，因為考試不考。」羅惠群也指出，台灣目前沒有發放家族治療師的證照，心理師通常自行標明專長項目，如此民眾在選擇心理師時，才可以透過心理師的學歷、專長領域來選擇。
+            </p>
+        </div>
+
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/7d0665438e81d8eceb98c1e31fca80c1.jpg">
+                <div class="blockquote">
+                    心理師羅惠群目前任職於馬偕醫院的協談中心，提供的諮商項目包含家族治療。　圖／徐卉馨攝
+                </div>
+        </div>
+
+       
+
+        <div class="article">
+            <p>
+                練成一位可以進行家族治療的心理師，會遇到的問題是缺乏學習資源。羅惠群說：「台灣沒有那麼正式的學制。」除了在心諮相關系所開設家族治療的選修課，學生若欲繼續學習家族治療，多選擇出國研讀。
+            </p>
+            <p>
+                國內心諮相關學系的訓練著重在個別諮商，若要進入家族治療領域，需重新調整自身觀點。羅惠群說：「過往訓練著墨在個人，要做這樣的翻轉要花段時間。」而若要持續進修家族治療知識，多需透過民間資源，由相關的基金會、協會等單位開設家族治療課程。
+            </p>
+            <p>  
+                羅惠群進一步說明，以台灣的人口所需的諮商資源而言，目前的心理師人數不足。而心理師若欲投入家族治療領域，需額外花費大量時間與金錢，來學習相關知識與重新調適自身觀點，在證照制度與民眾意識均不足的情況下，種種因素均成為心理師從事家族治療工作的阻礙。
+            </p>
+            <p>   
+                然而，林麗純也表示，當實務工作者發現自己有需要了解如何與家庭互動，便會自費報名課程學習。他發現參加基金會課程的部分學員，身份包含心理師、精神科醫師、社工師或輔導老師，「很多專業的第一線工作者，開始發覺其實家庭好重要。」
+            </p>
+            <h2>   
+                家族治療，是家庭渴望理解彼此的過程
+            </h2>
+            <p>
+                如何判定需要被治療的條件？徐森杰說：「華人文化裡面的儒家思想，把我們非常多人綁得死死的。」他說明，當今台灣社會仍存有夫婦有別、長幼有序、兄弟友愛等傳統價值觀念，「治療」對於多數人來說仍是沉重的名詞。
+            </p>
+            <p>    
+                其實參與家族治療對於許多案家來說並非狹義上的「治療」，陳大哥說：「我覺得這沒有什麼好去『治療』的，以治療這個詞來說的話。」他指出，小時候父親不擅言詞，時常用自己認為正確的方式對待他，比如以體罰的方式教育他，且缺乏給予讚美，「但我相信不是我的父親這樣而已，這是台灣人的通病。」
+            </p>
+            <p> 
+                而對家族心理師來說，家族治療是一個平台，讓家庭中每個人內在的需求可以被其他家人看見，徐森杰說：「我覺得家庭是一個有愛的地方，可是家庭也是一個帶來很多痛苦的地方。」他認為，家人會互相在意是因為對彼此有愛，才願意互相承擔，而心理師的角色就是去協助家庭發現真正適宜的互動模式。
+            </p>
+            <p>  
+                家族治療在現今的台灣社會，依舊有許多偏見需要被克服，多數人仍認為參與家族治療是小題大作或丟臉的行為，但對案主來說，家族治療不僅是解決溝通困難的管道，也是家庭成員渴望更理解彼此的過程。
+            </p>
+        </div>
+
+        <div style="height:114px">
+            <div style="margin-left:31px">
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#伴侶諮商</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#家族治療</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#心理諮商師</a>
+            </div>
+        </div>
+        <div style="background-color:#FFFFFF;height: 890px;">
+            <h3>
+                <p>延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art5.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4c34acca40402e11f4d306a8edc6ee5d.jpg">
+                        <a class="a-read-more" href="Real-art5.html">被遺忘的驛站——轉型中的坪林如何永飄茶香？</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art6.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/751d31dd6b56b26b29dac2c0e1839e34-14.jpg">
+                        <a class="a-read-more" href="Real-art6.html">睽違七年　交大男排再度稱霸永信杯</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art7.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/c4ca4238a0b923820dcc509a6f75849b-14.jpg">
+                        <a class="a-read-more" href="Real-art7.html">專業工作選擇少　青年儲蓄方案成效存疑</a>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <div style="text-align: center;">
+                <div style="margin: 32.7px;">
+                <img class="social-media inline-center" src="../asset/Icon_Facebook.png">
+                <img class="social-media inline-center" src="../asset/icon-ins.png">
+                <img class="social-media inline-center" src="../asset/icon-line.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="laptop desktop-only">
+        <div style="position: relative;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <a class="bar" style="right: calc(385/1024*100%) "href="https://www.w3schools.com">數位專題</a>
+            <a class="bar" style="right: calc(305/1024*100%) "href="https://www.w3schools.com">即時新聞</a>
+            <a class="bar" style="right: calc(225/1024*100%) "href="https://www.w3schools.com">捐款贊助</a>
+            <a class="bar" style="right: calc(145/1024*100%) "href="https://www.w3schools.com">關於我們</a>
+        </div>
+        <div>
+            <h1>
+                靈魂間的相遇和療癒 家族治療與心理師
+            </h1>
+        </div>
+
+
+        <div>
+            <p
+                style="color: #838383;width: calc(1024/1440*100%);height: 22px;font-size: 16px;line-height: 23px;margin-right: auto;margin-left: auto;">
+                專題記者徐卉馨、吳佩容、范莛威、林莉庭綜合報導</p>
+        </div>
+        <div>
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg">
+            <div class="blockquote" style="width: calc(1024/1440*100%);">
+                家庭成員一同聚在諮商室，透過心理師的引導，找出解決家庭困難的方法。　圖／范莛威攝</div>
+        </div>
+        
+        <div class="target" style="bottom: 3000px;">
+            <img class="sticky-icon" src="../asset/Icon_Facebook.png">
+            <img class="sticky-icon" src="../asset/icon-ins.png">
+            <img class="sticky-icon" src="../asset/icon-line.png">
+        </div>
+
+        <div class="article" style="margin-top: -225px;">
+            <p>其實我覺得家族治療（如附註）四個字，就是讓我的媽媽爸爸能夠有效溝通，這樣就好，很簡單的。」許多家庭在面臨問題時，選擇隱忍或逃避，而非坐下來一起面對。家族治療以解決伴侶、夫妻、家庭成員之間的困難為主，陳家子女因擔心母親無法與家裡成員溝通，選擇全家一起來諮商，希望透過諮商心理師（以下簡稱心理師）的引導，慢慢築起他們與母親的橋樑。
+            </p>
+            <p><i>
+                註：以往諮商與心理治療各理論派別皆以個人為治療對象，家族治療（Family
+                Therapy）是以當事人所屬的整個家族系統為治療核心，並探討其家庭成員彼此的互動模式。資訊來源：社團法人華人伴侶與家族治療協會網站http://www.acft.org.tw/qSynopsis.asp
+            </i>
+        </p>
+        </div>
+
+<div class="article">
+
+            <h2>
+                「心裡的話還是要一個出口。」
+            </h2>
+        </div>
+
+        <div class="article">
+            <p>
+                陳家有四個孩子，為改善父母關係選擇接受家族治療，他們在諮商過程中，發現母親長期以來不表達自身的想法，與父親性格有關，「主要是因為父親比較保守，是大男人主義。」陳三弟感受到母親並不快樂，希望透過溝通，讓母親逐漸願意敞開心房。
+            </p>
+            <p>
+                陳家在進行過兩次諮商後，不僅處理夫妻關係，也談及親子關係，「他會用激將法的方式去迫使你成長。」陳大哥回想，父親過去採用體罰的方式教育孩子，較少給予孩子鼓勵與稱讚，連帶形塑他成人後的處事態度。陳三弟補充，透過心理師引導，孩子坦白說出對父親的感受，而父親在發覺自己的教養方式對孩子的影響後，便當場落淚，陳二姐說：「所以我說是和解了！」
+            </p>
+            <p>
+                「我覺得很感動就是這次促進了這麼多的對話。」陳三弟坦言，家庭成員在諮商過程得以互相釋放情緒、闡述壓抑許久的想法。而對陳二姐來說，家人坐下來好好溝通，也解開原先親子關係存在的心結，「畢竟有時候心結這件事情可能不是只有A和B的事情，而是全部的人一起的事情。」
+            </p>
+            <p>
+                婚姻、伴侶的諮商也是家族治療的其中一個領域，共享親密關係的伴侶若遇到相處上的阻礙，也會尋求家族治療。芒果（化名）和小真（化名）兩人便透過家族治療，更互相了解而決定踏入婚姻，「那時候彼此都有心理準備，也許做完（伴侶諮商）就和平分手。」小真坦言，其實家族治療是為讓案主之間建立有效、良好的溝通，雖說最終目標是修復關係，但和平分手也是一種溝通結果。
+            </p>
+            <p>
+                而在諮商過程中，芒果開始意識到他在這段關係的責任，他不再將爭吵的原因完全歸咎到對方或某一特定事件，他藉由諮商聽到小真內心的感受，並選擇尊重對方，而非強迫對方改變。小真則表示，伴侶諮商使他更了解芒果，「去體會到他背後的顧慮，或是比較真實的感受。」
+            </p>
+            <p>
+                「他（心理師）永遠不會只關注在一個人的內在情緒多麽無助、傷心、憤怒，而是這個憤怒會怎麼影響到兩個人的關係。」芒果解釋，家族治療和個別諮商差異在於，心理師著重案主們的關係和溝通情況，而不同於個別諮商注重個人，芒果說：「伴侶諮商的目的其實就是，幫助兩個人有力量回去自己解決問題。」
+            </p>
+            <p>
+                接受過伴侶諮商的小蓉（化名）表示，當時與交往十年的伴侶發生衝突，其實也牽涉到父母不認可這段感情。在接受諮商後，紓解了彼此緊張的關係，他說：「會對跟他（伴侶）一起組織家庭比較有信心。」他也提及未來若雙方家庭遇到溝通問題，願意進一步嘗試邀請家人一同諮商。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/a2eda25e9bd2d4a4a1a182cb4d59c16a.jpg">
+            <div class="blockquote">小真(圖上)和芒果(圖下)，兩人大學都修讀心理輔導相關學系，也曾一同接受伴侶諮商。　圖／徐卉馨攝</div>
+        </div>
+
+
+
+        <div class="article">
+            <h2>
+                引導出新角度 理清家人互動的千絲萬縷
+            </h2>
+            <p>
+                個別諮商著重個人的深沉感受，當一位案主說出一段話時，無法體現這段話在「關係」中的意義。家族治療是一種對話的練習，也是溝通的功課，關注以案主為核心的家庭成員，以系統的觀點來分析家庭成員關係，並釐清衝突背後的脈絡，而普遍的形式為家庭成員或伴侶一同與心理師會診，注重彼此的溝通、互動模式。
+            </p>
+            <p>
+                當嫌隙與爭執磨損親密的伴侶或家庭關係，溝通的橋樑未能搭建起來，關係便無從改善，此時家族治療可作為尋求關係改善的一項管道。中華民國諮商心理師公會全國聯合會副理事長、心理師羅惠群說：「要轉彎才能避開情緒。」心理師會轉換說法，以紓解家人間互相究責、羞愧的情緒。
+            </p>
+            <p>
+                心理師進行家族治療時，也需同時分別觀察家庭成員的表情、肢體動作，以及成員之間的互動。芒果指出，進行家族治療的心理師需同理各成員心中的疑慮與憂心，並在言談間協助成員理解彼此內心的真實情緒。
+            </p>
+            <p>
+                盼心理諮商所所長、心理師呂伯杰也說明，心理師要顧及不同人的感受，並隨時觀察這段關係的動向，當發現對話無法繼續進行，心理師應試圖點出卡關原因，以提供案主新的視角與觀點，避免在看似無解的狀態裡停滯不前。社團法人華人伴侶與家族治療協會（以下簡稱華家）理事長、心理師徐森杰解釋心理師的角色，「去協助這個家庭看到他們真正想要的是什麼。」心理師經由適時引導，能讓案主摸索出合適的互動方式，並能共同面對彼此的關係。
+            </p>
+            <p>
+                徐森杰坦言，家族治療實為創造出一個溝通平台，「家族裡面的人可以彼此交流內心話，改變對彼此的看法。」華家副秘書長、心理師黃子銘也認為，家族治療提供家庭聚在一起討論事情的契機，使家庭關係變得更緊密，他說：「我覺得家庭諮商有點像是開家庭會議，大家一起來看家裡發生什麼事情，然後我們一起來想辦法。」
+            </p>
+            <p>
+                在親密關係中，人們反而更控制不住宣洩情緒、說出傷人的話語，對話過程不免產生衝突。呂伯杰將家族治療的現場比喻為菜市場，與個別諮商相比，家庭成員之間更常出現語言衝突的情形，心理師需依狀況適時介入家人的對話。呂伯杰舉例，曾有一對前來諮商的夫妻，妻子保持沉默，而丈夫激動時會以情緒性語彙攻擊對方，他便適時提醒案主對話已落入動彈不得的瓶頸。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/e45ee7ce7e88149af8dd32b27f9512ce.jpg">
+                <div class="blockquote">
+                    徐森杰為社團法人華人伴侶與家族治療協會的理事長，除提供諮商服務外，同時也培訓新的心理師。　圖／范莛威攝
+                </div>
+        </div>
+
+        <div class="article">
+            <h2>
+                把自己顧好再去顧別人 心理師的家庭作業
+            </h2>
+
+            <p>
+                黃子銘自身接受過伴侶諮商，「那時候印象很深刻，我以為我講得很清楚，結果沒有想到我太太完全誤解。」在兩人對話沒有共識時，心理師慢慢說服雙方耐心聆聽與思索，再說出自己的理解，讓兩人意識到彼此的誤解。
+            </p>
+            <p>
+                談及接受諮商的感受，黃子銘說：「我的感受是覺得被理解、被聽懂、被看見，是很溫暖的。」他也認為諮商過程像樂器調音，是調整跟修復的功夫，心理師用陪伴慢慢調整案主的思考方向，並協助案主修復內心的創傷，「是一個靈魂跟另外一個靈魂相遇。」
+            </p>
+
+        </div>
+
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/a2ef406e2c2351e0b9e80029c909242d.jpg">
+            <div class="blockquote">心理師在關係中也會遇上困難，黃子銘在婚前與伴侶一同接受過諮商。　圖／范莛威攝</div>
+        </div>
+
+        <div class="article">
+            <p>
+                黃子銘認為心理師是帶著傷的療癒者，心理師在養成過程中必須先梳理自身的生命議題，亦會被師長鼓勵要有接受諮商的經驗，在充分了解自我後，才得以在為他人諮商的過程中，隨時覺察自己的心靈狀態。華家理事、心理師蔡春美也說：「家庭工作者一定要先做個人工作。」他認為心理師須擁有成熟的自覺與修復能力，才能與案主的經歷共感。
+            </p>
+            <p>
+                「我們就要回到生活裡去吃苦。」呂伯杰將諮商工作比作健身，要慢慢鍛鍊承受、處理情緒的能力，藉由自我鍛鍊，學習給予案主安全、舒適的諮商感受，也能使案主更有信心進行後續的治療，他說：「不想讓案主感覺沒有被好好理解，或被隨便評價。」國立政治大學身心健康中心約用心理師、心理師沈欣葦也說：「Self
+                care（自我照護）才是對別人的尊重，把自己顧好再去顧別人，那才有品質。」
+            </p>
+            <p>
+                而若案主的經歷觸及心理師的個人創傷，心理師可向督導（如附註）尋求幫助，在結案後與督導討論諮商的過程，除可獲取專業建議，也能沉澱情緒、整理自我的生命經驗。沈欣葦以自身為例，曾在處理案主喪父的案例時，心情頗受觸動，當下仍穩住情緒到諮商結束，直到跟督導對談時，才漸漸意識並整理自身的真實感受。
+            </p>
+            <p>
+                <i>
+                    註：在心理師之間，督導制度並不具強制性，但通常在心理師的養成過程中，師長會鼓勵學生尋找資深的心理師擔任自己的督導。心理師可與督導討論結案的感受、心得，以持續精進專業能力，也可藉此梳理自身的生命議題。
+                </i>
+            </p>
+            <h2>
+                不了解家族治療 難以在社會推動
+            </h2>
+            <p>
+                針對家族治療推行的現況，呂伯杰分析，主動尋求家族治療的伴侶或家庭寥寥無幾，案主多半經由心理師、輔導老師或社工轉介才接觸到家族治療。蔡春美也指出，目前各大心理諮商中心都有相關資源，心理師也會提供轉介管道，但若民眾對家族治療不了解，則不會主動尋求，那麼管道多寡其實並非影響推行的重點。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/d72d187df41e10ea7d9fcdc7f5909205.jpg">
+            <div class="blockquote">呂伯杰為盼心理諮商所的所長，認為民眾對於家族治療還不了解，故較少向外尋求協助。　圖／范莛威攝</div>
+        </div>
+
+        <div class="article">
+
+            <p>
+                「通常從個別諮商開始，透過心理師轉介，依照家庭的狀態去找適合的心理師。」沈欣葦解釋，心理師通常會先進行個別諮商了解狀況後，再嘗試鼓勵案主邀請家人。華家執行秘書許雅萱則說明，協會中許多案主是經由輔導老師和社工師轉介，許多參與課程的學員也會口耳相傳介紹案例前來諮商。
+            </p>
+            <p>
+                然而對案主而言，進入家族治療後，又是一條難關重重的路途。沈欣葦說：「第一個是時間，第二個是費用。」在現實條件考量之下，家族治療通常需協調家人同時在場，收費也相較個別諮商高。而若案主的家人存有疑慮，參與諮商的意願則更為低落，呂伯杰舉例，許多人會請假逃避，他便常碰上排斥、拒絕聆聽的情況。
+            </p>
+            <p>
+                當前有些人不願接觸家族治療，更遑論自發尋求協助。而追溯大眾對家族治療抗拒的原因，可發現源於顧慮他人的眼光，社會風氣也仍無法適應向外人講述家庭私事，沈欣葦分析，案家會礙於親族的目光，不敢尋求諮商，「別人怎麼看我們啊，厝邊頭尾、鄰居、親戚啊。」服務於財團法人華人心理治療研究發展基金會的家族治療師（如附註）林麗純也說：「抗拒當然很大啊！如果不是到了萬不得已，誰願意向外人揭露家中隱私呢！」
+            </p>
+            <p>
+                <i>
+                註：台灣現行的心理師證照制度，並未發給家族治療師的證照，但從事家族治療工作的心理師，仍通稱為家族治療師。
+                </i>
+            </p>
+            <h2>
+                缺乏教育資源 培養心理師的難處
+            </h2>
+            <p>
+                台灣現行制度下，心理師分為臨床心理師與諮商心理師，根據《專門職業及技術人員高等考試心理師考試規則》，心理師首先必須在諮商心理所、系、組或相關心理研究所主修諮商心理，且實習至少一年、成績及格，並具有碩士以上的學位，才能參加心理師考試，而通過考試後，將由衛生福利部發放證照。
+            </p>
+            <p>
+                而只要取得心理師的證照，便能進行家族治療，但許多心理師缺乏家族治療實務經驗。林麗純分析，獲取證照的心理師不一定具備執行家族治療的能力，心理師考試引導了教學，現今有些大學開設家族治療相關課程，「可是這是選修的，因為考試不考。」羅惠群也指出，台灣目前沒有發放家族治療師的證照，心理師通常自行標明專長項目，如此民眾在選擇心理師時，才可以透過心理師的學歷、專長領域來選擇。
+            </p>
+        </div>
+
+
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/7d0665438e81d8eceb98c1e31fca80c1.jpg">
+                <div class="blockquote">
+                    心理師羅惠群目前任職於馬偕醫院的協談中心，提供的諮商項目包含家族治療。　圖／徐卉馨攝
+                </div>
+        </div>
+
+       
+
+        <div class="article">
+            <p>
+                練成一位可以進行家族治療的心理師，會遇到的問題是缺乏學習資源。羅惠群說：「台灣沒有那麼正式的學制。」除了在心諮相關系所開設家族治療的選修課，學生若欲繼續學習家族治療，多選擇出國研讀。
+            </p>
+            <p>
+                國內心諮相關學系的訓練著重在個別諮商，若要進入家族治療領域，需重新調整自身觀點。羅惠群說：「過往訓練著墨在個人，要做這樣的翻轉要花段時間。」而若要持續進修家族治療知識，多需透過民間資源，由相關的基金會、協會等單位開設家族治療課程。
+            </p>
+            <p>  
+                羅惠群進一步說明，以台灣的人口所需的諮商資源而言，目前的心理師人數不足。而心理師若欲投入家族治療領域，需額外花費大量時間與金錢，來學習相關知識與重新調適自身觀點，在證照制度與民眾意識均不足的情況下，種種因素均成為心理師從事家族治療工作的阻礙。
+            </p>
+            <p>   
+                然而，林麗純也表示，當實務工作者發現自己有需要了解如何與家庭互動，便會自費報名課程學習。他發現參加基金會課程的部分學員，身份包含心理師、精神科醫師、社工師或輔導老師，「很多專業的第一線工作者，開始發覺其實家庭好重要。」
+            </p>
+            <h2>   
+                家族治療，是家庭渴望理解彼此的過程
+            </h2>
+            <p>
+                如何判定需要被治療的條件？徐森杰說：「華人文化裡面的儒家思想，把我們非常多人綁得死死的。」他說明，當今台灣社會仍存有夫婦有別、長幼有序、兄弟友愛等傳統價值觀念，「治療」對於多數人來說仍是沉重的名詞。
+            </p>
+            <p>    
+                其實參與家族治療對於許多案家來說並非狹義上的「治療」，陳大哥說：「我覺得這沒有什麼好去『治療』的，以治療這個詞來說的話。」他指出，小時候父親不擅言詞，時常用自己認為正確的方式對待他，比如以體罰的方式教育他，且缺乏給予讚美，「但我相信不是我的父親這樣而已，這是台灣人的通病。」
+            </p>
+            <p> 
+                而對家族心理師來說，家族治療是一個平台，讓家庭中每個人內在的需求可以被其他家人看見，徐森杰說：「我覺得家庭是一個有愛的地方，可是家庭也是一個帶來很多痛苦的地方。」他認為，家人會互相在意是因為對彼此有愛，才願意互相承擔，而心理師的角色就是去協助家庭發現真正適宜的互動模式。
+            </p>
+            <p>  
+                家族治療在現今的台灣社會，依舊有許多偏見需要被克服，多數人仍認為參與家族治療是小題大作或丟臉的行為，但對案主來說，家族治療不僅是解決溝通困難的管道，也是家庭成員渴望更理解彼此的過程。
+            </p>
+        </div>
+
+        <div class="inline-center">
+            <div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#伴侶諮商</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#家庭治療</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#心理諮商師</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="laptop desktop-only">
+        <!--靠右結束-->
+        <div style="background-color:#FFFFFF; height: 433px;">
+            <h3>
+                <p style="padding-top: 38px;margin-left: auto;">延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art5.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4c34acca40402e11f4d306a8edc6ee5d.jpg">
+                        <a class="a-read-more" href="Real-art5.html">被遺忘的驛站——轉型中的坪林如何永飄茶香？</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art6.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/751d31dd6b56b26b29dac2c0e1839e34-14.jpg">
+                        <a class="a-read-more" href="Real-art6.html">睽違七年　交大男排再度稱霸永信杯</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art7.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/c4ca4238a0b923820dcc509a6f75849b-14.jpg">
+                        <a class="a-read-more" href="Real-art7.html">專業工作選擇少　青年儲蓄方案成效存疑</a>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <p class="bottom-word">一群整天跟爸媽哭窮、現在連做期末成品都想趁機向社會大眾要錢花的國家未來棟樑。</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
