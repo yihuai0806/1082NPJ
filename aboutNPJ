@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+				display: block;
+			}
+
+			.desktop-only {
+				display: none;
+			}
+		
+            .iphone8 {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+            .logo{
+                width: 147px;
+                height: 26px;
+                margin-left: 23px;
+                display: inline-block;
+            }
+                
+            div{
+                font-family: Noto Sans SC;
+                
+            }
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+                }
+            .bottom{
+                width: 100%;
+                height: 171px;
+                margin-top: 63px;
+           
+                background: #BBC9C2;
+            }
+            .bottom-logo{
+                width: 199px;
+                padding-top: 38px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .inline-center{
+                display: inline-block;
+                text-align: center;
+            }
+
+            ul{
+                display: none;
+                list-style-type: none;
+                }
+            label{
+                
+                display: inline-block;
+                width: 30px;
+                text-align: end;
+                position: absolute;
+                right: 20px;
+            }
+            
+            .burger-link{
+             text-decoration: none;
+             color: #000 ;
+            padding: 5px 10px;
+            background-color: #f0f0f0F0; 
+            }
+
+            #burger:checked + ul{
+            display:inline-block;
+            position: absolute;
+            text-align: end;
+            right: calc(20/375*100%);
+            top: calc(22/375*100%);
+
+            }
+
+            .social-media{
+                width: 23.4px;
+                padding-left: 7.25px;
+                padding-right: 7.25px;
+                
+            }
+            h1{
+                width: 100px;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 29px;                
+                color: #000000;
+                margin-top: 42px;
+                padding: 23px;
+            }
+
+            .introduction{
+                width: 100%;
+                
+                position: relative;
+
+            }
+            .member{               
+                width: 105px;
+                height: 144px;
+                overflow:hidden;
+                object-fit: cover;
+                display: inline-block;
+                
+            }
+
+            .photo-discri{
+                margin-left: auto;
+                margin-right: auto;
+                width: 230px;
+            }
+
+            .name-block{
+                width: 105px;
+                height: 46px;
+                background: #FFFAFA;
+                display: inline-block;
+                margin-left: calc(39/375*100%);
+                top: 50px;
+                position: absolute;
+                align-items: center
+            }
+            h2{
+                text-align: center;
+                width: 100%;
+                height: 21px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                margin: 0px;
+                color: #000000;
+                position: absolute;
+            }
+            p{
+                padding-top: 5px;
+            }
+        }
+
+        @media (min-width: 1024px){
+
+            .mobile-only {
+				display: none;
+			}
+
+			.desktop-only {
+				display: block;
+                width: 90%;
+			} 
+
+            .laptop {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+                
+            div{
+                font-family: Noto Sans SC;
+                width:100%;
+                
+            }
+
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+                }
+            .logo{
+                display: inline-block;
+                width: 380px;
+                height: 68px;
+                margin-left: 65px;
+               margin-top: 44px;
+            }
+            .bottom{
+                width: 100%;
+                height: 171px;
+                
+                
+                background: #BBC9C2;
+            }
+            .bottom-logo{
+                width: 199px;
+                padding-top: 38px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .inline-center{
+                display: inline-block;
+                text-align: center;
+            }
+            p{
+                display: block;
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .bar{
+                display: inline-block;
+                width: 96px;
+                height: 35px;
+                text-align: end;
+                color: #000000;
+                text-decoration: none;
+                position: absolute;
+                margin-top: 70px;
+            }
+ 
+        
+        }
+
+        </style>
+    </head>
+    <body style="margin:0px">
+        <div class="iphone8 mobile-only">
+            <div style="display: inline-block;">
+                <img class="logo" src="NPJ2.png">
+                <label for="burger">☰</label>
+                <input type="checkbox" id="burger" style="display: none;">
+                <ul>             
+                <li class="burger-link"><a class="burger-link" href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">數位專題</a></li>
+                <li class="burger-link"><a class="burger-link" href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                <li class="burger-link"><a class="burger-link" href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                <li class="burger-link"><a class="burger-link" href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+                </ul>
+            </div>
+
+<!--內文-->
+            <h1>關於我們</h1>
+            <div class="introduction"> 
+                <div class="photo-discri">
+                    <img class="member"src="charlie.png">
+                    <div class="name-block">
+                        <h2> 范莛威</h2>
+                        <p>頭銜頭銜頭銜</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="introduction" > 
+                <div class="photo-discri">
+                <img class="member"src="highway.png">
+                <div class="name-block">
+                    <h2> 高海葳</h2>
+                    <p>頭銜頭銜頭銜</p>
+                    </div>
+                </div>
+            </div>
+            <div class="introduction"> 
+                <div class="photo-discri">
+                <img class="member"src="yihui.png">
+                <div class="name-block">
+                    <h2> 簡毅慧</h2>
+                    <p>頭銜頭銜頭銜</p>
+                    </div>
+                </div>
+            </div>
+            <div class="introduction"> 
+                <div class="photo-discri">
+                <img class="member"src="yiyun.png">
+                <div class="name-block">
+                    <h2> 孫佾妘</h2>
+                    <p>頭銜頭銜頭銜</p>
+                    </div>
+                </div>
+            </div>
+            <div class="introduction"> 
+                <div class="photo-discri">
+                <img class="member"src="yutin.png">
+                <div class="name-block">
+                    <h2> 劉雨婷</h2>
+                    <p>頭銜頭銜頭銜</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="bottom">
+                <img class="bottom-logo"src="NPJ2.png">
+                <div style="text-align: center;">
+                    <div style="margin-top: 32.7px;">
+                        <img class="social-media inline-center"src="Icon_Facebook.png">
+                        <img class="social-media inline-center"src="icon-ins.png">
+                        <img class="social-media inline-center"src="icon-line.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="laptop desktop-only">
+            <div style="position: relative;">
+                <img class="logo" src="NPJ2.png">
+                <a class="bar" style="right: calc(385/1024*100%) "href="https://www.w3schools.com">數位專題</a>
+                <a class="bar" style="right: calc(305/1024*100%) "href="https://www.w3schools.com">即時新聞</a>
+                <a class="bar" style="right: calc(225/1024*100%) "href="https://www.w3schools.com">捐款贊助</a>
+                <a class="bar" style="right: calc(145/1024*100%) "href="https://www.w3schools.com">關於我們</a>
+            </div>
+
+
+<!--內文-->
+                <div class="bottom">
+                    <img class="bottom-logo"src="NPJ2.png">
+                    <p class="bottom-word">一群整天跟爸媽哭窮、現在連做期末成品都想趁機向社會大眾要錢花的國家未來棟樑。</p>
+                </div>
+
+
+        </div>
+
+
+    </body>
+</html>
