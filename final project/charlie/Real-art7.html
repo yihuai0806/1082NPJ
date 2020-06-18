@@ -1,0 +1,910 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+                display: block;
+            }
+
+            .desktop-only {
+                display: none;
+            }
+
+            .iphone8 {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                margin-left: 23px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                color: #000000;
+            }
+
+
+            h2 {
+                width: calu(320/375*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 17px;
+                line-height: 25px;
+
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                padding-top: 25px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            video {
+                width: calc(324/375*100%);
+                display: inline-block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+
+            iframe {
+                width: 100%;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .reporter {
+                width: calc(313/375*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #838383;
+                margin-left: 27px;
+            }
+
+            .logo {
+                width: 147px;
+                height: 26px;
+                margin-left: 23px;
+                display: inline-block;
+            }
+
+            .photo {
+                width: calc(324/375*100%);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 30%;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 30%;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 4px;
+            }
+
+            .hero-img {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: 50%;
+                display: flex;
+            }
+
+            .article {
+                width: calc(324/375*100%);
+                top: 488px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 16px;
+                line-height: 155%;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(324/375*100%);
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 18px;
+            }
+
+            .white-block {
+                width: 320px;
+                height: 126px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                height: 33px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 100px;
+                height: 33px;
+                margin-top: 37px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 171px;
+
+
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 199px;
+                padding-top: 38px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+                width: calc(324/375*100%);
+
+            }
+
+            .read-more {
+
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 33px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 200px;
+                margin-top: 33px;
+
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 63px;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .social-media {
+                width: 23.4px;
+                padding-left: 7.25px;
+                padding-right: 7.25px;
+
+            }
+
+            ul {
+                display: none;
+                list-style-type: none;
+            }
+
+            label {
+
+                display: inline-block;
+                width: 30px;
+                text-align: end;
+                position: absolute;
+                right: calc(20/375*100%);
+            }
+
+            .burger-link {
+                text-decoration: none;
+                color: #000;
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+
+            }
+
+            #burger:checked+ul {
+                display: inline-block;
+                position: absolute;
+                text-align: end;
+                right: calc(20/375*100%);
+                top: calc(22/375*100%)
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+            }
+
+
+
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-only {
+                display: none;
+            }
+
+            .desktop-only {
+                display: block;
+                width: 100%;
+            }
+
+            .laptop {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+                width: 100%;
+
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                text-align: left;
+                font-family: Noto Sans SC;
+                width: calc(1024/1440*100%);
+                height: 49px;
+                font-weight: 500px;
+                font-size: 34px;
+                line-height: 49px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h2 {
+                width: calc(793/1440*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: calc(200/1440*100%);
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            h3>p{
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 25px;
+                line-height: 29px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            p {
+                display: block;
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            video {
+                width: calc(793/1440*100%);
+                display: inline-block;
+                text-align: center;
+                margin-right: auto;
+                margin-left: calc(200/1440*100%);
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .logo {
+                display: inline-block;
+                width: 380px;
+                height: 68px;
+                margin-left: 65px;
+                margin-top: 44px;
+            }
+
+            .bar-block {
+                display: inline-block;
+                width: calc(800/1440*100%);
+                text-align: end;
+                margin-top: 44px;
+            }
+
+            .bar {
+                display: inline-block;
+                width: 96px;
+                height: 35px;
+                text-align: end;
+                color: #000000;
+                text-decoration: none;
+                position: absolute;
+                margin-top: 70px;
+            }
+
+            .photo {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .taiwan-picture {
+                display: inline-block;
+                width: 600px;
+
+
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 200px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 40px;
+                padding-right: 40px;
+                width: 180px;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 10px;
+            }
+
+            .hero-img {
+                width: calc(1024/1440*100%);
+                display: flex;
+            }
+
+            .hero-img-down {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: calc(920/1440*100%);
+                margin-right: 50px;
+                margin-bottom: 50px;
+                float: left;
+                margin-left: 0px;
+            }
+
+            .article {
+
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .half-article {
+                width: calc(1000/1440*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                display: inline-block;
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 30px;
+            }
+
+            .white-block {
+                width: 792px;
+                height: 144px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag-block {
+                width: 793px;
+                height: 114px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 72px;
+                height: 33px;
+                margin-top: 37px;
+                margin-right: 5px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 307px;
+                left: 0px;
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 219px;
+                padding-top: 73px;
+                margin-left: 0 auto;
+            }
+
+            .bottom-word {
+                width: 359px;
+                padding-top: 36px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .read-more {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                margin-top: 39px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                object-fit: cover;
+
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 126px;
+                margin: 44px;
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .target {
+                position: sticky;
+                display: inline-block;
+                width: 70px;
+                top: 200px;
+                padding-left: calc(220/1024*100%);
+
+            }
+
+            .sticky-icon {
+                width: 45px;
+                padding: 14px;
+
+            }
+
+            .slogan {
+                width: 481px;
+                height: auto;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 41px;
+                margin-left: 195px;
+                margin-right: 42px;
+                color: black;
+
+
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body style="margin:0px">
+    <div class="iphone8 mobile-only">
+        <div style="display: inline-block;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <label for="burger">☰</label>
+            <input type="checkbox" id="burger" style="display: none;">
+            <ul>
+                <li class="burger-link"><a class="burger-link" href="#test">數位專題</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1>
+                <p>專業工作選擇少　青年儲蓄方案成效存疑</p>
+            </h1>
+        </div>
+        <div>
+            <p class="reporter">政大大學報／記者高海葳 綜合報導</p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/c4ca4238a0b923820dcc509a6f75849b-14.jpg">
+            <div class="blockquote">國立師範大學附屬高級中學林子虔為青年儲蓄計劃第一屆學生，目前任職於Line TV行銷部，計劃於明年回到大學就讀。　圖／林子虔提供</div>
+        </div>
+
+        <div class="article">
+            <p>然而，林子虔指出，此政策雖針對高中職畢業生，但高職（五專）、技專學校早已提供產學合作機會，學生對此政策需求相對較少。他認為，真正需要此管道就業的是「高中畢業生」。由於高中生不像高職生畢業後能具備繪畫、美容等特殊技能，他因而認為政府應當提供更具專業、知識性的工作內容供高中生選擇，而非提供較多像是工廠技術員、餐廳服務生等偏體力活的工作。
+                </p>
+                <p>
+                對此，林課長則認為，政策目的是讓青年率先認識職場，而「職場就是職場」，職缺分佈必然和真實社會一樣，以服務業、餐飲業佔多數。他也提到，對於不同職缺內容，教育部都有要求廠商派遣資深人員帶領學生學習，保障學生權益。
+            </p>
+            <p>
+                國立北門高級農工職業學校畢業學生劉瑞伯參與政策將滿兩年，目前在台南紡織太子廠擔任助理公務員。他認為，對比同齡學生目前早已上大學就讀，參與此政策卻讓他感覺「浪費時間」。他說明，自己也能透過參與高職提供的產學合作，步入職場學習工作技能，但產學合作四年後有文憑，能得企業重視，相較之下值得很多。
+            </p>
+            <p>
+                教育部青年教育與就業儲蓄帳戶專案辦公室張小姐回應，參與產學合作學生未來目標多已明確，在工作同時，亦須讀書。此方案宗旨為幫助高中職畢業生職涯探索，目的並不相同。另外，此方案結束後，學生會持有工作年資證明、勞工保險證明或體驗學習證明，經各校核准，也能抵免相對應學科之課程或實習學分。
+            </p>
+            <p>  
+                明年學生即將重返大學就讀，劉瑞伯表示，未來若復學需調整心態，重新把自己定調成一個學生。林子虔則坦言，因為已離校兩年，最擔心的是不知如何和同儕溝通。
+            </p>    
+            </div>
+       
+
+
+
+        <div style="height:114px">
+            <div style="margin-left:31px">
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#教育部方案</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#產學合作</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#青年儲蓄</a>
+
+            </div>
+        </div>
+        <div style="background-color:#FFFFFF;height: 890px;">
+            <h3>
+                <p>延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art1.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg">
+                        <a class="a-read-more" href="Real-art1.html">實驗劇剖析愛  演譯少女的不可定義</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art2.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-768x512.jpg">
+                        <a class="a-read-more" href="Real-art2.html">《番肉考》重現食番肉歷史　揭清代原客衝突</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art3.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg">
+                        <a class="a-read-more" href="Real-art3.html">大選開票亂象多　公民監票盼落實程序正義</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <div style="text-align: center;">
+                <div style="margin: 32.7px;">
+                <img class="social-media inline-center" src="../asset/Icon_Facebook.png">
+                <img class="social-media inline-center" src="../asset/icon-ins.png">
+                <img class="social-media inline-center" src="../asset/icon-line.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="laptop desktop-only">
+        <div style="position: relative;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <a class="bar" style="right: calc(385/1024*100%) "href="https://www.w3schools.com">數位專題</a>
+            <a class="bar" style="right: calc(305/1024*100%) "href="https://www.w3schools.com">即時新聞</a>
+            <a class="bar" style="right: calc(225/1024*100%) "href="https://www.w3schools.com">捐款贊助</a>
+            <a class="bar" style="right: calc(145/1024*100%) "href="https://www.w3schools.com">關於我們</a>
+        </div>
+        <div>
+            <h1>
+                專業工作選擇少　青年儲蓄方案成效存疑
+            </h1>
+        </div>
+
+
+        <div>
+            <p
+                style="color: #838383;width: calc(1024/1440*100%);height: 22px;font-size: 16px;line-height: 23px;margin-right: auto;margin-left: auto;">
+                政大大學報／記者高海葳 綜合報導</p>
+        </div>
+        <div>
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/c4ca4238a0b923820dcc509a6f75849b-14.jpg">
+            <div class="blockquote" style="width: calc(1024/1440*100%);" >
+                國立師範大學附屬高級中學林子虔為青年儲蓄計劃第一屆學生，目前任職於Line TV行銷部，計劃於明年回到大學就讀。　圖／林子虔提供</div>
+        </div>
+        <!--sticky-->
+        <div class="target" style="bottom: 3000px;">
+            <img class="sticky-icon" src="../asset/Icon_Facebook.png">
+            <img class="sticky-icon" src="../asset/icon-ins.png">
+            <img class="sticky-icon" src="../asset/icon-line.png">
+        </div>
+        
+    
+        <div class="article" style="margin-top: -225px;">
+            <p>「然而，林子虔指出，此政策雖針對高中職畢業生，但高職（五專）、技專學校早已提供產學合作機會，學生對此政策需求相對較少。他認為，真正需要此管道就業的是「高中畢業生」。由於高中生不像高職生畢業後能具備繪畫、美容等特殊技能，他因而認為政府應當提供更具專業、知識性的工作內容供高中生選擇，而非提供較多像是工廠技術員、餐廳服務生等偏體力活的工作。
+            </p>
+        </div>
+
+        <div class="article">
+            <p>然而，林子虔指出，此政策雖針對高中職畢業生，但高職（五專）、技專學校早已提供產學合作機會，學生對此政策需求相對較少。他認為，真正需要此管道就業的是「高中畢業生」。由於高中生不像高職生畢業後能具備繪畫、美容等特殊技能，他因而認為政府應當提供更具專業、知識性的工作內容供高中生選擇，而非提供較多像是工廠技術員、餐廳服務生等偏體力活的工作。
+                </p>
+                <p>
+                對此，林課長則認為，政策目的是讓青年率先認識職場，而「職場就是職場」，職缺分佈必然和真實社會一樣，以服務業、餐飲業佔多數。他也提到，對於不同職缺內容，教育部都有要求廠商派遣資深人員帶領學生學習，保障學生權益。
+            </p>
+            <p>
+                國立北門高級農工職業學校畢業學生劉瑞伯參與政策將滿兩年，目前在台南紡織太子廠擔任助理公務員。他認為，對比同齡學生目前早已上大學就讀，參與此政策卻讓他感覺「浪費時間」。他說明，自己也能透過參與高職提供的產學合作，步入職場學習工作技能，但產學合作四年後有文憑，能得企業重視，相較之下值得很多。
+            </p>
+            <p>
+                教育部青年教育與就業儲蓄帳戶專案辦公室張小姐回應，參與產學合作學生未來目標多已明確，在工作同時，亦須讀書。此方案宗旨為幫助高中職畢業生職涯探索，目的並不相同。另外，此方案結束後，學生會持有工作年資證明、勞工保險證明或體驗學習證明，經各校核准，也能抵免相對應學科之課程或實習學分。
+            </p>
+            <p>  
+                明年學生即將重返大學就讀，劉瑞伯表示，未來若復學需調整心態，重新把自己定調成一個學生。林子虔則坦言，因為已離校兩年，最擔心的是不知如何和同儕溝通。
+            </p>    
+            </div>
+        
+
+       
+       
+
+
+        <div class="inline-center">
+            <div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#教育部方案</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#產學合作</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#青年儲蓄</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="laptop desktop-only">
+        <!--靠右結束-->
+        <div style="background-color:#FFFFFF; height: 433px;">
+            <h3>
+                <p style="padding-top: 38px;margin-left: auto;">延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="Real-art1.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg">
+                        <a class="a-read-more" href="Real-art1.html">實驗劇剖析愛  演譯少女的不可定義</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art2.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-768x512.jpg">
+                        <a class="a-read-more" href="Real-art2.html">《番肉考》重現食番肉歷史　揭清代原客衝突</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art3.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg">
+                        <a class="a-read-more" href="Real-art3.html">大選開票亂象多　公民監票盼落實程序正義</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <p class="bottom-word">一群整天跟爸媽哭窮、現在連做期末成品都想趁機向社會大眾要錢花的國家未來棟樑。</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

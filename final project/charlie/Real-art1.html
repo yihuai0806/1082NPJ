@@ -1,0 +1,948 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+                display: block;
+            }
+
+            .desktop-only {
+                display: none;
+            }
+
+            .iphone8 {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                margin-left: 23px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                color: #000000;
+            }
+
+
+            h2 {
+                width: calu(320/375*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 17px;
+                line-height: 25px;
+
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                padding-top: 25px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            video {
+                width: calc(324/375*100%);
+                display: inline-block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+
+            iframe {
+                width: 100%;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .reporter {
+                width: calc(313/375*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #838383;
+                margin-left: 27px;
+            }
+
+            .logo {
+                width: 147px;
+                height: 26px;
+                margin-left: 23px;
+                display: inline-block;
+            }
+
+            .photo {
+                width: calc(324/375*100%);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 30%;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 30%;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 4px;
+            }
+
+            .hero-img {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: 50%;
+                display: flex;
+            }
+
+            .article {
+                width: calc(324/375*100%);
+                top: 488px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 16px;
+                line-height: 155%;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(324/375*100%);
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 18px;
+            }
+
+            .white-block {
+                width: 320px;
+                height: 126px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                height: 33px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 100px;
+                height: 33px;
+                margin-top: 37px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 171px;
+
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 199px;
+                padding-top: 38px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+                width: calc(324/375*100%);
+
+            }
+
+            .read-more {
+
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 33px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 200px;
+                margin-top: 33px;
+
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 63px;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .social-media {
+                width: 23.4px;
+                padding-left: 7.25px;
+                padding-right: 7.25px;
+
+            }
+
+            ul {
+                display: none;
+                list-style-type: none;
+            }
+
+            label {
+
+                display: inline-block;
+                width: 30px;
+                text-align: end;
+                position: absolute;
+                right: calc(20/375*100%);
+            }
+
+            .burger-link {
+                text-decoration: none;
+                color: #000;
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+
+            }
+
+            #burger:checked+ul {
+                display: inline-block;
+                position: absolute;
+                text-align: end;
+                right: calc(20/375*100%);
+                top: calc(22/375*100%)
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+            }
+
+
+
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-only {
+                display: none;
+            }
+
+            .desktop-only {
+                display: block;
+                width: 100%;
+            }
+
+            .laptop {
+                width: 100%;
+                background-color: #E5E5E5;
+                padding-top: 32px;
+            }
+
+            div {
+                font-family: Noto Sans SC;
+                width: 100%;
+
+            }
+
+            .article>p {
+                text-align: justify;
+            }
+
+            h1 {
+                text-align: left;
+                font-family: Noto Sans SC;
+                width: calc(1024/1440*100%);
+                height: 49px;
+                font-weight: 500px;
+                font-size: 34px;
+                line-height: 49px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h2 {
+                width: calc(793/1440*100%);
+                height: 31px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: calc(200/1440*100%);
+            }
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            h3>p{
+                height: 29px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 25px;
+                line-height: 29px;
+            }
+
+            h4 {
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            p {
+                display: block;
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .chart {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            video {
+                width: calc(793/1440*100%);
+                display: inline-block;
+                text-align: center;
+                margin-right: auto;
+                margin-left: calc(200/1440*100%);
+                padding-left: auto;
+                padding-right: auto;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            .logo {
+                display: inline-block;
+                width: 380px;
+                height: 68px;
+                margin-left: 65px;
+                margin-top: 44px;
+            }
+
+            .bar-block {
+                display: inline-block;
+                width: calc(800/1440*100%);
+                text-align: end;
+                margin-top: 44px;
+            }
+
+            .bar {
+                display: inline-block;
+                width: 96px;
+                height: 35px;
+                text-align: end;
+                color: #000000;
+                text-decoration: none;
+                position: absolute;
+                margin-top: 70px;
+            }
+
+            .photo {
+                width: calc(793/1440*100%);
+                margin-left: calc(435/1440*100%);
+                margin-right: auto;
+            }
+
+            .taiwan-picture {
+                display: inline-block;
+                width: 600px;
+
+
+            }
+
+            .international-co {
+                display: inline-block;
+                width: 200px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .wild-co {
+                display: inline-block;
+                padding-left: 40px;
+                padding-right: 40px;
+                width: 180px;
+            }
+
+            .co-icon {
+                display: inline-block;
+                width: 100%;
+                margin: 10px;
+            }
+
+            .hero-img {
+                width: calc(1024/1440*100%);
+                display: flex;
+            }
+
+            .hero-img-down {
+                width: 100%;
+                display: flex;
+            }
+
+            .half-img {
+                width: calc(920/1440*100%);
+                margin-right: 50px;
+                margin-bottom: 50px;
+                float: left;
+                margin-left: 0px;
+            }
+
+            .article {
+
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .half-article {
+                width: calc(1000/1440*100%);
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #313131;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+                display: inline-block;
+            }
+
+            .chart-title {
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-size: 30px;
+            }
+
+            .white-block {
+                width: 792px;
+                height: 144px;
+                top: 988px;
+                background: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag-block {
+                width: 793px;
+                height: 114px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tag {
+                width: 100px;
+                margin-left: 10px;
+                background: #EDA272;
+                border-radius: 30px;
+                margin-top: 37px;
+                display: inline-block
+            }
+
+            .tag-word {
+                font-size: 16px;
+                color: #FFFDFD;
+                text-decoration: none;
+                background: #EDA272;
+                border-radius: 30px;
+                width: 72px;
+                height: 33px;
+                margin-top: 37px;
+                margin-right: 5px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 307px;
+                left: 0px;
+                background: #BBC9C2;
+            }
+
+            .bottom-logo {
+                width: 219px;
+                padding-top: 73px;
+                margin-left: 0 auto;
+            }
+
+            .bottom-word {
+                width: 359px;
+                padding-top: 36px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .inline-center {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .read-more {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                margin-top: 39px;
+            }
+
+            .read-more-link {
+                display: inline-block;
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                object-fit: cover;
+
+            }
+
+            .read-more-block {
+                display: inline-block;
+                width: 239px;
+                height: 126px;
+                margin: 44px;
+            }
+
+            .a-read-more {
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                line-height: 26px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .target {
+                position: sticky;
+                display: inline-block;
+                width: 70px;
+                top: 200px;
+                padding-left: calc(220/1024*100%);
+
+            }
+
+            .sticky-icon {
+                width: 45px;
+                padding: 14px;
+
+            }
+
+            .slogan {
+                width: 481px;
+                height: auto;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 41px;
+                margin-left: 195px;
+                margin-right: 42px;
+                color: black;
+
+
+            }
+
+            .inline-left {
+                display: inline-block;
+                text-align: left;
+
+            }
+
+            .blockquote {
+                width: 100%;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                text-transform: uppercase;
+                margin: auto;
+                color: black;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body style="margin:0px">
+    <div class="iphone8 mobile-only">
+        <div style="display: inline-block;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <label for="burger">☰</label>
+            <input type="checkbox" id="burger" style="display: none;">
+            <ul>
+                <li class="burger-link"><a class="burger-link" href="#test">數位專題</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                <li class="burger-link"><a class="burger-link"
+                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1>
+                <p>實驗劇剖析愛
+                    演譯少女的不可定義</p>
+            </h1>
+        </div>
+        <div>
+            <p class="reporter">政大大學報／記者孫佾妘 台北報導</p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg">
+            <div class="blockquote">開場三位少女倒臥在玻璃砂上，現場擺設有各式工具、豬肉和一隻黑貓。　圖／孫佾妘攝</div>
+        </div>
+
+        <div class="article">
+            <p>地上布滿玻璃砂，蒙面男子手持噴漆，倒臥地上的少女們如復生般起身，他們操作調理機、吹頭髮、以火燒豬肉，最後褪下衣物，將自己的身軀與生肉貼合。具有作家、演員與編導身分，現就讀國立台北藝術大學戲劇學系博士班的周曼農，執導系列作品《少女機器》，在今年11月至明年1月陸續在台灣當代文化實驗場C-LAB演出，從經典作品與日常生活瑣碎的意象討論「少女」的不可定義。
+            </p>
+            <p>「我愛你，我愛你噢！」戲中少女們多次呼喊著。周曼農認為少女無論是對國家、上帝、手足，「總之就是有一種愛，一種莫名其妙、隱約模糊又稍微成熟的愛。」社會宣稱它用國家、家政系統來愛少女，但少女學研究對此仍存疑。不斷變化姿態的少女用「如果我說上帝是愛」、「所有人都說沒有關係」等台詞，翻轉出「愛」的不同意義。
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/e45ee7ce7e88149af8dd32b27f9512ce-11.jpg">
+                <div class="blockquote">蒙面男子以粉紅色噴漆對準光源噴灑，後沿途走動渲染整個表演場域。　圖／孫佾妘攝</div>
+        </div>
+
+        <div class="article">
+            <p>「存取失敗，請輸入有效字句，系統無法受理……」該台詞接續在好幾次少女獨白後，代表「機器」當機，其中包含不停轉變的少女特質，或欲進入社會卻失敗的退卻。周曼農表示，萬物都會有失常無法接收訊息的時候，「特別是提到跟愛有關，他們就當機了。」阻絕而無法溝通的狀態，在「愛」和「少女」世界中一直出現卻無法被說明。少女們最終說出：「不要凝視我，不要看我，不要愛我，忘了我，成為一個少女。」透過拒絕被愛，讓自己成為一個不被明確定位的少女。
+            </p>
+            <p>《少女機器》的研究背景「少女學」是個龐大概念。周曼農以戰爭時期為例，「少女」、「少年」所指的十幾歲的年輕人可能被當作小孩，也可能被視為大人，定位十分曖昧。他認為視覺藝術的展覽並不用分項傳達每個文本的意義，而是將其搗碎、再造。儘管抽離背景，本場表演中的角色仍有脈絡可循。如《少女機器》第一場中三位少女形象分別來自《哈姆雷特》的奧菲莉亞、聖女貞德、希臘神話中的安蒂岡妮，另外兩位男性則代表「少女恐怖份子」。
+            </p> ​
+        </div>
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/faeac4e1eef307c2ab7b0a3821e6c667-4.jpg">
+                <div class="blockquote">少女閱讀著與「愛」相關台詞，但不斷被打斷、干擾，坐起又被壓制。　圖／孫佾妘攝</div>
+        </div>
+        <div class="article">
+            <p>日本文化以「萌」一詞代表可愛的事物，是可被分析且大量複製的。因此在資本主義的生產線上，它把特定族群稱為「少年」與「少女」，開始針對他們生產商品和教育。這些年輕人具有尚未定型的潛質，周曼農說：「日本神風特攻隊中很多都是十幾歲的少年，在動漫中駕駛巨大機器人的也多為少男少女。」他解釋，唯有少男少女們尚未成熟的神經，才能與不同的事物連結和運作。因此他們的潛能可能被訓練成為社會的生產力，也可能變成一股革命的力量去推翻現有世界。扮演「少女恐怖份子」的兩位男演員即象徵少女順從與顛覆兩種力量，一位像賢慧的家政婦，在少女身邊煎肉、搬東西，帶有恐懼色彩的蒙面男子則不斷操作噴漆，將粉紅色擴散至全世界
+            </p>
+            <p>
+                周曼農說：「『機器』對我而言，基本上就是一個重新連結的概念。」在哲學上，機器可與世界上其餘事物連結而產生新的事物。一般森嚴觀點中世界有所分類，如男人永遠是男人、女人永遠是女人。但在機器的世界萬物皆可離開原先的界域，正如蝴蝶吸取花蜜，口器與花結合的瞬間，蝴蝶與花兩個個體便化為宇宙中新的複合體。「對我而言表演就是這樣，重要的並不是說故事或是一個角色，我的概念並不是那麼古典。」他認為，劇場就是一個很大的試驗場，透過事物變化激起的火花，去追求過程中發生的美學。
+            </p>
+            <p>
+                觀眾陳品薇說：「看完之後還滿衝擊的，很多畫面和台詞都不是平常會接觸到的。」他認為，場地中充滿各種機器，演員時常拿起手機，彷彿勸說大家不要沉迷或依賴科技產品。觀眾吳昕芸則聯想到過去十年的日本電影，討論女性心理上的空缺，還有對於自己不著邊際的想像。此外，他認為劇中少女有如戰爭前後的對比，即使生活富足，他們仍對上帝呼喊，訴說心情卻無人回應，抑鬱欲尋求填補心靈的空缺。
+            </p>
+        </div>
+
+        <div class="photo">
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/0a8005f5594bd67041f88c6196192646-1.jpg">
+                <div class="blockquote">肉在劇中有多重隱喻，但透過人類的裸體和豬肉的貼合，讓人體與肉回歸一個純粹的物質。　圖／孫佾妘攝</div>
+        </div>
+
+
+
+        <div style="height:114px">
+            <div style="margin-left:31px">
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#少女機器</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#藝文</a>
+
+
+                <a class="tag-word inline-center" href="https://www.w3schools.com">#周曼農</a>
+
+            </div>
+        </div>
+        <div style="background-color:#FFFFFF;height: 890px;">
+            <h3>
+                <p>延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="../charlie/Real-art2.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-768x512.jpg">
+                        <a class="a-read-more" href="../charlie/Real-art2.html">《番肉考》重現食番肉歷史　揭清代原客衝突</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art3.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg">
+                        <a class="a-read-more" href="Real-art3.html">大選開票亂象多　公民監票盼落實程序正義</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art4.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg">
+                        <a class="a-read-more" href="Real-art4.html">靈魂間的相遇和療癒 家族治療與心理師</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <div style="text-align: center;">
+                <div style="margin: 32.7px;">
+                <img class="social-media inline-center" src="../asset/Icon_Facebook.png">
+                <img class="social-media inline-center" src="../asset/icon-ins.png">
+                <img class="social-media inline-center" src="../asset/icon-line.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="laptop desktop-only">
+        <div style="position: relative;">
+            <img class="logo" src="../asset/NPJ2.png">
+            <a class="bar" style="right: calc(385/1024*100%) "href="https://www.w3schools.com">數位專題</a>
+            <a class="bar" style="right: calc(305/1024*100%) "href="https://www.w3schools.com">即時新聞</a>
+            <a class="bar" style="right: calc(225/1024*100%) "href="https://www.w3schools.com">捐款贊助</a>
+            <a class="bar" style="right: calc(145/1024*100%) "href="https://www.w3schools.com">關於我們</a>
+        </div>
+        <div>
+            <h1>
+                實驗劇剖析愛 演譯少女的不可定義
+            </h1>
+        </div>
+
+
+        <div>
+            <p
+                style="color: #838383;width: calc(1024/1440*100%);height: 22px;font-size: 16px;line-height: 23px;margin-right: auto;margin-left: auto;">
+                政大大學報／記者孫佾妘 台北報導</p>
+        </div>
+        <div>
+            <img class="hero-img"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg">
+            <div class="blockquote" style="width: calc(1024/1440*100%)">
+                開場三位少女倒臥在玻璃砂上，現場擺設有各式工具、豬肉和一隻黑貓。　圖／孫佾妘攝</div>
+        </div>
+        <!--sticky-->
+        <div class="target" style="bottom: 3000px;">
+            <img class="sticky-icon" src="../asset/Icon_Facebook.png">
+            <img class="sticky-icon" src="../asset/icon-ins.png">
+            <img class="sticky-icon" src="../asset/icon-line.png">
+        </div>
+
+        <div class="article" style="margin-top: -225px;">
+            <p>地上布滿玻璃砂，蒙面男子手持噴漆，倒臥地上的少女們如復生般起身，他們操作調理機、吹頭髮、以火燒豬肉，最後褪下衣物，將自己的身軀與生肉貼合。具有作家、演員與編導身分，現就讀國立台北藝術大學戲劇學系博士班的周曼農，執導系列作品《少女機器》，在今年11月至明年1月陸續在台灣當代文化實驗場C-LAB演出，從經典作品與日常生活瑣碎的意象討論「少女」的不可定義。
+            </p>
+        </div>
+
+        <div class="article">
+            <p>「我愛你，我愛你噢！」戲中少女們多次呼喊著。周曼農認為少女無論是對國家、上帝、手足，「總之就是有一種愛，一種莫名其妙、隱約模糊又稍微成熟的愛。」社會宣稱它用國家、家政系統來愛少女，但少女學研究對此仍存疑。不斷變化姿態的少女用「如果我說上帝是愛」、「所有人都說沒有關係」等台詞，翻轉出「愛」的不同意義。
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/e45ee7ce7e88149af8dd32b27f9512ce-11.jpg">
+                <div class="blockquote">蒙面男子以粉紅色噴漆對準光源噴灑，後沿途走動渲染整個表演場域。　圖／孫佾妘攝</div>
+        </div>
+        <div class="article">
+            <p>「存取失敗，請輸入有效字句，系統無法受理……」該台詞接續在好幾次少女獨白後，代表「機器」當機，其中包含不停轉變的少女特質，或欲進入社會卻失敗的退卻。周曼農表示，萬物都會有失常無法接收訊息的時候，「特別是提到跟愛有關，他們就當機了。」阻絕而無法溝通的狀態，在「愛」和「少女」世界中一直出現卻無法被說明。少女們最終說出：「不要凝視我，不要看我，不要愛我，忘了我，成為一個少女。」透過拒絕被愛，讓自己成為一個不被明確定位的少女。
+            </p>
+            <p>《少女機器》的研究背景「少女學」是個龐大概念。周曼農以戰爭時期為例，「少女」、「少年」所指的十幾歲的年輕人可能被當作小孩，也可能被視為大人，定位十分曖昧。他認為視覺藝術的展覽並不用分項傳達每個文本的意義，而是將其搗碎、再造。儘管抽離背景，本場表演中的角色仍有脈絡可循。如《少女機器》第一場中三位少女形象分別來自《哈姆雷特》的奧菲莉亞、聖女貞德、希臘神話中的安蒂岡妮，另外兩位男性則代表「少女恐怖份子」。
+
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/faeac4e1eef307c2ab7b0a3821e6c667-4.jpg">
+                <div class="blockquote">少女閱讀著與「愛」相關台詞，但不斷被打斷、干擾，坐起又被壓制。　圖／孫佾妘攝</div>
+        </div>
+        <div class="article">
+            <p>
+                日本文化以「萌」一詞代表可愛的事物，是可被分析且大量複製的。因此在資本主義的生產線上，它把特定族群稱為「少年」與「少女」，開始針對他們生產商品和教育。這些年輕人具有尚未定型的潛質，周曼農說：「日本神風特攻隊中很多都是十幾歲的少年，在動漫中駕駛巨大機器人的也多為少男少女。」他解釋，唯有少男少女們尚未成熟的神經，才能與不同的事物連結和運作。因此他們的潛能可能被訓練成為社會的生產力，也可能變成一股革命的力量去推翻現有世界。扮演「少女恐怖份子」的兩位男演員即象徵少女順從與顛覆兩種力量，一位像賢慧的家政婦，在少女身邊煎肉、搬東西，帶有恐懼色彩的蒙面男子則不斷操作噴漆，將粉紅色擴散至全世界。
+            </p>
+            <p>
+                周曼農說：「『機器』對我而言，基本上就是一個重新連結的概念。」在哲學上，機器可與世界上其餘事物連結而產生新的事物。一般森嚴觀點中世界有所分類，如男人永遠是男人、女人永遠是女人。但在機器的世界萬物皆可離開原先的界域，正如蝴蝶吸取花蜜，口器與花結合的瞬間，蝴蝶與花兩個個體便化為宇宙中新的複合體。「對我而言表演就是這樣，重要的並不是說故事或是一個角色，我的概念並不是那麼古典。」他認為，劇場就是一個很大的試驗場，透過事物變化激起的火花，去追求過程中發生的美學。
+            </p>
+            <p>
+                觀眾陳品薇說：「看完之後還滿衝擊的，很多畫面和台詞都不是平常會接觸到的。」他認為，場地中充滿各種機器，演員時常拿起手機，彷彿勸說大家不要沉迷或依賴科技產品。觀眾吳昕芸則聯想到過去十年的日本電影，討論女性心理上的空缺，還有對於自己不著邊際的想像。此外，他認為劇中少女有如戰爭前後的對比，即使生活富足，他們仍對上帝呼喊，訴說心情卻無人回應，抑鬱欲尋求填補心靈的空缺。
+            </p>
+        </div>
+        <div class="photo">
+            <img class="hero-img-down"
+                src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/0a8005f5594bd67041f88c6196192646-1.jpg">
+                <div class="blockquote">肉在劇中有多重隱喻，但透過人類的裸體和豬肉的貼合，讓人體與肉回歸一個純粹的物質。　圖／孫佾妘攝</div>
+        </div>
+
+
+        <div class="inline-center">
+            <div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#少女機器</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#藝文</a>
+                </div>
+                <div class="tag inline-center">
+                    <a class="tag-word" href="https://www.w3schools.com">#周曼農</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="laptop desktop-only">
+        <!--靠右結束-->
+        <div style="background-color:#FFFFFF; height: 433px;">
+            <h3>
+                <p style="padding-top: 38px;margin-left: auto;">延伸閱讀</p>
+            </h3>
+            <div class="read-more">
+                <div class="inline-center read-more-block">
+                    <a href="../charlie/Real-art2.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-768x512.jpg">
+                        <a class="a-read-more" href="../charlie/Real-art2.html">《番肉考》重現食番肉歷史　揭清代原客衝突</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art3.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg">
+                        <a class="a-read-more" href="Real-art3.html">大選開票亂象多　公民監票盼落實程序正義</a>
+                    </a>
+                </div>
+                <div class="inline-center read-more-block">
+                    <a href="Real-art4.html">
+                        <img class="read-more-link"
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg">
+                        <a class="a-read-more" href="Real-art4.html">靈魂間的相遇和療癒 家族治療與心理師</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <img class="bottom-logo" src="../asset/NPJ2.png">
+            <p class="bottom-word">一群整天跟爸媽哭窮、現在連做期末成品都想趁機向社會大眾要錢花的國家未來棟樑。</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

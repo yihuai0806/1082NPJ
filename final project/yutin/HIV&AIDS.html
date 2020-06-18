@@ -1,0 +1,1433 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #FFE5F0;
+            line-height: 10px;
+            margin: 0px;
+        }
+
+        #burger:checked+ul {
+            display: block;
+        }
+
+        .burger-link {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 200%;
+            font-style: 100;
+            background-color: #ff85b1;
+            padding: 10px;
+        }
+
+        ul {
+            display: none;
+        }
+
+        label {
+
+            display: inline-block;
+            width: 30px;
+            text-align: end;
+        }
+
+        .BK_pink {
+            width: 100%;
+            background-color: #FFE5F0;
+            display: inline-block;
+        }
+
+        .div {
+            height: auto;
+            z-index: 4;
+            position: relative;
+        }
+
+
+        .BK_bottom {
+            width: 100%;
+            background-color: #BBC9C2;
+            display: inline-block;
+        }
+
+        .red {
+            background: linear-gradient(transparent 70%, rgba(255, 26, 26, 70));
+            padding: 2px 1px;
+        }
+
+
+
+
+
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+                display: block;
+            }
+
+            .desktop-only {
+                display: none;
+            }
+
+            .iphone8 {
+                width: 100%;
+                height: auto;
+            }
+
+
+            .line {
+                width: 22px;
+                height: 3px;
+                background-color: #FF4085;
+                position: flex;
+            }
+
+            .back {
+                width: 100%;
+                color: rgba(255, 229, 240, 0.5);
+                display: inline-block;
+            }
+
+            .header1 {
+                z-index: 10;
+                width: 100%;
+                height: 80px;
+                position: sticky;
+                top: 0px;
+                background-color: rgba(255, 229, 240, 0.5);
+            }
+
+            .header2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .wordcloud {
+                position: sticky;
+                top: 0px;
+                display: flex;
+                justify-content: center;
+                z-index: 1;
+                opacity: 0.6;
+            }
+
+            .maintitle-back {
+                width: 100%;
+                height: auto;
+                background-color: rgba(255, 229, 240, 0.9);
+                position: sticky;
+                top: 0px;
+                display: inline-block;
+                z-index: 2;
+
+            }
+
+            .maintitle-word {
+                width: auto;
+                height: auto;
+                position: relative;
+                z-index: 3;
+            }
+
+            .main-title-1 {
+                font-family: 'Noto Sans SC', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                color: #FFFFFF;
+                -webkit-text-stroke: 1.5px #FE537A;
+                margin-left: 14px;
+                z-index: 2;
+            }
+
+            .main-title-2 {
+                font-family: 'Noto Sans SC', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 75px;
+                color: #FE537A;
+                -webkit-text-stroke: 2.5px #FFFFFF;
+                margin-left: 14px;
+                z-index: 2;
+            }
+
+            .intro1 {
+                width: 100%;
+                height: auto;
+                background-color: rgba(255, 255, 255, 0.9);
+                position: sticky;
+                top: 0px;
+                display: inline-block;
+                z-index: 2;
+            }
+
+            .intro2 {
+                z-index: 3;
+                width: auto;
+                height: auto;
+                position: relative;
+            }
+
+            .introduction {
+                font-size: 14px;
+                line-height: 155%;
+                font-style: 300;
+                font-weight: normal;
+                color: #D42754;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                width: 305px;
+            }
+
+            .title {
+                color: #FE537A;
+                font-size: 24px;
+                line-height: 155%;
+                -webkit-text-stroke: 0.6px #FFFFFF;
+                text-align: center;
+                margin: 25px auto 25px auto;
+            }
+
+            .paragraph {
+                font-size: 16px;
+                line-height: 155%;
+                font-style: 300;
+                color: #000000;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                width: 330px;
+
+            }
+
+            .quote {
+                font-weight: 500;
+            }
+
+            .figcaption {
+                font-size: 14px;
+                line-height: 155%;
+                font-style: 100;
+                color: #8E8E8E;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                padding-bottom: 10px;
+                width: 330px;
+                display: inline-block;
+                text-align: left;
+            }
+
+            .ending {
+
+                font-size: 12px;
+                font-style: 100;
+                line-height: 17px;
+                color: #D42754;
+                width: calc(330/375*100%)px;
+                text-align: left;
+
+            }
+
+            .two_line {
+                width: 277px;
+                height: auto;
+                border-top: 4px solid rgba(211, 39, 85, 0.5);
+                border-bottom: 4px solid rgba(211, 39, 85, 0.5);
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+
+            .fig {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .pic {
+                width: calc(350/375*100%);
+                height: auto;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (min-width: 1024px) {
+            .mobile-only {
+                display: none;
+            }
+
+            .desktop-only {
+                display: block;
+            }
+
+            .desktop {
+                width: 1024px;
+            }
+
+            .block-horizontal-center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .line {
+                width: 22px;
+                height: 3px;
+                background-color: #FF4085;
+            }
+
+            .back {
+                width: 340px;
+                color: rgba(255, 229, 240, 0.5);
+                display: inline-block;
+                margin-left: 25px;
+            }
+
+            .header2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 2;
+            }
+
+            .wordcloud {
+                position: sticky;
+                top: 0px;
+                display: flexbox;
+                z-index: 1;
+                opacity: 0.6;
+            }
+
+            .main-title-1 {
+                font-family: 'Noto Sans SC', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                color: #FFFFFF;
+                -webkit-text-stroke: 1.5px #FE537A;
+            }
+
+            .main-title-2 {
+                font-family: 'Noto Sans SC', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 80px;
+                color: #FE537A;
+                -webkit-text-stroke: 3px #FFFFFF;
+
+            }
+
+            .intro1 {
+                width: 1024px;
+                height: auto;
+                background-color: rgba(255, 255, 255, 0.9);
+                position: sticky;
+                top: 0px;
+                display: inline-block;
+                z-index: 2;
+            }
+
+            .intro2 {
+                z-index: 3;
+                width: auto;
+                height: auto;
+                position: relative;
+            }
+
+            .introduction {
+                width: 80%;
+                font-size: 18px;
+                line-height: 155%;
+                font-style: 300;
+                font-weight: normal;
+                color: #D42754;
+                margin: 50px auto 50px auto;
+            }
+
+            .title {
+                color: #FE537A;
+                font-size: 40px;
+                line-height: 155%;
+                -webkit-text-stroke: 0.6px #FFFFFF;
+                margin: 50px auto 50px auto;
+                text-align: center;
+
+            }
+
+            .paragraph {
+                width: 85%;
+                font-size: 16px;
+                line-height: 155%;
+                font-style: 300;
+                color: #000000;
+                margin: 30px auto 30px auto;
+
+            }
+
+            .quote {
+                font-weight: 500;
+            }
+
+            .figcaption {
+                font-size: 14px;
+                line-height: 155%;
+                font-style: 100;
+                color: #8E8E8E;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                padding-bottom: 10px;
+                width: 800px;
+                display: inline-block;
+                text-align: left;
+            }
+
+            .ending {
+
+                font-size: 14px;
+                font-style: 100;
+                line-height: 17px;
+                color: #D42754;
+                width: calc(800/1024*100%);
+                text-align: left;
+
+            }
+
+            .two_line {
+                width: 800px;
+                height: auto;
+                border-top: 4px solid rgba(211, 39, 85, 0.5);
+                border-bottom: 4px solid rgba(211, 39, 85, 0.5);
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            .fig {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .pic {
+                width: calc(800/1024*100%);
+                height: auto;
+            }
+
+            .info {
+                width: 50%;
+                height: auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .bar-block {
+                display: inline-block;
+                width: calc(800/1440*100%);
+                text-align: end;
+                margin-top: 44px;
+            }
+
+            .bar {
+                display: inline-block;
+                width: 96px;
+                height: 35px;
+                text-align: end;
+                color: #D42754;
+                text-decoration: none;
+            }
+
+            .target {
+                position: sticky;
+                display: inline-block;
+                width: 70px;
+                top: 200px;
+            }
+
+            .sticky-icon {
+                width: 50px;
+                padding: 14px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mobile version start -->
+    <div class="mobile-only">
+        <div class="BK_pink iphone8">
+
+            <!-- 釘住的header_包含logo跟burger -->
+            <div class="header1">
+                <div class="header2">
+                    <img src="../asset/NPJ2.png" alt="LOGO" width="147px" height="26px"
+                        style="display: flex;margin-left:23px; margin-top:32px;margin-bottom:20px;">
+                    <div style="margin-right: 23px;">
+                        <label for="burger">
+                            <div style="text-align: right; display: inline-block;">
+                                <div class="line"></div>
+                                <div style="display: inline-block; width: auto; height: 3px"></div>
+                                <div class="line"></div>
+                                <div style="display: inline-block;  width: auto; height: 3px"></div>
+                                <div class="line"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <input type="checkbox" id="burger" style="display: none;">
+                <ul style="text-align: end;;list-style-type: none;">
+                    <li><a class="burger-link"
+                            href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">數位專題</a></li>
+                    <li><a class="burger-link"
+                            href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a>
+                    </li>
+                    <li><a class="burger-link"
+                            href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a>
+                    </li>
+                    <li><a class="burger-link"
+                            href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 留白 -->
+            <div style="height: 60px"></div>
+
+            <!-- 文字雲 -->
+            <img src="../yutin/images3.png" height="auto" width="80%" class="wordcloud"
+                style="margin:0px auto 60px auto;">
+
+
+            <!-- 主標題 -->
+            <div class="maintitle-back">
+                <div style="height: 120px"></div>
+                <div class="maintitle-word">
+                    <h1 style="text-align: center;" class="main-title-1">讓恐懼
+                        <span style="font-size: 80px;margin-left: 0px;" class="main-title-2">現形</span>
+                    </h1>
+                    <div style="height: 5px;"></div>
+                    <h1 class="main-title-1" style="text-align: center; margin-top: 10px;">破解</h1>
+                    <div style="height: 5px;"></div>
+                    <h1 style="text-align: center;"><span class="main-title-2">愛滋</span><span
+                            style="font-size: 45px;margin-left: auto;" class="main-title-1">與</span><span
+                            style="margin-left: auto;" class="main-title-2">同志</span>
+                    </h1>
+                    <h1 style="font-size: 80px;text-align: center;" class="main-title-2">汙名謠言</h1>
+                </div>
+                <div style="height: 120px"></div>
+            </div>
+
+            <!-- 說明 -->
+            <div class="intro1">
+                <div class="intro2">
+                    <div style="height: 60px"></div>
+                    <p class="introduction">
+                        自1984年我國出現首位愛滋患者以來，隨著醫療技術的進步，政府和民間團體野對此投入許多心力，愛滋病時至今日已成為「可控制的慢性病」。可惜，社會至今對愛滋的認知卻遠遠不足，仍舊充斥著刻板印象，甚至將它錯誤連結到同志族群，讓這股恐懼與歧視傷害了更多的人。也因此讓愛滋病榮登眾疾病中，不實謠言數量第一的受害者寶座。<br><br>究竟，我們該如何破除因恐懼而生的愛滋病汙名謠言呢？
+                    </p>
+                    <div style="height: 60px"></div>
+                </div>
+            </div>
+
+
+            <!-- 副標1 -->
+            <div class="BK_pink div">
+                <h1 class="title">愛滋謠言滿天飛<br>錯誤印象仍舊深植人心</h1>
+                <!-- LINE謠言 -->
+                <script class="INFO" id="infogram_0_ce9f6109-37b9-4272-bd93-75014e5d3b92" title="000"
+                    src="https://e.infogram.com/js/dist/embed.js?4u8" type="text/javascript"></script>
+                <div class="INFO"
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <!-- INFO圖1_愛滋謠言數量 -->
+                <script id="infogram_0_f3b23424-f3a4-446d-ad73-3777f43d47bd" title="01愛滋謠言數量"
+                    src="https://e.infogram.com/js/dist/embed.js?w3e" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+                <p class="paragraph">
+                    也許，謠言早變成你我生活中的一部分。<br><br>我們從Line上提供闢謠功能的聊天機器人-真的假的Cofacts，得到與愛滋相關回傳謠言共有174則，並從2016年開始，依照其回傳時間點排序，發現每當政治、社會事件出現時，愛滋相關謠言的數量亦會增加。<br><br>而從疾管署的澄清專區中，可以發現與愛滋有關的澄清稿相較於其他疾病的比例高很多，見政府相關單位花很大的力氣在愛滋相關謠言的澄清上。
+                </p>
+
+                <!-- INFO圖2_疾管數澄清新聞 -->
+                <script id="infogram_0_d4132d7d-844f-4e9e-978b-80d9a599e525" title="00疾管署澄清新聞類型"
+                    src="https://e.infogram.com/js/dist/embed.js?o9i" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+
+                <p class="paragraph">
+                    「當這個社會議題被高度關注且有意見對立的團體存在時，就容易被媒體找到新聞點，想說服另一方的團體就會開始製造似是而非的謠言。」<br><br>紅絲帶秘書長林頂無奈地向我們表示，愛滋相關謠言所牽涉的議題有同婚、同志、健保等等，這些具爭議性的社會議題往往也會與愛滋病連結，加上社會大眾對於愛滋病的不了解，讓近年愛滋相關謠言一再流傳。<br><br>這些謠言或許各有目的，但其論述方式，卻反映了「得愛滋的人都是同志」此一刻板印象。<br>然而，同志族群和愛滋病有什麼關係呢？
+                </p>
+            </div>
+
+
+
+            <!-- 副標2 -->
+            <div class="BK_pink div">
+                <h1 class="title">不安全性行為惹禍<br>愛滋感染風險肛交僅次於輸血</h1>
+
+                <!-- INFO圖3_危險因子 -->
+                <script id="infogram_0_ae3f9f51-f9fd-4e84-89c6-fdb406468c07" title="02我國歷年HIV危險因子人數變化"
+                    src="https://e.infogram.com/js/dist/embed.js?0Ou" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <p class="paragraph">
+                    根據〈歷年感染愛滋原因人數折線圖〉顯示，我國2005年突發的藥癮感染者疫情，在2010年被控制住而下降後，藉由不安全性行為感染的人數便成為最大宗，2012年至今的比例維持在95%，和歐美地區的流行趨勢相同。其中，異性戀占10%上下，80%左右為男同志不安全性行為。
+                </p>
+                <!-- 螢光筆紅 -->
+                <p class="paragraph">同樣都從事不安全性行為，為什麼男同志的比例會此如此高呢？
+                    <mark class="red">這其實和人體生理結構，以及愛滋病的傳染途徑有關。</mark></p>
+
+
+                <p class="paragraph">
+                    從生理結構來說，人體的肛門和直腸是為排便而設計，只分布單層細胞，保護身體效果較差，又只有直腸液能做潤滑，導致從事性行為時較容易受傷見血，增加經血液傳染的風險
+                    <br><br>
+                    此外，為防止糞便通過時感染到病毒，直腸內壁密布許多免疫細胞，是愛滋病毒喜愛攻擊的目標，造成肛交感染愛滋的風險較大。
+                    <br><br>
+                    相較之下，女性人類的陰道是為了生殖而設計，細胞排列緊密又分布多層，保護身體效果較好，也有較多分泌物提高潤滑度，從事性行為時較不容易受傷見血，內壁也不用分布太多免疫細胞，使得陰道性交感染愛滋的風險較低。
+                </p>
+
+                <!-- INFO圖4_傳染途徑風險 -->
+                <script id="infogram_0_22d1e909-15fe-40d9-8a0a-da3ee07c51ae" title="03不同HIV傳染途徑的風險"
+                    src="https://e.infogram.com/js/dist/embed.js?Eow" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+                <p class="paragraph">
+                    根據〈不同HIV傳染途徑的風險表格圖〉進一步分析，肛交的接受方感染愛滋之機率約為1.38%，僅次於輸血感染的92.5%，位居第二。而肛交也是男同志最常採用的性愛方式，自然比還可選擇陰道性交的異性戀族群，更容易感染。
+                </p>
+
+                <!-- 螢光筆紅-->
+                <p class="paragraph">
+                    前衛生署疾管局副局長，現任財團法人台灣紅絲帶基金會秘書長林頂解釋，疾管署依照傳播途徑的不同，將傳染病分為六大類，愛滋病便屬於「性與血液傳染病」。<mark
+                        class="red">愛滋病毒需透過血液交換，或發生不安全性行為，才會傳播出去。</mark>一般的飛沫傳染、肌膚接觸等，都不會讓人因此感染愛滋。
+                </p>
+
+                <p class="paragraph">
+                    雖然從統計數據上、生理結構和性向等客觀因素來看，能理解為何大眾會認為大多數愛滋感染者是同志，但謠言中摻雜的意與歧視，則和社會為它們貼上的汙名標籤脫不了關係。
+                </p>
+            </div>
+
+            <!-- 副標3 -->
+            <div class="BK_pink div">
+                <h1 class="title">同志族群=得愛滋病?
+                    <br>疏於篩檢的異性戀風險反高</h1>
+
+                <!-- 螢光筆-->
+                <p class="paragraph">
+                    由於一開始在歐美國家發現愛滋病時，感染者多集中在同志族群，媒體報導便揣測愛滋病和該族群有關，<mark class="red">創造出感染愛滋群眾「4H」</mark>
+                    （海地、海洛因、血友病、同性戀
+                    4 字的英文首字都是H）的標籤，兩者結合的汙名就此開始流傳。
+                </p>
+
+                <p class="paragraph quote">「我其實在還沒患病時，就認為同志等於愛滋。」</p>
+
+                <p class="paragraph">
+                    在藥物試驗的健康檢查時，確診為愛滋感染者的酷里濕（化名），坦白地告訴我們他在被緊急通知後，為何心情能如此平靜的原因－－長期被社會「愛滋＝同志」的污名洗腦，讓他在發現自己是同志後，便做好了遲早會得愛滋的心理準備，儘管這兩者其實並無任何決定性關連。
+                    <br><br>而乍聽之下，愛滋病汙名好像只會出現在向人坦承後的心理壓力，但酷里濕發現，其實很明顯反映在日常生活上－－比如看病這件事。看診順序被延後、被醫院拒診、在非侵入性治療的狀況下，被安排在指定位置、用著指定用具......明顯受到許多「特殊對待」的他，也挺身與這一連串大大小小的醫療糾紛對抗，也顯示理應是了解愛滋病相關知識的醫界人員，卻依舊是以不友善的態度面對感染者。<br><br>
+                    酷里濕感嘆：<span class="quote">「其實，我只是一個希望以健保身分、以一般人身分，得到一般對待的病患而已。」</span></p>
+
+                <!-- 電腦螢幕截圖-->
+                <figure class="fig">
+                    <img src="../yutin/pc_picture1.jpg" alt="挺同" class="pic">
+                    <div style="height:10px;"></div>
+                    <img src="../yutin/pc_picture2.jpg" alt="反同" class="pic">
+                    <div style="height:10px;"></div>
+                    <figcaption class="figcaption" style="border-bottom:1px solid 	#BF0060;">
+
+                        從兩份截然不同立場的政策提案中，即可發現社會對愛滋患者與同志族群的不理解與不友善。<br>（截圖自／公共政策網路參與平台）
+                    </figcaption>
+                </figure>
+
+                <p class="paragraph">
+                    除了被醫院拒診，前年（2018年）六月，我國政府本欲放寬「捐血者健康標準」中的男同志族群條件，只要五年之內未曾發生過不安全性行為的同志，即可捐血。<br><br>
+                    但在公聽會上，草案卻遭遇民眾的強烈反彈，讓衛生福利部食品藥物管理署在同年七月20日發布新聞稿，表示將「暫緩捐血之規定」且未訂有恢復討論之期限，等同於政策緊急喊卡。<br><br>
+                    「全世界都說，只有高危險行為，沒有高危險族群，所以我們不能把同志族群設定為高危險族群。」</p>
+
+                <!-- 螢光筆-->
+                <p class="paragraph">最早在國內推動愛滋防治教育的性教育學者、杏陵醫學基金會執行長晏涵文表示，社會不能因為同志族群感染愛滋的風險較高，而限制他們不得捐血，<mark
+                        class="red">因為疾病傳染是跟行為有關，武斷把愛滋病與某個族群劃上等號是錯誤的連結與觀念。</mark></p>
+
+                <p class="paragraph">此外，林頂也提到，現今網路交友軟體已成為舉辦「Chemsex
+                    藥物性愛」的便利管道，也就是同時使用俱樂部藥物（二、三、四級管制毒品），如：安非他命、搖頭丸，並發生性行為的派對。
+                    <br><br>
+                    這種「約砲、同時約High」的舉動，參與者多半會因感覺問題、或神智不清而不使用保險套，會共用針具與稀釋液，加上若不斷追藥，便可一直發生高風險性行為，因此參與這種派對，的確容易增加自身感染風險－－但這並不僅限於同志族群，異性戀亦有類似派對，同樣讓自寄處在高風險之中。
+                </p>
+
+                <!-- 螢光筆-->
+                <p class="paragraph">台北市立聯合醫院昆明防治中心護理師莊苹也指出，<mark
+                        class="red">其實男同性戀者防治愛滋意識相較其他族群來得高，也會做定期篩檢。反倒是異性戀者往往輕忽了自己感染的風險，較無篩檢習慣，感染風險反倒更高</mark>，「異性戀染病時，往往是發病時才會知道。」
+                </p>
+
+                <p class="paragraph">「檢驗出來發現是陽性後，我覺得很崩潰，覺得自己髒掉了，所以我想盡辦法讓自己墮落，瘋狂跑夜店、約炮，甚至嗑藥。」
+                    <br><br>
+                    曾有藥癮的亞倫（化名），毫無保留地告解自己人生最黑暗的一面。無法面對感染事實的他，曾不顧親友勸阻，沉淪於毒品帶來的慰藉。
+                    <br><br>
+                    直到後來，亞倫遇見與自己處境相似的病友，看著對方如何勇於與生命對抗，他才開始有了不一樣的想法。
+                </p>
+
+                <p class="paragraph quote">「就像是一個洗不掉污漬、被弄髒的娃娃，既然事實無法改變，那就改變生命的狀態吧！」</p>
+            </div>
+
+            <!-- 副標4 -->
+            <div class="BK_pink div">
+                <h1 class="title">對未知的恐懼 是歧視的溫床</h1>
+
+                <p class="paragraph">
+                    「愛滋不是只跟同志有關，是跟所有社群都有關。」台灣同志諮詢熱線協會政策推廣部主任杜思誠指出。台灣同志諮詢熱線協會長年提供線上諮詢服務，愛滋相關議題雖然不是排名前幾名，但都有一定的比例。
+                </p>
+
+                <!-- INFO圖5_熱線諮詢電話 -->
+                <script id="infogram_0_28d6341b-e1cb-4d8d-b2b7-8de38cdbe25e" title="04熱線諮詢電話中關於愛滋與性的比例"
+                    src="https://e.infogram.com/js/dist/embed.js?qzb" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <p class="paragraph">他透露，不只是同性戀，其中也不乏異性戀男性打來詢問愛滋議題。對話中也不難發現，這群人除了對愛滋所知甚少，更對此懷抱恐懼。
+                    <br><br>
+                    他們往往也上網搜索過相關資料，甚至是已經做過篩檢，最後卻還是打專線來，只為了想找人再確認，自己是否真的有可能中標，語氣盡是滿滿的焦慮。
+                    <br><br>
+                    「大部分的人都只是恐懼會得到這個疾病，但我們會想跟他們聊，那如果真的有這個疾病，你會怎麼做，其實不少人是不願去想的。」</p>
+
+                <!-- 螢光筆-->
+                <p class="paragraph"><mark
+                        class="red">杜思誠認為，這些焦慮其實反映了愛滋被汙名化的負面影響，「很多人把恐懼放大，放大到只要感染就會天崩地裂，可能他人生毀了。」</mark>
+                    <br><br>
+                    儘管現在已有藥物可控制病情，但<mark
+                        class="red">這群人的恐懼並不是只有疾病本身，很大一部份其實是對未知未來的恐懼</mark>，像是擔心人際關係恐因此大受影響，恐遭受他人異樣眼光、被親密的人排斥，以及找不到伴侶等。
+                </p>
+
+                <p class="paragraph">
+                    「我並沒有跟每一個要發生性關係的人，誠實地說出自己是HIV感染者。」感染者的身分讓亞倫在找尋伴侶之路上遭受不少挫敗，但他也無法不讓對方不害怕這個事實，讓他開始掙扎是否應向人誠實相告。
+                    <br><br>
+                    事實上，現在透過藥物控制，不僅可讓體內愛滋病毒量降低到不會傳染，也讓愛滋感染者擁有和常人無太大差異的存活率，甚至是不發病直到死亡。
+                    <br><br>
+                    然而，而林頂指出，當社會不了解愛滋病與同志的諸多知識，往往會將他們和諸如性工作者、藥癮患者、窮人等弱勢族群聯想在一起，並標籤化為「得愛滋的」，使得這群人又落入社會更弱勢的地位。當他們與疾病產生連結，並因此拒絕社會介入與協助的話，就會造成社會防疫上嚴重的漏洞。
+                </p>
+
+                <!-- 螢光筆-->
+                <p class="paragraph quote"><mark class="red">「若社會能開放、包容他們，而非汙名化，很多問題其實就自然解決了。」</mark></p>
+            </div>
+
+            <!-- 副標5 -->
+            <div class="BK_pink div">
+                <h1 class="title">讓恐慌現形<br>
+                    破除愛滋與同志汙名謠言</h1>
+
+                <!-- 螢光筆-->
+                <p class="paragraph">傳染病防治最重要的關鍵，便是把病人找出來。林頂表示，一旦找出病人，讓他們趕緊接受治療，問題就能解決一半了；但<mark
+                        class="red">當社會對感染者們不友善，他們自然不願現身，防疫上出現漏洞，反倒對公共衛生安全造成威脅。</mark></p>
+
+                <p class="paragraph">
+                    因此，政府近年開始積極推動愛滋病匿名篩檢，除了各縣市都有愛滋治療專責機構、和民間團體可做篩檢外，也提供超商店到店取貨的*居家篩檢（離島也行），和巡迴各縣市的*篩檢車，就是希望能做到盡可能方便民眾，提高篩檢意願。
+                </p>
+
+                <!-- 螢光筆-->
+                <p class="paragraph"><mark class="red">「篩檢只是工具，更重要是連結到醫療體系。」</mark>
+                    <br><br>
+                    林頂也強調，重要的其實不是篩檢，而是篩出來後續的治療及衛生教育。一來，確診感染的人能及早控制病情，提高存活率；二來，當感染者能維持體內病毒量低到不太具備傳染性時，也降低整體社會的病情風險；三來，即便篩檢結果為陰性，但也表示篩檢者可能有遇到或從事高感染風險的行為，所以在篩檢前後也提供諮商或衛生教育，供民眾諮詢參考。
+                </p>
+
+                <!-- 居家篩檢包圖片-->
+                <figure class="fig">
+                    <img src="../yutin/picture3.JPG" alt="居家篩檢包" class="pic">
+                    <div style="height:10px;"></div>
+                    <figcaption class="figcaption" style="border-bottom:1px solid 	#BF0060;">
+                        居家篩檢包可分為唾液和血液篩檢兩種，本圖為唾液篩檢包。
+                        <br>民眾只需要上疾管署網站訂購，稍後便可到便利商店店到店取貨(運費NT$45、押金NT$200，總計NT$245)，亦可使用化名保護自己的身分。檢驗完後，若民眾願意登錄資料給疾管署統計調查，可掃包裝上的QR
+                        code進行填答，即可退還200元押金，同時政府取得相關愛滋病資訊。
+                        <br>根據紅絲帶基金會的統計，在2018/12/8~2019/12/23之間，共發送33,919件居家檢測試劑。（攝影／陳彥任
+                        ;提供／財團法人台灣紅絲帶基金會）
+                    </figcaption>
+                </figure>
+
+                <p class="paragraph quote">「我們怎麼真的去理解這個疾病，以及去理解這些感染者所遇到的處境。」</p>
+
+                <!-- 螢光筆-->
+                <p class="paragraph"><mark
+                        class="red">杜思誠也認為，只有當大眾不再恐懼，將愛滋當作一般疾病，才可能較有意願接受篩檢、治療。</mark>而最好的做法，便是讓恐懼的對象現形，唯有面對面直接接觸，才能讓人了解其實對方和你我，並沒有多大的差異。
+                    <br><br>
+                    因此，同志諮詢熱線協會內部讓感染者和非感染者一起工作、生活，藉此破除對對方的恐懼。又或是近年他們推動*「HIV+OK」符號，讓感染者或支持該議題的人能以這個正向符號，在日常生活中表達對感染者的支持，讓感染者知道，自己仍能與人連結，關係並不會因此斷裂，從而讓大眾以用正常的心態來面對這議題。
+                </p>
+
+                <!-- HIV+OK文宣品圖片-->
+                <figure class="fig">
+                    <img src="../yutin/picture4_2017HIV+OK.jpg" alt="HIV+OK文宣品圖片" class="pic">
+                    <div style="height:10px;"></div>
+                    <figcaption class="figcaption" style="border-bottom:1px solid #BF0060;">
+                        HIV+指的是愛滋檢測陽性反應，並以不同人際團體來構成加號，意指讓感染者能接受自己是HIV+是件OK的事，非感染者跟感染互動也很OK，希望能藉此正向支持符號，舒緩近年同志與愛滋感染者被不斷攻擊的低迷氛圍。（提供／台灣同志諮詢熱線協會）
+                    </figcaption>
+                </figure>
+
+                <!-- 螢光筆-->
+                <p class="paragraph">此外，他們也拓展衛教主題，不只是談愛滋防治，也談同志性文化，以及愛滋感染者的處境或權益，希望能透過真人現身說法，讓大眾能不再對愛滋感到恐懼。<mark
+                        class="red">但在近年愛滋與反同謠言高漲的情況下，杜思誠坦言，校園演講的場數不僅比過往少了許多，內容也更加受限。</mark></p>
+
+                <!-- INFO圖6_講座數量 -->
+                <script id="infogram_0_169b38a3-686d-4245-9c0f-76699a735613" title="05每年舉辦同志講座"
+                    src="https://e.infogram.com/js/dist/embed.js?S3k" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <p class="paragraph">在2016年之前，同志諮詢熱線協會每年都能接到超過500場以上、談論同志議題的校園講座，但2018年單年卻只剩193場，落差十分明顯。
+                    <br><br>
+                    此外，有些學校會希望他們的防治愛滋宣導內容，不要談及如何實際操作保護措施，只要以安全性行為帶過即可。然而，「關鍵其實就是在那些細節裡。」杜思誠無奈表示。
+                    <br><br>
+                    在謠言影響下，校園漸趨保守，就連紅絲帶基金會自2006年以來、年年獲疾管署肯定與補助的「愛滋感染者現身說法（愛現幫）暨培力計畫」宣導教育，也受到影響。
+                    <br><br>
+                    2017年，反毒陣將他們校園宣導影片截圖，質疑活動橋段中，學生被強迫和感染者講師擁抱，而非基金會所稱的自願互動。在相關新聞底下，亦不乏見到擔心感染愛滋的留言，最後以疾管署發新聞稿澄清，並要求要重新審查教案作收。
+                </p>
+            </div>
+
+
+            <!-- 副標6 -->
+            <div class="BK_pink div">
+                <h1 class="title">正視現況<br>
+                    唯有了解 才能不再恐懼</h1>
+
+                <p class="paragraph">起因自恐慌的愛滋與同志族群污名標籤，想要有效防堵相關謠言繼續傳播，最重要的仍是讓大眾了解實際情形。
+                    <br><br>
+                    以世界趨勢來說，〈世界HIV感染者人數歷年趨勢圖〉顯示全球愛滋感染和死亡人數自2004年以後明顯下降；但反觀我國，感染人數卻是逐年上升，甚至在2005年爆發因海洛因藥癮引起的疫情，感染人數急速上升，但隨即又下降，直到2010年才又開始增長，直到2017年才開始下降，2018年成長率約為20%。
+                </p>
+
+                <!-- INFO圖7_歷年全球新增HIV感染人數統計圖 -->
+                <script id="infogram_0_42eaebd2-c8b4-4b60-9b1a-93eccfa8481d" title="06歷年全球新增HIV感染人數統計圖"
+                    src="https://e.infogram.com/js/dist/embed.js?Q4s" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <!-- INFO圖8_我國歷年新增HIV感染人數統計與趨勢圖 -->
+                <script id="infogram_0_556d6cab-1694-48be-8d3c-37dca3effca2" title="08我國歷年新增HIV感染人數統計與趨勢圖"
+                    src="https://e.infogram.com/js/dist/embed.js?NxN" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <p class="paragraph">
+                    晏涵文解釋，2005~2010年間，是因政府控制藥癮引發的疫情有成，而維持負成長，但藉由不安全性行為的人數依舊默默增長，並在2010年後成為影響主因。而林頂預估，2019年單年感染人數將達1700多人，成長率可能約為-12%。
+                    <br><br>對近兩年負成長的趨勢，林頂認為，可能和近年積極推動匿名篩檢、強化與醫療體系的連結，以及推行事前預防用藥（為愛滋病毒暴露前預防性投藥，簡稱PrEP）有關。
+                    <br><br>晏涵文則認為，雖然他樂見2019年底累計總感染人數破四萬的預測失敗，但他認為我們還不能高興得太早，因為負成長的幅度並不如前一年來得大。</p>
+
+                <!-- INFO圖9_我國歷年HIV各年齡層人數變化 -->
+                <script id="infogram_0_f1774017-7c66-4942-b49e-12d18fe2f0ae" title="09我國歷年HIV各年齡層人數變化"
+                    src="https://e.infogram.com/js/dist/embed.js?jnn" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <!-- 螢光筆-->
+                <p class="paragraph">
+                    而觀察歷年感染的各年齡層變化，2009年以後，人數最多為25~34歲，約占總體累計人數43%；其次則為15~24歲，約占總體的23%，<mark
+                        class="red">而無論哪個年齡層，人數都在近兩年呈下降趨勢。</mark>
+                    <br><br>然而，晏涵文擔心，全球15~24歲的愛滋感染者大部分都占總累計人數的32%，台灣遠比國際潮流低，可能別有原因或黑數尚未現形。</p>
+
+                <!-- INFO圖10_2019年我國大專院校學生性行為情形 -->
+                <script id="infogram_0_4bbcf0b5-a616-4207-88b6-6aaecbdc67c3" title="11白2019年我國大專院校學生性行為情形"
+                    src="https://e.infogram.com/js/dist/embed.js?YW3" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                </div>
+
+                <!-- INFO圖11_我國20歲男女大專院校學生近四十年來性行為人數比例變化 -->
+                <script id="infogram_0_68277e4d-5f69-40f0-90ea-6da3fec65231" title="10我國20歲大專院校學生近40年來性行為人數比例變化比較"
+                    src="https://e.infogram.com/js/dist/embed.js?0C6" type="text/javascript"></script>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+
+                </div>
+
+                <p class="paragraph">
+                    根據2019年大專院校性教育(含愛滋病防治)學生現況調查，20歲的大學生在這四十年來，從事性行為的比例無論男女都有成長，其中有七成使用會使用保險套來預防懷孕，但不論異性戀或同性戀，每次性交都使用保險套的人卻只有三成。
+                    <br><br>
+                    「即便有相關預防藥品，但仍須使用保險套才能根本避病。」晏涵文表示，避孕或許可以不必每次都使用保險套，但是要避免性病的傳染，每次都使用保險套是必須的，未來學校應加強此方面的教育，不單只是提供保險套就好。
+                    <br><br>
+                    他也補充，目前致力推廣各大學普設保險套販賣機，或在輔導室和健康中心門口提供免費保險套，也規定校內的便利商店一定要賣保險套，未來也打算推動裝設快速唾液篩檢的機器。晏涵文強調，重點就是要讓學生方便取得保險套，降低15~24歲年齡層的感染人數。
+                </p>
+
+                <!-- 螢光筆-->
+                <p class="paragraph"><mark
+                        class="red">總體來看，我國愛滋感染人數目前是負成長</mark>，多透過不安全性行為感染，主要為最具生產力的15~34歲的青年族群，總感染人數近四萬，符合全球其他都市愛滋潮流的趨勢。
+                </p>
+            </div>
+
+
+            <!-- 副標8 -->
+            <div class="BK_pink div">
+                <h1 class="title">有風險行為 沒有風險族群<br>撕下疾病與族群雙重汙名標籤</h1>
+
+                <p class="paragraph">「每個世代對於愛滋病的觀感有很大的區別。」莊苹表示，在十年前得到愛滋，或許仍被視為遭天譴，但現在它不過是個可用藥物控制的慢性傳染病而已。
+                    <br><br>「只有高風險的行為，沒有高風險的族群。」林頂也再三強調，愛滋是因為從事高風險行為而感染，而非跟族群有關，無論是篩檢、保健、或檢查，都不該只針對所謂的「高風險族群」。
+                    <br><br> 他以「CPU
+                    project」來說明愛滋防治觀念，未感染者應在每次性行為都使用保險套（Condom）；身處發生高風險行為的環境、但尚未感染的人，與其防堵不如疏導，在醫生授權之下使用愛滋病毒暴露前預防性投藥（PrEP）；已經感染愛滋的人，應了解「治療即預防」的概念，朝降低體內病毒量到U=U（Undetectable
+                    equals Untransmittable，意指測不到病毒 = 不具傳染力）的目標努力。
+                    <br><br> 愛滋並不令人恐懼，反倒是謠言背後，因對未知事務的恐懼而演變成的惡意，才令人恐懼。當人們願意敞開心房、了解實情，才有終結謠言傳播的可能。
+                    <br><br> <mark class="red">「把我們當成正常人就好。」</mark>像酷里濕這樣的愛滋感染者，正期待有朝一日能享有和一般人同樣的待遇。
+                </p>
+
+                <!-- 分工名單 -->
+                <div class="two_line">
+                    <P class="ending">
+                        採訪、企劃／李例嬛、陳彥任、劉雨婷
+                        <br>攝影／陳彥任
+                        <br>原始網頁製作／李例嬛
+                        <br>原始網頁連結／<a
+                            href="https://a866437.wixsite.com/datajournalismhw?fbclid=IwAR31pudcMGBz49pOCR9ricqWA9P1WL7CowVV9ghMl9H1RKY2sDZUMstC-T0">讓恐慌現形，
+                            破除愛滋與同志汙名謠言</a>
+                        <br>網頁重製／劉雨婷
+
+                    </P>
+                </div>
+            </div>
+            <!-- 底部連結 -->
+            <div style="height: auto;" class="BK_bottom div">
+                <div style="width:auto; display:flexbox; justify-content: center; align-items: center;">
+                    <div style="display:flex">
+                        <img src="../asset/NPJ2.png" alt="LOGO" width="199px" height="38px"
+                            style="margin-top: 38px;margin-left: auto;margin-right: auto;">
+                    </div>
+                </div>
+
+                <!-- 三外網 -->
+                <div style="width:auto; display:flexbox; justify-content: center; align-items: center;">
+                    <div style="display:flex">
+                        <img src="../asset/Icon_Facebook.png" alt="FB" width="24px" height="24px" style="
+                position: relative;margin: 32px 15px 42px auto;">
+                        <img src="../asset/icon-ins.png" alt="IG" width="27px" height="24px" style="
+                position: relative;margin: 32px 15px 42px 15px;">
+                        <img src="../asset/icon-line.png" alt="LINE" width="24px" height="27px" style="
+                position: relative;margin: 32px auto 42px 15px;">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- mobile version end -->
+
+
+
+    <!-- desktop version start -->
+    <div class="desktop desktop-only block-horizontal-center BK_pink" style="z-index: 1;">
+
+        <!--header_包含logo跟bar -->
+        <div class="header2">
+            <img src="../asset/NPJ2.png" alt="LOGO" width="380px" height="68px"
+                style="display: flex;margin-left:59px; margin-top:32px;margin-bottom:20px;">
+            <div class="bar-block">
+                <a class="bar" href="https://www.w3schools.com">數位專題</a>
+                <a class="bar" href="https://www.w3schools.com">即時新聞</a>
+                <a class="bar" href="https://www.w3schools.com">捐款贊助</a>
+                <a class="bar" href="https://www.w3schools.com">關於我們</a>
+            </div>
+        </div>
+
+        <!--留白 -->
+        <div style="height: 60px;"></div>
+
+
+        <!-- 文字雲 -->
+        <img src="../yutin/images3.png" width="62.5%" height="auto" class="wordcloud" style="margin-left: 384px;">
+
+        <!-- 主視覺畫面 -->
+        <div style="width:auto; height: auto;display: flexbox; justify-content: center; align-items:flex-start;">
+            <!-- 主標題 -->
+            <div class="back BK_pink" style="display: flexbox;z-index: 2;">
+                <h1 style="margin-top: 10px;" class="main-title-1">讓恐懼
+                    <span style="margin-left: 5px;" class="main-title-2">現形</span>
+                </h1>
+
+                <div style="height: 10px;"></div>
+                <h1 class="main-title-1" style=" margin-top: 50px; ">破解</h1>
+                <div style="height: 10px;"></div>
+
+                <h1 style=" margin-top: 50px;"><span class="main-title-2" style="font-size: 70px;">愛滋</span><span
+                        style="margin-left: auto;" class="main-title-1">與</span><span
+                        style="margin-left: auto;font-size: 70px;" class="main-title-2">同志</span>
+                </h1>
+                <h1 style="margin-top: 100px;" class="main-title-2">汙名謠言</h1>
+            </div>
+        </div>
+        <div style="height: 200px;background-color: rgba(255, 229, 240, 0.7);"></div>
+
+        <!-- 說明 -->
+        <div class="intro1">
+            <div class="intro2">
+                <p class="introduction">
+                    自1984年我國出現首位愛滋患者以來，隨著醫療技術的進步，政府和民間團體野對此投入許多心力，愛滋病時至今日已成為「可控制的慢性病」。可惜，社會至今對愛滋的認知卻遠遠不足，仍舊充斥著刻板印象，甚至將它錯誤連結到同志族群，讓這股恐懼與歧視傷害了更多的人。也因此讓愛滋病榮登眾疾病中，不實謠言數量第一的受害者寶座。<br><br>究竟，我們該如何破除因恐懼而生的愛滋病汙名謠言呢？
+                </p>
+            </div>
+        </div>
+        <div style="height: 200px;background-color: rgba(255, 229, 240, 0.7);"></div>
+
+        <!--sticky-->
+        <div style="z-index: 10" class="target" style="bottom: 5000px;">
+            <img class="sticky-icon" src="../asset/Icon_Facebook.png">
+            <img class="sticky-icon" src="../asset/icon-ins.png">
+            <img class="sticky-icon" src="../asset/icon-line.png">
+        </div>
+
+        <!-- 副標1 -->
+        <div class="BK_pink div">
+            <h1 class="title">愛滋謠言滿天飛<br>錯誤印象仍舊深植人心</h1>
+
+            <!-- LINE謠言留白 -->
+            <div style="width: 800px; height:915px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/ce9f6109-37b9-4272-bd93-75014e5d3b92?src=embed" title="000"
+                    width="800" height="915" scrolling="no" frameborder="0" style="border:none; "
+                    allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <!-- INFO圖1_愛滋謠言數量 -->
+            <div style="width: 800px; height:580px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/f3b23424-f3a4-446d-ad73-3777f43d47bd?src=embed" title="01愛滋謠言數量"
+                    width="800" height="580" scrolling="no" frameborder="0" style="border:none;"
+                    allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+
+            </div>
+
+
+            <p class="paragraph">
+                也許，謠言早變成你我生活中的一部分。<br><br>我們從Line上提供闢謠功能的聊天機器人-真的假的Cofacts，得到與愛滋相關回傳謠言共有174則，並從2016年開始，依照其回傳時間點排序，發現每當政治、社會事件出現時，愛滋相關謠言的數量亦會增加。<br><br>而從疾管署的澄清專區中，可以發現與愛滋有關的澄清稿相較於其他疾病的比例高很多，見政府相關單位花很大的力氣在愛滋相關謠言的澄清上。
+            </p>
+
+            <!-- INFO圖2_疾管數澄清新聞 -->
+            <div style="width: 500px; height:650px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/d4132d7d-844f-4e9e-978b-80d9a599e525?src=embed" title="00疾管署澄清新聞類型"
+                    width="500" height="650" scrolling="no" frameborder="0" style="border:none;"
+                    allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+            <p class="paragraph">
+                「當這個社會議題被高度關注且有意見對立的團體存在時，就容易被媒體找到新聞點，想說服另一方的團體就會開始製造似是而非的謠言。」<br><br>紅絲帶秘書長林頂無奈地向我們表示，愛滋相關謠言所牽涉的議題有同婚、同志、健保等等，這些具爭議性的社會議題往往也會與愛滋病連結，加上社會大眾對於愛滋病的不了解，讓近年愛滋相關謠言一再流傳。<br><br>這些謠言或許各有目的，但其論述方式，卻反映了「得愛滋的人都是同志」此一刻板印象。<br>然而，同志族群和愛滋病有什麼關係呢？
+            </p>
+
+        </div>
+
+
+
+        <!-- 副標2 -->
+        <div class="BK_pink div">
+            <h1 class="title">不安全性行為惹禍<br>愛滋感染風險肛交僅次於輸血</h1>
+
+            <!-- INFO圖3_危險因子 -->
+            <div style="width: 800px; height:590px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/ae3f9f51-f9fd-4e84-89c6-fdb406468c07?src=embed"
+                    title="02我國歷年HIV危險因子人數變化" width="800" height="590" scrolling="no" frameborder="0"
+                    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <p class="paragraph">
+                根據〈歷年感染愛滋原因人數折線圖〉顯示，我國2005年突發的藥癮感染者疫情，在2010年被控制住而下降後，藉由不安全性行為感染的人數便成為最大宗，2012年至今的比例維持在95%，和歐美地區的流行趨勢相同。其中，異性戀占10%上下，80%左右為男同志不安全性行為。
+            </p>
+            <!-- 螢光筆 -->
+            <p class="paragraph">同樣都從事不安全性行為，為什麼男同志的比例會此如此高呢？
+                <mark class="red">這其實和人體生理結構，以及愛滋病的傳染途徑有關。</mark></p>
+
+
+            <p class="paragraph">
+                從生理結構來說，人體的肛門和直腸是為排便而設計，只分布單層細胞，保護身體效果較差，又只有直腸液能做潤滑，導致從事性行為時較容易受傷見血，增加經血液傳染的風險
+                <br><br>
+                此外，為防止糞便通過時感染到病毒，直腸內壁密布許多免疫細胞，是愛滋病毒喜愛攻擊的目標，造成肛交感染愛滋的風險較大。
+                <br><br>
+                相較之下，女性人類的陰道是為了生殖而設計，細胞排列緊密又分布多層，保護身體效果較好，也有較多分泌物提高潤滑度，從事性行為時較不容易受傷見血，內壁也不用分布太多免疫細胞，使得陰道性交感染愛滋的風險較低。
+            </p>
+
+            <!-- INFO圖4_傳染途徑風險 -->
+            <div style="width: 600px; height:596px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/22d1e909-15fe-40d9-8a0a-da3ee07c51ae?src=embed"
+                    title="03不同HIV傳染途徑的風險" width="600" height="596" scrolling="no" frameborder="0" style="border:none;"
+                    allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <p class="paragraph">
+                根據〈不同HIV傳染途徑的風險表格圖〉進一步分析，肛交的接受方感染愛滋之機率約為1.38%，僅次於輸血感染的92.5%，位居第二。而肛交也是男同志最常採用的性愛方式，自然比還可選擇陰道性交的異性戀族群，更容易感染。
+            </p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph">
+                前衛生署疾管局副局長，現任財團法人台灣紅絲帶基金會秘書長林頂解釋，疾管署依照傳播途徑的不同，將傳染病分為六大類，愛滋病便屬於「性與血液傳染病」。<mark
+                    class="red">愛滋病毒需透過血液交換，或發生不安全性行為，才會傳播出去。</mark>一般的飛沫傳染、肌膚接觸等，都不會讓人因此感染愛滋。
+            </p>
+
+            <p class="paragraph">
+                雖然從統計數據上、生理結構和性向等客觀因素來看，能理解為何大眾會認為大多數愛滋感染者是同志，但謠言中摻雜的意與歧視，則和社會為它們貼上的汙名標籤脫不了關係。
+            </p>
+        </div>
+
+        <!-- 副標3 -->
+        <div class="BK_pink div">
+            <h1 class="title">同志族群=得愛滋病?
+                <br>疏於篩檢的異性戀風險反高</h1>
+
+            <!-- 螢光筆-->
+            <p class="paragraph">
+                由於一開始在歐美國家發現愛滋病時，感染者多集中在同志族群，媒體報導便揣測愛滋病和該族群有關，<mark class="red">創造出感染愛滋群眾「4H」</mark>
+                （海地、海洛因、血友病、同性戀
+                4 字的英文首字都是H）的標籤，兩者結合的汙名就此開始流傳。
+            </p>
+
+            <p class="paragraph quote">「我其實在還沒患病時，就認為同志等於愛滋。」</p>
+
+            <p class="paragraph">
+                在藥物試驗的健康檢查時，確診為愛滋感染者的酷里濕（化名），坦白地告訴我們他在被緊急通知後，為何心情能如此平靜的原因－－長期被社會「愛滋＝同志」的污名洗腦，讓他在發現自己是同志後，便做好了遲早會得愛滋的心理準備，儘管這兩者其實並無任何決定性關連。
+                <br><br>而乍聽之下，愛滋病汙名好像只會出現在向人坦承後的心理壓力，但酷里濕發現，其實很明顯反映在日常生活上－－比如看病這件事。看診順序被延後、被醫院拒診、在非侵入性治療的狀況下，被安排在指定位置、用著指定用具......明顯受到許多「特殊對待」的他，也挺身與這一連串大大小小的醫療糾紛對抗，也顯示理應是了解愛滋病相關知識的醫界人員，卻依舊是以不友善的態度面對感染者。<br><br>
+                酷里濕感嘆：<span class="quote">「其實，我只是一個希望以健保身分、以一般人身分，得到一般對待的病患而已。」</span></p>
+
+            <!-- 電腦螢幕截圖-->
+            <figure class="fig">
+                <img src="../yutin/pc_picture1.jpg" alt="挺同" class="pic">
+                <div style="height: 30px"></div>
+                <img src="../yutin/pc_picture2.jpg" alt="反同" class="pic">
+                <figcaption class="figcaption" style="border-bottom:2px solid rgba(211, 39, 85, 0.5);">
+                    從兩份截然不同立場的政策提案中，即可發現社會對愛滋患者與同志族群的不理解與不友善。<br>（截圖自／公共政策網路參與平台）
+                </figcaption>
+            </figure>
+
+            <p class="paragraph">
+                除了被醫院拒診，前年（2018年）六月，我國政府本欲放寬「捐血者健康標準」中的男同志族群條件，只要五年之內未曾發生過不安全性行為的同志，即可捐血。<br><br>
+                但在公聽會上，草案卻遭遇民眾的強烈反彈，讓衛生福利部食品藥物管理署在同年七月20日發布新聞稿，表示將「暫緩捐血之規定」且未訂有恢復討論之期限，等同於政策緊急喊卡。<br><br>
+                「全世界都說，只有高危險行為，沒有高危險族群，所以我們不能把同志族群設定為高危險族群。」</p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph">最早在國內推動愛滋防治教育的性教育學者、杏陵醫學基金會執行長晏涵文表示，社會不能因為同志族群感染愛滋的風險較高，而限制他們不得捐血，<mark
+                    class="red">因為疾病傳染是跟行為有關，武斷把愛滋病與某個族群劃上等號是錯誤的連結與觀念。</mark></p>
+
+            <p class="paragraph">此外，林頂也提到，現今網路交友軟體已成為舉辦「Chemsex
+                藥物性愛」的便利管道，也就是同時使用俱樂部藥物（二、三、四級管制毒品），如：安非他命、搖頭丸，並發生性行為的派對。
+                <br><br>
+                這種「約砲、同時約High」的舉動，參與者多半會因感覺問題、或神智不清而不使用保險套，會共用針具與稀釋液，加上若不斷追藥，便可一直發生高風險性行為，因此參與這種派對，的確容易增加自身感染風險－－但這並不僅限於同志族群，異性戀亦有類似派對，同樣讓自寄處在高風險之中。
+            </p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph">台北市立聯合醫院昆明防治中心護理師莊苹也指出，<mark
+                    class="red">其實男同性戀者防治愛滋意識相較其他族群來得高，也會做定期篩檢。反倒是異性戀者往往輕忽了自己感染的風險，較無篩檢習慣，感染風險反倒更高</mark>，「異性戀染病時，往往是發病時才會知道。」
+            </p>
+
+            <p class="paragraph">「檢驗出來發現是陽性後，我覺得很崩潰，覺得自己髒掉了，所以我想盡辦法讓自己墮落，瘋狂跑夜店、約炮，甚至嗑藥。」
+                <br><br>
+                曾有藥癮的亞倫（化名），毫無保留地告解自己人生最黑暗的一面。無法面對感染事實的他，曾不顧親友勸阻，沉淪於毒品帶來的慰藉。
+                <br><br>
+                直到後來，亞倫遇見與自己處境相似的病友，看著對方如何勇於與生命對抗，他才開始有了不一樣的想法。
+            </p>
+
+            <p class="paragraph quote">「就像是一個洗不掉污漬、被弄髒的娃娃，既然事實無法改變，那就改變生命的狀態吧！」</p>
+        </div>
+
+        <!-- 副標4 -->
+        <div class="BK_pink div">
+            <h1 class="title">對未知的恐懼 是歧視的溫床</h1>
+
+            <p class="paragraph">
+                「愛滋不是只跟同志有關，是跟所有社群都有關。」台灣同志諮詢熱線協會政策推廣部主任杜思誠指出。台灣同志諮詢熱線協會長年提供線上諮詢服務，愛滋相關議題雖然不是排名前幾名，但都有一定的比例。
+            </p>
+
+            <!-- INFO圖5_熱線諮詢電話 -->
+            <div style="width: 500px; height:740px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/28d6341b-e1cb-4d8d-b2b7-8de38cdbe25e?src=embed"
+                    title="04熱線諮詢電話中關於愛滋與性的比例" width="500" height="740" scrolling="no" frameborder="0"
+                    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+
+            <p class="paragraph">他透露，不只是同性戀，其中也不乏異性戀男性打來詢問愛滋議題。對話中也不難發現，這群人除了對愛滋所知甚少，更對此懷抱恐懼。
+                <br><br>
+                他們往往也上網搜索過相關資料，甚至是已經做過篩檢，最後卻還是打專線來，只為了想找人再確認，自己是否真的有可能中標，語氣盡是滿滿的焦慮。
+                <br><br>
+                「大部分的人都只是恐懼會得到這個疾病，但我們會想跟他們聊，那如果真的有這個疾病，你會怎麼做，其實不少人是不願去想的。」</p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph"><mark class="red">杜思誠認為，這些焦慮其實反映了愛滋被汙名化的負面影響，「很多人把恐懼放大，放大到只要感染就會天崩地裂，可能他人生毀了。」</mark>
+                <br><br>
+                儘管現在已有藥物可控制病情，但<mark
+                    class="red">這群人的恐懼並不是只有疾病本身，很大一部份其實是對未知未來的恐懼</mark>，像是擔心人際關係恐因此大受影響，恐遭受他人異樣眼光、被親密的人排斥，以及找不到伴侶等。
+            </p>
+
+            <p class="paragraph">
+                「我並沒有跟每一個要發生性關係的人，誠實地說出自己是HIV感染者。」感染者的身分讓亞倫在找尋伴侶之路上遭受不少挫敗，但他也無法不讓對方不害怕這個事實，讓他開始掙扎是否應向人誠實相告。
+                <br><br>
+                事實上，現在透過藥物控制，不僅可讓體內愛滋病毒量降低到不會傳染，也讓愛滋感染者擁有和常人無太大差異的存活率，甚至是不發病直到死亡。
+                <br><br>
+                然而，而林頂指出，當社會不了解愛滋病與同志的諸多知識，往往會將他們和諸如性工作者、藥癮患者、窮人等弱勢族群聯想在一起，並標籤化為「得愛滋的」，使得這群人又落入社會更弱勢的地位。當他們與疾病產生連結，並因此拒絕社會介入與協助的話，就會造成社會防疫上嚴重的漏洞。
+            </p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph quote"><mark class="red">「若社會能開放、包容他們，而非汙名化，很多問題其實就自然解決了。」</mark></p>
+        </div>
+
+
+        <!-- 副標5 -->
+        <div class="BK_pink div">
+            <h1 class="title">讓恐慌現形<br>
+                破除愛滋與同志汙名謠言</h1>
+
+            <!-- 螢光筆-->
+            <p class="paragraph">傳染病防治最重要的關鍵，便是把病人找出來。林頂表示，一旦找出病人，讓他們趕緊接受治療，問題就能解決一半了；但<mark
+                    class="red">當社會對感染者們不友善，他們自然不願現身，防疫上出現漏洞，反倒對公共衛生安全造成威脅。</mark></p>
+
+            <p class="paragraph">
+                因此，政府近年開始積極推動愛滋病匿名篩檢，除了各縣市都有愛滋治療專責機構、和民間團體可做篩檢外，也提供超商店到店取貨的*居家篩檢（離島也行），和巡迴各縣市的*篩檢車，就是希望能做到盡可能方便民眾，提高篩檢意願。
+            </p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph"><mark class="red">「篩檢只是工具，更重要是連結到醫療體系。」</mark>
+                <br><br>
+                林頂也強調，重要的其實不是篩檢，而是篩出來後續的治療及衛生教育。一來，確診感染的人能及早控制病情，提高存活率；二來，當感染者能維持體內病毒量低到不太具備傳染性時，也降低整體社會的病情風險；三來，即便篩檢結果為陰性，但也表示篩檢者可能有遇到或從事高感染風險的行為，所以在篩檢前後也提供諮商或衛生教育，供民眾諮詢參考。
+            </p>
+
+            <!-- 居家篩檢包圖片-->
+            <figure class="fig">
+                <img src="../yutin/picture3.JPG" alt="居家篩檢包" class="pic">
+                <figcaption class="figcaption" style="border-bottom:2px solid 	rgba(211, 39, 85, 0.5);">
+                    居家篩檢包可分為唾液和血液篩檢兩種，本圖為唾液篩檢包。
+                    <br>民眾只需要上疾管署網站訂購，稍後便可到便利商店店到店取貨(運費NT$45、押金NT$200，總計NT$245)，亦可使用化名保護自己的身分。檢驗完後，若民眾願意登錄資料給疾管署統計調查，可掃包裝上的QR
+                    code進行填答，即可退還200元押金，同時政府取得相關愛滋病資訊。
+                    根據紅絲帶基金會的統計，在2018/12/8~2019/12/23之間，共發送33,919件居家檢測試劑。<br>（攝影／陳彥任
+                    ;提供／財團法人台灣紅絲帶基金會）
+                </figcaption>
+            </figure>
+
+            <p class="paragraph quote">「我們怎麼真的去理解這個疾病，以及去理解這些感染者所遇到的處境。」</p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph"><mark
+                    class="red">杜思誠也認為，只有當大眾不再恐懼，將愛滋當作一般疾病，才可能較有意願接受篩檢、治療。</mark>而最好的做法，便是讓恐懼的對象現形，唯有面對面直接接觸，才能讓人了解其實對方和你我，並沒有多大的差異。
+                <br><br>
+                因此，同志諮詢熱線協會內部讓感染者和非感染者一起工作、生活，藉此破除對對方的恐懼。又或是近年他們推動*「HIV+OK」符號，讓感染者或支持該議題的人能以這個正向符號，在日常生活中表達對感染者的支持，讓感染者知道，自己仍能與人連結，關係並不會因此斷裂，從而讓大眾以用正常的心態來面對這議題。
+            </p>
+
+            <!-- HIV+OK文宣品圖片-->
+            <figure class="fig">
+                <img src="../yutin/picture4_2017HIV+OK.jpg" alt="HIV+OK文宣品圖片" class="pic">
+                <figcaption class="figcaption" style="border-bottom:2px solid rgba(211, 39, 85, 0.5);">
+                    HIV+指的是愛滋檢測陽性反應，並以不同人際團體來構成加號，意指讓感染者能接受自己是HIV+是件OK的事，非感染者跟感染互動也很OK，希望能藉此正向支持符號，舒緩近年同志與愛滋感染者被不斷攻擊的低迷氛圍。（提供／台灣同志諮詢熱線協會）
+                </figcaption>
+            </figure>
+
+            <!-- 螢光筆-->
+            <p class="paragraph">此外，他們也拓展衛教主題，不只是談愛滋防治，也談同志性文化，以及愛滋感染者的處境或權益，希望能透過真人現身說法，讓大眾能不再對愛滋感到恐懼。<mark
+                    class="red">但在近年愛滋與反同謠言高漲的情況下，杜思誠坦言，校園演講的場數不僅比過往少了許多，內容也更加受限。</mark></p>
+
+            <!-- INFO圖6_講座數量 -->
+            <div style="width: 800px; height:904px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/169b38a3-686d-4245-9c0f-76699a735613?src=embed" title="05每年舉辦同志講座"
+                    width="800" height="904" scrolling="no" frameborder="0" style="border:none;"
+                    allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <p class="paragraph">在2016年之前，同志諮詢熱線協會每年都能接到超過500場以上、談論同志議題的校園講座，但2018年單年卻只剩193場，落差十分明顯。
+                <br><br>
+                此外，有些學校會希望他們的防治愛滋宣導內容，不要談及如何實際操作保護措施，只要以安全性行為帶過即可。然而，「關鍵其實就是在那些細節裡。」杜思誠無奈表示。
+                <br><br>
+                在謠言影響下，校園漸趨保守，就連紅絲帶基金會自2006年以來、年年獲疾管署肯定與補助的「愛滋感染者現身說法（愛現幫）暨培力計畫」宣導教育，也受到影響。
+                <br><br>
+                2017年，反毒陣將他們校園宣導影片截圖，質疑活動橋段中，學生被強迫和感染者講師擁抱，而非基金會所稱的自願互動。在相關新聞底下，亦不乏見到擔心感染愛滋的留言，最後以疾管署發新聞稿澄清，並要求要重新審查教案作收。
+            </p>
+        </div>
+
+
+        <!-- 副標6 -->
+        <div class="BK_pink div">
+            <h1 class="title">正視現況<br>
+                唯有了解 才能不再恐懼</h1>
+
+            <p class="paragraph">起因自恐慌的愛滋與同志族群污名標籤，想要有效防堵相關謠言繼續傳播，最重要的仍是讓大眾了解實際情形。
+                <br><br>
+                以世界趨勢來說，〈世界HIV感染者人數歷年趨勢圖〉顯示全球愛滋感染和死亡人數自2004年以後明顯下降；但反觀我國，感染人數卻是逐年上升，甚至在2005年爆發因海洛因藥癮引起的疫情，感染人數急速上升，但隨即又下降，直到2010年才又開始增長，直到2017年才開始下降，2018年成長率約為20%。
+            </p>
+
+            <!-- INFO圖7_歷年全球新增HIV感染人數統計圖 -->
+            <div style="width: 800px; height:732px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/42eaebd2-c8b4-4b60-9b1a-93eccfa8481d?src=embed"
+                    title="06歷年全球新增HIV感染人數統計圖" width="800" height="732" scrolling="no" frameborder="0"
+                    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+            <!-- INFO圖8_我國歷年新增HIV感染人數統計與趨勢圖 -->
+            <div style="width: 800px; height:609px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/556d6cab-1694-48be-8d3c-37dca3effca2?src=embed"
+                    title="08我國歷年新增HIV感染人數統計與趨勢圖" width="800" height="609" scrolling="no" frameborder="0"
+                    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <p class="paragraph">
+                晏涵文解釋，2005~2010年間，是因政府控制藥癮引發的疫情有成，而維持負成長，但藉由不安全性行為的人數依舊默默增長，並在2010年後成為影響主因。而林頂預估，2019年單年感染人數將達1700多人，成長率可能約為-12%。
+                <br><br>對近兩年負成長的趨勢，林頂認為，可能和近年積極推動匿名篩檢、強化與醫療體系的連結，以及推行事前預防用藥（為愛滋病毒暴露前預防性投藥，簡稱PrEP）有關。
+                <br><br>晏涵文則認為，雖然他樂見2019年底累計總感染人數破四萬的預測失敗，但他認為我們還不能高興得太早，因為負成長的幅度並不如前一年來得大。</p>
+
+            <!-- INFO圖9_我國歷年HIV各年齡層人數變化 -->
+            <div style="width: 800px; height:504px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/f1774017-7c66-4942-b49e-12d18fe2f0ae?src=embed"
+                    title="09我國歷年HIV各年齡層人數變化" width="800" height="504" scrolling="no" frameborder="0"
+                    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <!-- 螢光筆-->
+            <p class="paragraph">
+                而觀察歷年感染的各年齡層變化，2009年以後，人數最多為25~34歲，約占總體累計人數43%；其次則為15~24歲，約占總體的23%，<mark
+                    class="red">而無論哪個年齡層，人數都在近兩年呈下降趨勢。</mark>
+                <br><br>然而，晏涵文擔心，全球15~24歲的愛滋感染者大部分都占總累計人數的32%，台灣遠比國際潮流低，可能別有原因或黑數尚未現形。</p>
+
+            <!-- INFO圖10_2019年我國大專院校學生性行為情形 -->
+            <div style="width: 800px; height:408px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/4bbcf0b5-a616-4207-88b6-6aaecbdc67c3?src=embed"
+                    title="11白2019年我國大專院校學生性行為情形" width="800" height="408" scrolling="no" frameborder="0"
+                    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <!-- INFO圖11_我國20歲男女大專院校學生近四十年來性行為人數比例變化 -->
+            <div style="width: 800px; height:675px;margin-left: auto;margin-right: auto;">
+                <iframe src="https://e.infogram.com/68277e4d-5f69-40f0-90ea-6da3fec65231?src=embed"
+                    title="10我國20歲大專院校學生近40年來性行為人數比例變化比較" width="800" height="675" scrolling="no" frameborder="0"
+                    style="border:none;" allowfullscreen="allowfullscreen"></iframe>
+                <div
+                    style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px;width: 964px">
+                </div>
+            </div>
+
+            <p class="paragraph">
+                根據2019年大專院校性教育(含愛滋病防治)學生現況調查，20歲的大學生在這四十年來，從事性行為的比例無論男女都有成長，其中有七成使用會使用保險套來預防懷孕，但不論異性戀或同性戀，每次性交都使用保險套的人卻只有三成。
+                <br><br>
+                「即便有相關預防藥品，但仍須使用保險套才能根本避病。」晏涵文表示，避孕或許可以不必每次都使用保險套，但是要避免性病的傳染，每次都使用保險套是必須的，未來學校應加強此方面的教育，不單只是提供保險套就好。
+                <br><br>
+                他也補充，目前致力推廣各大學普設保險套販賣機，或在輔導室和健康中心門口提供免費保險套，也規定校內的便利商店一定要賣保險套，未來也打算推動裝設快速唾液篩檢的機器。晏涵文強調，重點就是要讓學生方便取得保險套，降低15~24歲年齡層的感染人數。
+            </p>
+
+            <!-- 螢光筆-->
+            <p class="paragraph"><mark
+                    class="red">總體來看，我國愛滋感染人數目前是負成長</mark>，多透過不安全性行為感染，主要為最具生產力的15~34歲的青年族群，總感染人數近四萬，符合全球其他都市愛滋潮流的趨勢。
+            </p>
+        </div>
+
+        <!-- 副標7 -->
+        <div class="BK_pink div">
+            <h1 class="title">只有風險行為 沒有風險族群<br>撕下疾病與族群雙重汙名標籤</h1>
+
+            <p class="paragraph">「每個世代對於愛滋病的觀感有很大的區別。」莊苹表示，在十年前得到愛滋，或許仍被視為遭天譴，但現在它不過是個可用藥物控制的慢性傳染病而已。
+                <br><br>「只有高風險的行為，沒有高風險的族群。」林頂也再三強調，愛滋是因為從事高風險行為而感染，而非跟族群有關，無論是篩檢、保健、或檢查，都不該只針對所謂的「高風險族群」。
+                <br><br> 他以「CPU
+                project」來說明愛滋防治觀念，未感染者應在每次性行為都使用保險套（Condom）；身處發生高風險行為的環境、但尚未感染的人，與其防堵不如疏導，在醫生授權之下使用愛滋病毒暴露前預防性投藥（PrEP）；已經感染愛滋的人，應了解「治療即預防」的概念，朝降低體內病毒量到U=U（Undetectable
+                equals Untransmittable，意指測不到病毒 = 不具傳染力）的目標努力。
+                <br><br> 愛滋並不令人恐懼，反倒是謠言背後，因對未知事務的恐懼而演變成的惡意，才令人恐懼。當人們願意敞開心房、了解實情，才有終結謠言傳播的可能。
+                <br><br> <mark class="red">「把我們當成正常人就好。」</mark>像酷里濕這樣的愛滋感染者，正期待有朝一日能享有和一般人同樣的待遇。
+            </p>
+            <div style="height: 20px;"></div>
+            <!-- 分工名單 -->
+            <div class="two_line">
+                <P class="ending">
+                    採訪、企劃／李例嬛、陳彥任、劉雨婷
+                    <br>攝影／陳彥任
+                    <br>原始網頁製作／李例嬛
+                    <br>原始網頁連結／<a
+                        href="https://a866437.wixsite.com/datajournalismhw?fbclid=IwAR31pudcMGBz49pOCR9ricqWA9P1WL7CowVV9ghMl9H1RKY2sDZUMstC-T0">讓恐慌現形，
+                        破除愛滋與同志汙名謠言</a>
+                    <br>網頁重製／劉雨婷
+
+                </P>
+            </div>
+            <div style="height: 50px;"></div>
+        </div>
+
+        <!-- 底部連結 -->
+        <div class="BK_bottom div">
+            <div style="width:auto; display:flexbox; justify-content: center; align-items: center;">
+                <div style="display:flex">
+                    <img src="../asset/NPJ2.png" alt="LOGO" width="199px" height="38px"
+                        style="margin-top: 38px;margin-left: auto;margin-right: auto;">
+                </div>
+            </div>
+            <!-- 三外網 -->
+            <div style="width:auto; display:flexbox; justify-content: center; align-items: center;">
+                <div style="display:flex">
+                    <img src="../asset/Icon_Facebook.png" alt="FB" width="24px" height="24px" style="
+                                position: relative;margin: 32px 15px 42px auto;">
+                    <img src="../asset/icon-ins.png" alt="IG" width="27px" height="24px" style="
+                                position: relative;margin: 32px 15px 42px 15px;">
+                    <img src="../asset/icon-line.png" alt="LINE" width="24px" height="27px" style="
+                                position: relative;margin: 32px auto 42px 15px;">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- desktop version end -->
+
+</body>
+
+</html>

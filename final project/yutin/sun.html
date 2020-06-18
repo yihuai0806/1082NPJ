@@ -1,0 +1,1214 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @media all and (max-width: 1023px) {
+            .mobile-only {
+                display: block;
+            }
+
+            .desktop-only {
+                display: none;
+            }
+
+
+            .title {
+                position: relative;
+                color: #FFFBFB;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                cursor: pointer;
+                width: 290px;
+                text-align: center;
+            }
+
+
+            .b {
+                background-color: #E5E5E5;
+                width: 100%;
+                
+            }
+
+
+            .bottom-hb {
+                height: 3px;
+                width: 22px;
+                background-color: #4A5579;
+                margin-bottom: 3px;
+            }
+
+            .bottom-hb3 {
+                cursor: pointer;
+                display: inline-block;
+                margin-left: 155px;
+                position: relative;
+            }
+
+
+            .circle-bt {
+                position: relative;
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                background: #FFFFFF;
+                border-radius: 999em;
+                cursor: pointer;
+            }
+
+
+
+            .date {
+                position: absolute;
+                width: 85px;
+                height: 22px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                color: #838383
+            }
+
+            .gray-block {
+
+                width: 312px;
+                height: 100px;
+                background-color: #899790;
+                border-radius: 0px 0px 9px 9px;
+                margin-left: 31px;
+                margin-top: 257px;
+                vertical-align: middle;
+
+            }
+
+
+            .slider_container {
+                margin: 30px auto;
+                width: 312px;
+                height: 208px;
+                position: relative;
+                border: 0px solid;
+                border-color: #fff;
+                border-bottom-width: 0px;
+                background-color: #f5f5f5;
+                box-shadow: #666 0 0 5px;
+                border-radius: 9px 9px 0px 0px;
+            }
+
+            .slider_container div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+
+            .slider_container div {
+                -webkit-animation: round 25s linear infinite;
+                animation: round 25s linear infinite;
+            }
+
+            .slider_container1 div {
+                -webkit-animation: round 25s linear infinite;
+                animation: round 25s linear infinite;
+            }
+
+            @-webkit-keyframes round {
+                4% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 0 - 1秒 淡入*/
+                }
+
+                20% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 1- 5秒靜止*/
+                }
+
+                24% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    /* 5-6秒淡出*/
+                }
+            }
+
+            @keyframes round {
+                4% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 0 - 1秒 淡入*/
+                }
+
+                20% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 1- 5秒靜止*/
+                }
+
+                24% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    /* 5-6秒淡出*/
+                }
+            }
+
+            .slider_container div:nth-child(5) {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+
+            .slider_container div:nth-child(4) {
+                -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+            }
+
+            .slider_container div:nth-child(3) {
+                -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+            }
+
+            .slider_container div:nth-child(2) {
+                -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+            }
+
+            .slider_container div:nth-child(1) {
+                -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+            }
+
+
+            .slider_container:hover div {
+                -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+            }
+
+
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-only {
+                display: none;
+            }
+
+            .desktop-only {
+                display: block;
+            }
+
+            .background-1 {
+                margin: 0px;
+                width: 100%;
+                height: 720px;
+                background-color: #BBC9C2
+
+            }
+
+            .logo {
+                position: relative;
+                display: inline-block;
+                width: 380px;
+                height: 68px;
+                margin-left: 65px;
+                margin-top: 44px;
+            }
+
+            .menu-head {
+                width: 96px;
+                height: 35px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                color: #4A5579;
+                cursor: pointer;
+                display: inline-block;
+                margin-left: 62px;
+            }
+
+            .title {
+                position: relative;
+                width: 242px;
+                height: 52px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                cursor: pointer;
+                text-align: center;
+
+            }
+
+            .title-1 {
+                position: relative;
+                width: 573px;
+                height: 35px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                color: #000000;
+                cursor: pointer;
+                text-align: center;
+            }
+
+
+            .white-block {
+                width: 100%;
+                height: 703px;
+                position: relative;
+                background-color: white;
+            }
+
+
+
+
+            .w-b-title {
+                position: absolute;
+                width: 158px;
+                height: 49px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 52px;
+                color: #4A5579;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin-left: 238px;
+                margin-top: 39px;
+                cursor: pointer;
+            }
+
+            .w-b-title2 {
+                position: absolute;
+                width: 376px;
+                height: 66px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                color: #000000;
+                margin-left: 231px;
+                cursor: pointer;
+                margin-top: 407px;
+
+            }
+
+            .w-b-title3 {
+                position: absolute;
+                width: 188px;
+                height: 42px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                cursor: pointer;
+            }
+
+            .text {
+                position: absolute;
+                width: 376px;
+                height: 137px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #838383;
+            }
+
+            .date {
+                position: absolute;
+                width: 85px;
+                height: 22px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                color: #838383;
+            }
+
+            .slider_container {
+                margin: 30px auto;
+                width: 242px;
+                height: 161px;
+                position: relative;
+                border: 0px solid;
+                border-color: #fff;
+                border-bottom-width: 0px;
+                background-color: #f5f5f5;
+                box-shadow: #666 0 0 5px;
+            }
+
+            .slider_container div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+
+            .slider_container1 {
+                margin: 30px auto;
+                width: 573px;
+                height: 382px;
+                position: relative;
+                border: 0px solid;
+                border-color: #fff;
+                border-bottom-width: 0px;
+                background-color: #f5f5f5;
+                box-shadow: #666 0 0 5px;
+            }
+
+            .slider_container1 div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+
+            .slider_container div {
+                -webkit-animation: round 25s linear infinite;
+                animation: round 25s linear infinite;
+            }
+
+            .slider_container1 div {
+                -webkit-animation: round 25s linear infinite;
+                animation: round 25s linear infinite;
+            }
+
+            @-webkit-keyframes round {
+                4% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 0 - 1秒 淡入*/
+                }
+
+                20% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 1- 5秒靜止*/
+                }
+
+                24% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    /* 5-6秒淡出*/
+                }
+            }
+
+            @keyframes round {
+                4% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 0 - 1秒 淡入*/
+                }
+
+                20% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 1- 5秒靜止*/
+                }
+
+                24% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    /* 5-6秒淡出*/
+                }
+            }
+
+            .slider_container div:nth-child(5) {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+
+            .slider_container div:nth-child(4) {
+                -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+            }
+
+            .slider_container div:nth-child(3) {
+                -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+            }
+
+            .slider_container div:nth-child(2) {
+                -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+            }
+
+            .slider_container div:nth-child(1) {
+                -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+            }
+
+
+            .slider_container1 div:nth-child(5) {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+
+            .slider_container1 div:nth-child(4) {
+                -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+            }
+
+            .slider_container1 div:nth-child(3) {
+                -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+            }
+
+            .slider_container1 div:nth-child(2) {
+                -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+            }
+
+            .slider_container1 div:nth-child(1) {
+                -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+            }
+
+
+
+
+
+            .slider_container:hover div {
+                -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+            }
+
+
+
+            .slider_container1:hover div {
+                -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+            }
+
+            h1 {
+                width: 100%;
+                height: 52px;
+                text-align: center;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 52px;
+                color: #4A5579;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                padding-top: 66px;
+                margin: 0px;
+            }
+
+
+        }
+
+        .slogan {
+            width: 481px;
+            height: auto;
+            font-family: Noto Sans SC;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 41px;
+            margin-left: 195px;
+            margin-right: 42px;
+            color: black;
+
+
+        }
+
+        .brown-block {
+            width: 466px;
+            height: 563px;
+            background: rgba(208, 201, 181, 0.75);
+            margin-top: 187px;
+
+
+        }
+
+        .brown-block-phone {
+            width: 315px;
+            height: 352px;
+            background: rgba(208, 201, 181, 0.75);
+            margin-top: 23px;
+            margin-left: 30px;
+
+
+
+        }
+
+        .gray-block-small {
+            width: 374px;
+            height: 406px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 45px 52px 44px 40px;
+
+        }
+
+        .gray-block-small-phone {
+            width: 253px;
+            height: 275px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 17px 32px 32px 30px;
+
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+        }
+
+        .murmur {
+            width: 482px;
+
+            font-family: Noto Sans SC;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            padding-left: 195px;
+            color: #2D2D2D;
+        }
+
+        .murmur-phone {
+            width: 482px;
+
+            font-family: Noto Sans SC;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            color: #2D2D2D;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 307px;
+            left: 0px;
+            background: #BBC9C2;
+        }
+
+        .bottom-logo {
+            width: 219px;
+            padding-top: 73px;
+            margin-left: 393px;
+        }
+
+        .bottom-word {
+            width: 359px;
+            padding-top: 36px;
+            margin-left: 398px;
+        }
+
+
+        .orange-line {
+            background-color: orange;
+        }
+
+        .sponser {
+            font-family: Noto Sans SC;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 43px;
+            color: #000000;
+            margin-left: calc(46/466*100%);
+            padding-top: calc(31/563*100%);
+        }
+
+        .s1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        .s2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 38px;
+        }
+
+        .s3 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .s1-phone {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 16px;
+        }
+
+        .s2-phone {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .s3-phone {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        .ss {
+            width: calc(311/374*100%);
+            height: calc(175/406*100%);
+            position: relative;
+            top: calc(34/406*100%);
+            left: calc(34/374*100%);
+            border-left: 2px solid #000000;
+            padding-left: calc(23/311*100%);
+        }
+
+        .moneyinfo {
+            width: calc(328/374*100%);
+            position: relative;
+            left: calc(34/374*100%);
+            top: calc(30/406*100%);
+            padding-top: calc(30/406*100%);
+
+        }
+
+
+        .donate {
+            font-weight: 500;
+            font-size: 31px;
+            line-height: 45px;
+
+
+            color: #4A5579;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .lock {
+            height: 13px;
+            width: 14px;
+        }
+
+        .safe-iphone {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            margin-left: 228px;
+            padding-top: 22px;
+            color: #838383;
+        }
+
+        .safe {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            float: right;
+            margin-right: 52px;
+            margin-top: 5px;
+            color: #838383;
+        }
+    </style>
+</head>
+
+
+<body style="margin: 0;">
+
+    <div class=" mobile-only" style=" background-color: #BBC9C2">
+
+        <div style="display: inline-block; position: relative; margin-top: 32px;margin-left: 23px;">
+            <img src="NPJ2.png" alt="NATIONAL POOR JOURNALIST" width="147px" height="26px"></div>
+
+
+        <div class="bottom-hb3">
+            <div class="bottom-hb"></div>
+            <div class="bottom-hb"></div>
+            <div class="bottom-hb"></div>
+        </div>
+
+
+        <div class="gray-block">
+
+
+
+            <div class="slider_container" class="title"
+                style="position: relative;display: inline-block;margin-left: 0px;margin-top: -208px;">
+
+                <div class="title">
+                    <img src="https://i.ytimg.com/vi/WADJuG_K5uQ/maxresdefault.jpg" width="312px" height="208px" style="position: relative;cursor: pointer;
+                                border-radius: 9px 9px 0px 0px;">
+                    <br /><br />【數位專題】數位專題數位專題數位專題數位專題數位專題
+                </div>
+
+                <div class="title">
+                    <img src="https://www.flixwatch.co/wp-content/uploads/415356-800x450.jpg" width="312px"
+                        height="208px" style="position: relative;cursor: pointer;
+                                border-radius: 9px 9px 0px 0px;">
+                    <br /><br />【數位專題】數位專題數位專題數位專數位專題數位專題數位專題
+                </div>
+
+                <div class="title">
+                    <img src="https://3.bp.blogspot.com/-SlWp3Uz-RQg/WlOcQLRFdrI/AAAAAAAAZhs/211c9GNp588brHl0aflOUi-QO5pWYAJEwCLcBGAs/s1600/%25E7%2583%2588%25E7%2581%25AB%25E6%2583%2585%25E4%25BA%25BA.jpg"
+                        width="312px" height="208px" style="position: relative;cursor: pointer;
+                                border-radius: 9px 9px 0px 0px;">
+                    <br /><br />【數位專題】數位專題數位專題數位專題數位專題數位專題
+                </div>
+
+                <div class="title">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/516Z5JR1M6L._AC_.jpg" width="312px"
+                        height="208px" style="position: relative;cursor: pointer;
+                                border-radius: 9px 9px 0px 0px;">
+                    <br /> <br />【數位專題】數位專題數位專題數專題數位專題數位專題
+                </div>
+
+                <div class="title">
+                    <img src="https://www.flixwatch.co/wp-content/uploads/415356-800x450.jpg" width="312px"
+                        height="208px" style="position: relative;cursor: pointer;
+                                border-radius: 9px 9px 0px 0px;">
+                    <br /> <br />【數位專題】數位專題數位專題數位專題數位專題數位專題數位專題
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div style="
+        position: absolute;
+        width: 158px;height: 49px;
+        margin-top: 120px; margin-left: 0px;
+        font-family: Noto Sans SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 31px;
+        line-height: 45px;
+        color: #4A5579;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                即時新聞
+            </div>
+
+
+
+            <div style="cursor: pointer;">
+                <img src="https://img.4gamers.com.tw/ckfinder/images/Katy/TGS%202019/20190913-onepunchman-05.jpg?versionId=hWsZ623aSD5LtdOlG9pcDJqMAWYFX9Tz"
+                    width="313px" height="212px"
+                    style="position: relative;margin-left: 0px; margin-top: 188px;border-radius: 9px;">
+            </div>
+
+
+
+
+            <div style="position: relative;margin-left: 0px;margin-top: 15px;
+        width: 314px; height: 66px;
+        font-family: Noto Sans SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;cursor: pointer;">
+                標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div style="position: absolute;width: 313px; height: 91px;margin-left: 0px; margin-top: 1px;
+        font-family: Noto Sans SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        
+        color: #838383;">
+                內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+            </div>
+
+            <div class="date" style="margin-top: 100px; margin-left: 210px"> 2020/05/20 </div>
+        </div>
+
+
+        <div class="background-1" style="position: relative; height: 1000px;">
+
+
+            <div>
+                <h1 class="donate">捐款贊助</h1>
+                <div style="display: inline-block;">
+                    <div class="brown-block-phone">
+                        <div class="safe-iphone"> <img class="lock" src="../asset/cover-lock.png">&emsp;安全</div>
+                        <div class="gray-block-small-phone">
+                            <div class="ss">
+                                <div><span class="s1-phone"> 戶名</span> <span class="s2-phone">國家媒錢基金會</span></div>
+                                <div><span class="s1-phone"> 銀行</span> <span class="s2-phone">樹林迴龍郵局</span></div>
+                                <div> <span class="s1-phone"> 銀行代碼</span> <span class="s2-phone">700</span></div>
+                                <div><span class="s1-phone">帳號</span><span class="s2-phone">031 184 594 869 52</span>
+                                </div>
+                            </div>
+                            <div class="s3-phone moneyinfo">請於匯款後來信至 <br />105405175@nccu.edu.tw <br />收件人：行政簡小姐
+                                <br /><br />來信時請提供以下資訊：
+                                <br />帳號末五碼、姓名、地址、聯絡電話。</div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div style="display: inline-block;">
+                        <!--左邊的字-->
+
+                        <div class="murmur-phone" style="width: calc(523/375*100%);
+                        font-weight: bold;
+                        font-size: 19px;
+                        line-height: 28px;
+                        margin-top: 33px;
+                        margin-bottom: 19px;
+                        margin-left: 30px;">
+                            一個因沒錢而存在的媒體 ——<br />
+                            <div style="position: relative;display: inline-block;">
+                                《NATIONAL POOR JOURNALIST》
+                                <div
+                                    style="position: absolute;bottom: -2px;left: 0px;height: 20px;width: 100%;background-color:#EDA272;opacity: 0.5;">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div style="width: calc(320/375*100%); margin-bottom: 67px;margin-left: 30px; height: 138px;">
+                            <div>《NPJ》營運經費皆自掏腰包，這股由下而上的力量，除了支持我們期末不會被當，也讓法賢有動力繼續造福下一屆學弟妹。</div><br />
+                            <div>因此，唯有您的贊助，能持《NPJ》鋪就一條往前的路。</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="background-1 desktop-only">
+
+        <div style="display: inline-block; position: relative;width: 96px;height: 35px;">
+            <img src="NPJ2.png" class="logo">
+        </div>
+
+        <div style="margin-left: 674px;margin-top: 17px;">
+            <div class="menu-head">數位專題</div>
+            <div class="menu-head">即時新聞</div>
+            <div class="menu-head">捐款贊助</div>
+            <div class="menu-head">關於我們</div>
+        </div>
+
+
+
+        <div class="slider_container"
+            style="position: relative;display: inline-block;margin-right: 62px;margin-left: 129px;vertical-align: middle;">
+
+            <div class="title" style="position: relative">
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fhellogiggles.com%2Fwp-content%2Fuploads%2F2015%2F06%2F04%2F554a7dfa56c78-elle-13-angelina-jolie-h.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://pixhost.icu/avaxhome/91/c2/005fc291.jpg" width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://img1.nickiswift.com/img/gallery/what-angelina-jolie-doesnt-want-you-to-know-about-her-life/intro-1515538840.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://superstarswiki.com/wp-content/uploads/2017/03/Angelina-Jolie-4K-1024x640.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/02/22/angelina-jolie.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="slider_container1"
+            style="position: relative;display: inline-block;margin-top:121px; vertical-align: middle;">
+
+            <div class="title-1">
+                <img src="https://pixhost.icu/avaxhome/91/c2/005fc291.jpg" width="573px" height="382px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; ">
+                <br /><br /> 【數位專題】專題專題專題專題專題專題專題專題
+            </div>
+
+            <div class="title-1">
+                <img src="https://media1.s-nbcnews.com/i/newscms/2019_45/1503919/angelina-jolie-lives-close-to-brad-for-kids-today-main-191106_84362c44f687622fd40c3bd321cde133.jpg"
+                    width="573px" height="382px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; ">
+                <br /><br /> 【數位專題】專題專題專題專題專題專題專題專題
+            </div>
+
+
+            <div class="title-1">
+                <img src="https://superstarswiki.com/wp-content/uploads/2017/03/Angelina-Jolie-4K-1024x640.jpg"
+                    width="573px" height="382px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; ">
+                <br /><br /> 【數位專題】專題專題專題專題專題專題專題專題
+            </div>
+
+            <div class="title-1">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51DbkiPqXTL._AC_.jpg" width="573px"
+                    height="382px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; ">
+                <br /><br /> 【數位專題】專題專題專題專題專題專題專題專題
+            </div>
+
+            <div class="title-1">
+                <img src="https://pixhost.icu/avaxhome/91/c2/005fc291.jpg" width="573px" height="382px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; ">
+                <br /><br /> 【數位專題】專題專題專題專題專題專題專題專題
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="slider_container"
+            style="position: relative;display: inline-block;margin-left: 62px;vertical-align: middle;">
+
+            <div class="title" style="position: relative">
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fhellogiggles.com%2Fwp-content%2Fuploads%2F2015%2F06%2F04%2F554a7dfa56c78-elle-13-angelina-jolie-h.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/02/22/angelina-jolie.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://img.cinemablend.com/quill/9/3/a/6/0/c/93a60c2b3dd1fdcc483f7815b579e3e5683ab1a4.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51DbkiPqXTL._AC_.jpg" width="242px"
+                    height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+
+            <div class="title">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/02/22/angelina-jolie.jpg"
+                    width="242px" height="161px"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;">
+                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+            </div>
+        </div>
+
+
+
+
+        <div class="white-block">
+
+            <div class="w-b-title">即時新聞</div>
+            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                width="369px" height="250px"
+                style="position: absolute; margin-left: 238px; margin-top: 133px;cursor: pointer;">
+            <div class="w-b-title2">標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="text" style="margin-left: 231px; margin-top: 491px;">
+                內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</div>
+
+
+            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                width="188px" height="127px"
+                style="position: absolute; margin-left: 636px; margin-top: 133px;cursor: pointer;">
+            <div class="w-b-title3" style="margin-top: 273px;margin-left: 635px;">標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="date" style="margin-left: 635px; margin-top: 326px;">2020/06/08</div>
+
+
+
+            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                width="188px" height="127px"
+                style="position: absolute; margin-left: 854px; margin-top: 133px;cursor: pointer;">
+            <div class="w-b-title3" style="margin-top: 273px;margin-left: 852px;">標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="date" style="margin-left: 854px; margin-top: 326px;">2020/06/08</div>
+
+
+            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                width="188px" height="127px"
+                style="position: absolute; margin-left: 1071px; margin-top: 133px;cursor: pointer;">
+            <div class="w-b-title3" style="margin-top: 273px;margin-left: 1072px;">標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="date" style="margin-left: 1073px; margin-top: 326px;">2020/06/08</div>
+
+
+            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                width="188px" height="127px"
+                style="position: absolute; margin-left: 636px; margin-top: 381px;cursor: pointer;">
+            <div class="w-b-title3" style="margin-top: 522px;margin-left: 635px;">標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="date" style="margin-left: 635px; margin-top: 575px;">2020/06/08</div>
+
+            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                width="188px" height="127px"
+                style="position: absolute; margin-left: 854px; margin-top: 381px;cursor: pointer;">
+            <div class="w-b-title3" style="margin-top: 522px;margin-left: 852px;">標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="date" style="margin-left: 854px; margin-top: 575px;">2020/06/08</div>
+
+            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                width="188px" height="127px"
+                style="position: absolute; margin-left: 1071px; margin-top: 381px;cursor: pointer;">
+            <div class="w-b-title3" style="margin-top: 522px;margin-left: 1072px;">標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="date" style="margin-left: 1073px; margin-top: 575px;">2020/06/08</div>
+
+
+        </div>
+
+        <div class="background-1" style="position: relative; height: 1000px;">
+
+
+            <div>
+                <h1>捐款贊助</h1>
+                <div style="display: inline-block;">
+                    <!--左邊的字-->
+                    <div>
+                        <p class="slogan">
+                            一個因沒錢而存在的媒體 ——<br />
+                        <div class="slogan" style="position: relative;display: inline-block;">
+                            《NATIONAL POOR JOURNALIST》
+                            <div
+                                style="position: absolute;bottom: -2px;left: 0px;height: 25px;width: 100%;background-color:#EDA272;opacity: 0.5;">
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div style="width: 482px;">
+                        <p class="murmur">《NPJ》營運經費皆自掏腰包，這股由下而上的力量，除了支持我們期末不會被當，也讓法賢有動力繼續造福下一屆學弟妹。</p>
+
+                        <p class="murmur">因此，唯有您的贊助，能持《NPJ》鋪就一條往前的路。</p>
+                    </div>
+                </div>
+
+                <div style="display: inline-block;">
+                    <div class="brown-block">
+                        <div class="sponser">成為贊助夥伴
+                            <div class="safe"> <img class="lock" src="../asset/cover-lock.png">&emsp;安全</div>
+                        </div>
+
+                        <div class="gray-block-small">
+                            <div class="ss">
+                                <div><span class="s1"> 戶名</span> <span class="s2">國家媒錢基金會</span></div>
+                                <div><span class="s1"> 銀行</span> <span class="s2">樹林迴龍郵局</span></div>
+                                <div> <span class="s1"> 銀行代碼</span> <span class="s2">700</span></div>
+                                <div><span class="s1">帳號</span><span class="s2">031 184 594 869 52</span></div>
+                            </div>
+                            <div class="s3 moneyinfo">請於匯款後來信至 <br />105405175@nccu.edu.tw <br />收件人：行政簡小姐
+                                <br /><br />來信時請提供以下資訊：
+                                <br />帳號末五碼、姓名、地址、聯絡電話。</div>
+
+                        </div>
+
+                        <!--右邊的圖-->
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div>
+
+
+
+        </div>
+
+
+        <div class="bottom">
+            <img class="bottom-logo" src="NPJ2.png">
+            <p class="bottom-word">一群整天跟爸媽哭窮、現在連做期末成品都想趁機向社會大眾要錢花的國家未來棟樑。</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
