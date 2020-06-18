@@ -6,6 +6,7 @@
     <style>
         body {
             background-color: #E3ECE7;
+            margin: 0; padding: 0px;
         }
 
         @media all and (max-width: 1023px) {
@@ -135,6 +136,7 @@
                 background-color: #f5f5f5;
                 box-shadow: #666 0 0 5px;
                 border-radius: 9px 9px 0px 0px;
+                text-decoration: none;
             }
 
             .slider_container div {
@@ -284,6 +286,19 @@
                 right: calc(20/375*100%);
                 top: calc(22/375*100%)
             }
+
+            .title-m {
+                position: relative;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #FFFFFF;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+            }
         }
 
         @media (min-width: 1024px) {
@@ -367,6 +382,11 @@
                 opacity: 0;
                 background: #EDA272;
                 color: #000000;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 41px;
                 transition: all 0.4s;
                 transform: scale(0.5, 1);
             }
@@ -403,7 +423,6 @@
 
             .title {
                 position: relative;
-
                 font-family: Noto Sans SC;
                 font-style: normal;
                 font-weight: 500;
@@ -412,7 +431,7 @@
                 color: #000000;
                 cursor: pointer;
                 text-align: center;
-
+                text-decoration: none;
             }
 
             .title-3 {
@@ -424,6 +443,7 @@
                 color: #000000;
                 cursor: pointer;
                 text-align: center;
+                text-decoration:none;
 
             }
 
@@ -480,6 +500,7 @@
                 font-size: 24.901px;
                 line-height: 36px;
                 color: #000000;
+                text-decoration: none;
             }
 
             .text {
@@ -745,63 +766,66 @@
 </head>
 
 
-<body>
+<body margin: 0; padding: 0px;>
     <!--mobile-version-->
     <div class="b mobile-only">
 
         <div style="display: inline-block">
-            <img class="m-logo" src="../asset/NPJ2.png">
+            <a href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html"><img class="m-logo" src="../asset/NPJ2.png"></a>
             <label for="burger">☰</label>
             <input type="checkbox" id="burger" style="display: none;">
             <ul>
-                <li class="burger-link m-burger"><a class="burger-link" href="#test">數位專題</a></li>
+                <li class="burger-link m-burger"><a class="burger-link" href="#digital">數位專題</a></li>
                 <li class="burger-link m-burger"><a class="burger-link"
-                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                        href="#news-mobile">即時新聞</a></li>
                 <li class="burger-link m-burger"><a class="burger-link"
-                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                        href="#donate-m">捐款贊助</a></li>
                 <li class="burger-link m-burger"><a class="burger-link"
-                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+                        href="https://yihuai0806.github.io/1082NPJ/final%20project/highway/about-NPJ.html">關於我們</a></li>
             </ul>
         </div>
 
-        <div class="gray-block"  id="digital-story">
+        <div class="gray-block"  id="digital">
 
-            <div class="slider_container" class="title"
+            <div class="slider_container" class="title-m"
                 style="position: relative;display: inline-block;margin-left: 0px;margin-top: -208px;">
 
-                <div class="title">
-                    <img src="https://i.ytimg.com/vi/WADJuG_K5uQ/maxresdefault.jpg" width="312px" height="208px" style="position: relative;cursor: pointer;
+                <div class="title-m">
+                    <img src="../yutin/picture4_2017HIV+OK.jpg" width="312px" height="208px" style="position: relative;cursor: pointer;
                                 border-radius: 9px 9px 0px 0px;">
-                    <br /><br />【數位專題】數位專題數位專題數位專題數位專題數位專題
+                    <br /><br />
+                    <a class="title-m" href="../yutin/HIV&AIDS.html">【數位專題】讓恐慌現形，破除愛滋與同志汙名謠言</a>
                 </div>
 
-                <div class="title">
-                    <img src="https://www.flixwatch.co/wp-content/uploads/415356-800x450.jpg" width="312px"
+                <div class="title-m">
+                    <img src="../yiyun/hospital (2).png" width="312px"
                         height="208px" style="position: relative;cursor: pointer;
                                 border-radius: 9px 9px 0px 0px;">
-                    <br /><br />【數位專題】數位專題數位專題數位專數位專題數位專題數位專題
+                    <br /><br />
+                    <a class="title-m" href="../yiyun/animal in iphone.html">【數位專題】人道收容然後呢？　野生動物保育難題</a>
                 </div>
 
-                <div class="title">
-                    <img src="https://3.bp.blogspot.com/-SlWp3Uz-RQg/WlOcQLRFdrI/AAAAAAAAZhs/211c9GNp588brHl0aflOUi-QO5pWYAJEwCLcBGAs/s1600/%25E7%2583%2588%25E7%2581%25AB%25E6%2583%2585%25E4%25BA%25BA.jpg"
+                <div class="title-m">
+                    <img src="../yutin/picture4_2017HIV+OK.jpg"
                         width="312px" height="208px" style="position: relative;cursor: pointer;
                                 border-radius: 9px 9px 0px 0px;">
-                    <br /><br />【數位專題】數位專題數位專題數位專題數位專題數位專題
+                    <br /><br />
+                    <a class="title-m" href="../yutin/HIV&AIDS.html">【數位專題】讓恐慌現形，破除愛滋與同志汙名謠言</a>
                 </div>
 
-                <div class="title">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/516Z5JR1M6L._AC_.jpg" width="312px"
-                        height="208px" style="position: relative;cursor: pointer;
+                <div class="title-m">
+                    <img src="../yutin/picture4_2017HIV+OK.jpg" width="312px" height="208px" style="position: relative;cursor: pointer;
                                 border-radius: 9px 9px 0px 0px;">
-                    <br /> <br />【數位專題】數位專題數位專題數專題數位專題數位專題
+                    <br /><br />
+                    <a class="title-m" href="../yutin/HIV&AIDS.html">【數位專題】讓恐慌現形，破除愛滋與同志汙名謠言</a>
                 </div>
 
-                <div class="title">
-                    <img src="https://www.flixwatch.co/wp-content/uploads/415356-800x450.jpg" width="312px"
+                <div class="title-m">
+                    <img src="../yiyun/hospital (2).png" width="312px"
                         height="208px" style="position: relative;cursor: pointer;
                                 border-radius: 9px 9px 0px 0px;">
-                    <br /> <br />【數位專題】數位專題數位專題數位專題數位專題數位專題數位專題
-                </div>
+                    <br /> <br />
+                    <a class="title-m" href="../yiyun/animal in iphone.html">【數位專題】人道收容然後呢？　野生動物保育難題</a></div>
 
             </div>
 
@@ -823,14 +847,14 @@
         font-size: 31px;
         line-height: 45px;
         color: #4A5579;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" id="news-mobile">
                 即時新聞
             </div>
 
 
 
-            <div style="cursor: pointer;">
-                <img src="https://img.4gamers.com.tw/ckfinder/images/Katy/TGS%202019/20190913-onepunchman-05.jpg?versionId=hWsZ623aSD5LtdOlG9pcDJqMAWYFX9Tz"
+            <a style="text-decoration: none;" href="../charlie/Real-art1.html"><div style="cursor: pointer;">
+                <img src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg"
                     width="313px" height="212px"
                     style="position: relative;margin-left: 0px; margin-top: 188px;border-radius: 9px;">
             </div>
@@ -838,15 +862,15 @@
 
 
 
-            <div style="position: relative;margin-left: 0px;margin-top: 15px;
-        width: 314px; height: 66px;
+            <div style="text-decoration: none;position: relative;margin-left: 0px;margin-top: 15px;
+        width: 314px; height: 60px;
         font-family: Noto Sans SC;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
-        color: #000000;cursor: pointer;">
-                標題標題標題標題標題標題標題標題標題標題標題標題
+        color: #000000;cursor: pointer;
+        ">實驗劇剖析愛　演譯少女的不可定義
             </div>
 
             <div style="position: absolute;width: 313px; height: 91px;margin-left: 0px; margin-top: 1px;
@@ -854,13 +878,13 @@
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 23px;
-        
+        line-height: 15px;
+        line-height: 26px;
         color: #838383;">
-                內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+                地上布滿玻璃砂，蒙面男子手持噴漆，倒臥地上的少女們如復生般起身，他們操作調理機、吹頭髮、以火燒豬肉，最後褪下衣物，將自己的身軀與生肉貼合。
             </div>
 
-            <div class="date" style="margin-top: 100px; margin-left: 210px"> 2020/05/20 </div>
+            <div class="date" style="margin-top: 100px; margin-left: 210px"> 2020/05/20 </div></a>
 
 
         </div>
@@ -868,16 +892,16 @@
 
 
         <div class="mobile-only" style="display: inline-block;;margin-left: calc(32/375*100%);width: 144px;">
-            <img src="https://img.4gamers.com.tw/ckfinder/images/Katy/TGS%202019/20190913-onepunchman-05.jpg?versionId=hWsZ623aSD5LtdOlG9pcDJqMAWYFX9Tz"
-                style="width: 144px;height: 97px; position: relative;margin-top: 572px;">
+            <a style="text-decoration: none;" href="../charlie/Real-art2.html"><img src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-1024x683.jpg"
+                style="width: 144px;height: 97px; position: relative;margin-top: 572px;"></a>
 
 
-            <img src="https://img.4gamers.com.tw/ckfinder/images/Katy/TGS%202019/20190913-onepunchman-05.jpg?versionId=hWsZ623aSD5LtdOlG9pcDJqMAWYFX9Tz"
-                style="width: 144px;height: 97px; position: relative;margin-top: 28px;">
+            <a style="text-decoration: none;" href="../charlie/Real-art3.html"><img src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg"
+                style="width: 144px;height: 97px; position: relative;margin-top: 28px;"></a>
 
 
-            <img src="https://img.4gamers.com.tw/ckfinder/images/Katy/TGS%202019/20190913-onepunchman-05.jpg?versionId=hWsZ623aSD5LtdOlG9pcDJqMAWYFX9Tz"
-                style="width: 144px;height: 97px; position: relative;margin-top: 28px;">
+            <a style="text-decoration: none;" href="../charlie/Real-art4.html"><img src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg"
+                style="width: 144px;height: 97px; position: relative;margin-top: 28px;"></a>
 
         </div>
 
@@ -891,7 +915,7 @@
         background: url(000036.jpg);
         border-radius: 9px;
         display: inline-block;">
-                標題標題標題標題標題標題標題標題標題標題
+                《番肉考》重現食番肉歷史　揭清代原客衝突
             </div>
             <div style="
         width: 144px;
@@ -901,7 +925,7 @@
         background: url(000036.jpg);
         border-radius: 9px;
         ">
-                標題標題標題標題標題標題標題標題標題標題
+                大選開票亂象多　公民監票盼落實程序正義
             </div>
 
             <div style="
@@ -910,7 +934,7 @@
        margin-top: 28px;
         background: url(000036.jpg);
         border-radius: 9px;display: inline-block;">
-                標題標題標題標題標題標題標題標題標題標題 </div>
+                靈魂間的相遇和療癒　家族治療與心理師 </div>
         </div>
 
         <div style="position: relative;
@@ -923,7 +947,7 @@
         line-height: 52px;                
         color: #4A5579;               
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: calc(30/375*100%);margin-top: 67px;">捐款贊助</div>
+        margin-left: calc(30/375*100%);margin-top: 67px;" id="donate-m">捐款贊助</div>
 
         <div style="position: absolute;
 width: 315px;
@@ -1088,7 +1112,7 @@ color: #000000;
         <div class="orange-bg-mb">《NATIONAL POOR JOURNALIST》</div>
 
 
-        <div style="position: relative;height: 138px;margin-top: 40px;margin-left: calc(30/375*100%);font-family: Noto Sans SC;font-style: normal;font-weight: 500;font-size: 16px;line-height: 23px;color: #2D2D2D; margin-bottom: 40px;">
+        <div style="position: relative;height: 138px;margin-top: 40px;margin-left: calc(30/375*100%);margin-right: calc(25/375*100%);font-family: Noto Sans SC;font-style: normal;font-weight: 500;font-size: 16px;line-height: 23px;color: #2D2D2D; margin-bottom: 40px;">
             《NPJ》營運經費皆自掏腰包，這股由下而上的力量，除了支持我們期末不會被當，也讓法賢有動力繼續造福下一屆學弟妹。
             <br><br>因此，唯有您的贊助，能持《NPJ》鋪就一條往前的路。</div>
 
@@ -1096,17 +1120,17 @@ color: #000000;
 
 
     <div class="bottom-block mobile-only">
-        <img src="NPJ2.png" width="199px" height="35px"
+        <img src="../asset/NPJ2.png" width="199px" height="35px"
             style="position: absolute; margin-top: 38px;margin-left: calc(88/375*100%);">
 
-        <img src="Icon_Facebook.png" width="23.4px" height="23.93px"
-            style="position: absolute;margin-left:calc(135/375*100%);margin-top: 105.71;">
-        <img src="icon-IG.png" height="26.93px"
-            style="position: absolute;margin-left:calc(173.44/375*100%);margin-top: 104.71;">
-        <img src="icon-line.png" width="30px"
-            style=" position: absolute;margin-left:calc(213.88/375*100%);margin-top: 103;">
+        <a href="https://www.facebook.com/"><img src="../asset/Icon_Facebook.png" width="23.4px" height="23.93px"
+            style="position: absolute;margin-left:calc(135/375*100%);margin-top: 105.71;"></a>
+        <a href="https://www.instagram.com/"><img src="../asset/icon-ins.png" height="26.93px"
+            style="position: absolute;margin-left:calc(173.44/375*100%);margin-top: 104.71;"></a>
+        <a href="https://line.me/zh-hant/"><img src="../asset/icon-line.png" width="30px"
+            style=" position: absolute;margin-left:calc(213.88/375*100%);margin-top: 103;"></a>
 
-
+            
     </div>
 
     </div>
@@ -1117,51 +1141,55 @@ color: #000000;
     <div class="background-1 desktop-only">
 
         <div style="display: inline-block; position: relative;width: 96px;height: 35px;">
-            <img src="NPJ2.png" class="logo">
+            <a href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html"><img src="../asset/NPJ2.png" class="logo"></a>
         </div>
 
         <div style="margin-left:calc(739/1440*100%) ;margin-top: 17px;">
             <a class="menu-head" href="#digital-story">數位專題</a>
             <a class="menu-head" href="#news">即時新聞</a>
             <a class="menu-head" href="#donate">捐款贊助</a>
-            <a class="menu-head">關於我們</a>
+            <a class="menu-head" href="https://yihuai0806.github.io/1082NPJ/final%20project/highway/about-NPJ.html">關於我們</a>
         </div>
 
         <div class="slider_container"
             style="width: calc(242/1440*100%);height: 161px;position: relative;display: inline-block;margin-right: calc(62/1440*100%);margin-left:calc(129/1440*100%);vertical-align: middle;">
 
             <div class="title" style="position: relative">
-                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fhellogiggles.com%2Fwp-content%2Fuploads%2F2015%2F06%2F04%2F554a7dfa56c78-elle-13-angelina-jolie-h.jpg"
+                <img src="../yiyun/hospital (2).png"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />
+                <a class="title" href="../yiyun/animal in iphone.html"></a>【數位】人道收容然後呢？　野生動物保育難題</a>
             </div>
 
             <div class="title">
-                <img src="https://pixhost.icu/avaxhome/91/c2/005fc291.jpg" width="100%" height="161px"
+                <img src="../yutin/picture4_2017HIV+OK.jpg" width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br /> 
+                <a class="title" href="../yutin/HIV&AIDS.html">【數位】讓恐慌現形，破除愛滋與同志汙名謠言</a>
             </div>
 
             <div class="title">
                 <img src="https://img1.nickiswift.com/img/gallery/what-angelina-jolie-doesnt-want-you-to-know-about-her-life/intro-1515538840.jpg"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />【數位專題】簡毅慧快寫好
             </div>
 
             <div class="title">
-                <img src="https://superstarswiki.com/wp-content/uploads/2017/03/Angelina-Jolie-4K-1024x640.jpg"
+                <img src="../yiyun/hospital (2).png"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />
+                <a class="title" href="../yiyun/animal in iphone.html">【數位】人道收容然後呢？　野生動物保育難題</a>
             </div>
 
             <div class="title">
-                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/02/22/angelina-jolie.jpg"
+                <img src="../yutin/picture4_2017HIV+OK.jpg"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />
+                <a class="title" href="../yutin/HIV&AIDS.html">【數位】讓恐慌現形，破除愛滋與同志汙名謠言</a>
             </div>
 
         </div>
@@ -1172,49 +1200,46 @@ color: #000000;
             style="position: relative;display: inline-block;margin-top:121px; vertical-align: middle; width:calc(573/1440*100%);">
 
             <div class="title-3 ">
-                <img src="https://pixhost.icu/avaxhome/91/c2/005fc291.jpg" width="100%" height="382px"
+                <img src="../yutin/picture4_2017HIV+OK.jpg" width="100%" height="382px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover; ">
                 <br />
-                <p class="hover-h1">【數位專題】專題專題專題專題專題專題專題專題</p>
+                <br>
+                <a class="hover-h1 title-3" href="https://yihuai0806.github.io/1082NPJ/final%20project/yutin/HIV&AIDS.html">【數位】讓恐慌現形，破除愛滋與同志汙名謠言</a>
             </div>
 
             <div class="title-3 ">
-                <img src="https://media1.s-nbcnews.com/i/newscms/2019_45/1503919/angelina-jolie-lives-close-to-brad-for-kids-today-main-191106_84362c44f687622fd40c3bd321cde133.jpg"
+                <img src="../yiyun/hospital (2).png"
                     height="382px" width="100%"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; object-fit: cover;">
                 <br />
-                <p class="hover-h1">【數位專題】專題專題專題專題專題專題專題專題</p>
+                <br>
+                <a class="hover-h1  title-3" href="../yiyun/animal in iphone.html">【數位】人道收容然後呢？　野生動物保育難題 </a>
             </div>
-
 
             <div class="title-3">
                 <img src="https://superstarswiki.com/wp-content/uploads/2017/03/Angelina-Jolie-4K-1024x640.jpg"
                     height="382px" width="100%"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover; ">
                 <br />
-                <p class="hover-h1">【數位專題】專題專題專題專題專題專題專題專題</p>
+                <p class="hover-h1 title-3">【數位專題】簡毅慧快寫好</p>
             </div>
 
-            <div class="title-3">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51DbkiPqXTL._AC_.jpg" height="382px"
-                    width="100%"
-                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; object-fit: cover;">
-                <br />
-                <p class="hover-h1">【數位專題】專題專題專題專題專題專題專題專題</p>
-            </div>
-
-            <div class="title-3">
-                <img src="https://pixhost.icu/avaxhome/91/c2/005fc291.jpg" height="382px" width="100%"
+            <div class="title-3 ">
+                <img src="../yutin/picture4_2017HIV+OK.jpg" width="100%" height="382px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover; ">
                 <br />
-                <p class="hover-h1">【數位專題】專題專題專題專題專題專題專題專題</p>
+                <br>
+                <a class="hover-h1 title-3" href="https://yihuai0806.github.io/1082NPJ/final%20project/yutin/HIV&AIDS.html">【數位】讓恐慌現形，破除愛滋與同志汙名謠言</a>
             </div>
 
-
-
-
-
-
+            <div class="title-3 ">
+                <img src="../yiyun/hospital (2).png"
+                    height="382px" width="100%"
+                    style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer; object-fit: cover;">
+                <br />
+                <br>
+                <a class="hover-h1  title-3" href="../yiyun/animal in iphone.html">【數位】人道收容然後呢？　野生動物保育難題 </a>
+            </div>
 
 
         </div>
@@ -1230,35 +1255,38 @@ color: #000000;
                 <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fhellogiggles.com%2Fwp-content%2Fuploads%2F2015%2F06%2F04%2F554a7dfa56c78-elle-13-angelina-jolie-h.jpg"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />【數位專題】簡毅慧快寫好
             </div>
 
             <div class="title">
-                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/02/22/angelina-jolie.jpg"
+                <img src="../yutin/picture4_2017HIV+OK.jpg"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />
+                <a class="title" href="../yutin/HIV&AIDS.html">【數位】讓恐慌現形，破除愛滋與同志汙名謠言</a>
             </div>
 
             <div class="title">
-                <img src="https://img.cinemablend.com/quill/9/3/a/6/0/c/93a60c2b3dd1fdcc483f7815b579e3e5683ab1a4.jpg"
+                <img src="../yiyun/hospital (2).png"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />
+                <a class="title" href="../yiyun/animal in iphone.html">【數位】人道收容然後呢？　野生動物保育難題</a>
             </div>
 
             <div class="title">
                 <img src="https://images-na.ssl-images-amazon.com/images/I/51DbkiPqXTL._AC_.jpg" width="100%"
                     height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br /> 標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br /> 【數位專題】簡毅慧快寫好
             </div>
 
             <div class="title">
-                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/02/22/angelina-jolie.jpg"
+                <img src="../yiyun/hospital (2).png"
                     width="100%" height="161px"
                     style="position: relative ;display: inline-block;vertical-align: middle;cursor: pointer;object-fit: cover;">
-                <br /><br />標題標題標題標題標題標題標題標題標題標題標題標題
+                <br /><br />
+                <a class="title" href="../yiyun/animal in iphone.html">【數位】人道收容然後呢？　野生動物保育難題</a>
             </div>
         </div>
 
@@ -1280,32 +1308,36 @@ color: #000000;
 
                     <div style="position: relative;display: flex;">
 
-                        <div>
-                            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                        <a href="../charlie/Real-art1.html"><div>
+                            <img src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/96a3be3cf272e017046d1b2674a52bd3-15.jpg"
                                 width="260px" height="175px"
                                 style="position: relative;display: flex; margin-left:calc(41.5/1024*100%);cursor: pointer;display: inline-block;">
                             <div class="w-b-title3"
                                 style="margin-left: calc(38/1024*100%);margin-top: 17.98px;cursor: pointer;display: inline-flex;text-align: center;">
-                                標題標題標題標題標題標題標題標題標題標題</div>
-                        </div>
+                                <a class="w-b-title3" href="../charlie/Real-art1.html">實驗劇剖析愛　演譯少女的不可定義</a>
+                            
+                            </div>
+                        </div></a>
 
-                        <div>
-                            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                        <a href="../charlie/Real-art2.html"><div>
+                            <img src="https://unews.nccu.edu.tw/wp-content/uploads/2018/10/96a3be3cf272e017046d1b2674a52bd3-40-1024x683.jpg"
                                 width="260px" height="175px"
                                 style="position: relative;display: flex; margin-left: calc(41.5/1024*100%);cursor: pointer;display: inline-block;">
                             <div class="w-b-title3"
                                 style="margin-left: calc(38/1024*100%);margin-top: 17.98px;cursor: pointer;display: inline-flex;text-align: center;">
-                                標題標題標題標題標題標題標題標題標題標題</div>
-                        </div>
+                                <a class="w-b-title3" href="../charlie/Real-art2.html">《番肉考》重現食番肉歷史　揭清代原客衝突</a>
+                            </div>
+                        </div></a>
 
-                        <div>
-                            <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+
+                        <a href="../charlie/Real-art3.html"><div>
+                            <img src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/7aac34a3e29ef1e0db35e8ee75202f4e.jpg"
                                 width="260px" height="175px"
                                 style="position: relative;display: flex; margin-left: calc(41.5/1024*100%);cursor: pointer;display: inline-block;">
                             <div class="w-b-title3"
                                 style="margin-left: calc(38/1024*100%);margin-top: 17.98px;cursor: pointer;display: inline-flex;text-align: center;">
-                                標題標題標題標題標題標題標題標題標題標題</div>
-                        </div>
+                                <a class="w-b-title3" href="../charlie/Real-art3.html">大選開票亂象多　公民監票盼落實程序正義</a></div>
+                        </div></a>
 
                     </div>
 
@@ -1314,32 +1346,32 @@ color: #000000;
 
                         <div style="position: relative;display: flex;">
 
-                            <div>
-                                <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                            <a href="../charlie/Real-art4.html"> <div>
+                                <img src="https://unews.nccu.edu.tw/wp-content/uploads/2019/05/96a3be3cf272e017046d1b2674a52bd3.jpg"
                                     width="260px" height="175px"
                                     style="position: relative;display: flex; margin-left:calc(41.5/1024*100%);cursor: pointer;display: inline-block;">
                                 <div class="w-b-title3"
                                     style="margin-left: calc(38/1024*100%);margin-top: 17.98px;cursor: pointer;display: inline-flex;text-align: center;">
-                                    標題標題標題標題標題標題標題標題標題標題</div>
-                            </div>
+                                    <a class="w-b-title3" href="../charlie/Real-art4.html">靈魂間的相遇和療癒　家族治療與心理師</a></div>
+                            </div></a>
 
-                            <div>
-                                <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                            <a href="../charlie/Real-art5.html"><div>
+                                <img src="https://unews.nccu.edu.tw/wp-content/uploads/2019/04/4c34acca40402e11f4d306a8edc6ee5d.jpg"
                                     width="260px" height="175px"
                                     style="position: relative;display: flex; margin-left: calc(41.5/1024*100%);cursor: pointer;display: inline-block;">
                                 <div class="w-b-title3"
                                     style="margin-left: calc(38/1024*100%);margin-top: 17.98px;cursor: pointer;display: inline-flex;text-align: center;">
-                                    標題標題標題標題標題標題標題標題標題標題</div>
-                            </div>
+                                    <a class="w-b-title3" href="../charlie/Real-art4.html">被遺忘的驛站——轉型中的坪林如何永飄茶香</a></div>
+                            </div></a>
 
-                            <div>
-                                <img src="https://cdn0-production-images-kly.akamaized.net/dWPkXDndECUuFtAkQECjmVZ6ndA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1230362/original/091276600_1462978891-Angelina_Jollie.jpg"
+                            <a href="../charlie/Real-art7.html"><div>
+                                <img src="https://unews.nccu.edu.tw/wp-content/uploads/2018/12/c4ca4238a0b923820dcc509a6f75849b-14.jpg"
                                     width="260px" height="175px"
                                     style="position: relative;display: flex; margin-left: calc(41.5/1024*100%);cursor: pointer;display: inline-block;">
                                 <div class="w-b-title3"
                                     style="margin-left: calc(38/1024*100%);margin-top: 17.98px;cursor: pointer;display: inline-flex;text-align: center;">
-                                    標題標題標題標題標題標題標題標題標題標題</div>
-                            </div>
+                                    <a class="w-b-title3" href="../charlie/Real-art7.html">專業工作選擇少　青年儲蓄方案成效存疑</a></div>
+                            </div></a>
 
                         </div>
 
@@ -1538,16 +1570,16 @@ color: #000000;
                     style="width: 100%;height: 307px;position: relative;background-color:  #BBC9C2;margin-top: 750px;">
 
                     <div>
-                        <img src="NPJ2.png" width="219px" height="39px"
+                        <img src="../asset/NPJ2.png" width="219px" height="39px"
                             style="position: relative; margin-left: calc(393/1440*100%); margin-top: 73px;">
-                        <img src="Icon_Facebook.png" width="38.2px"
-                            style="position: absolute ;margin-left: calc(184/1440*100%); margin-top: 127.6px;display: inline-block;;">
-                        <img src="icon-IG.png " width="54px"
-                            style="position: absolute ;margin-left: calc(246/1440*100%); margin-top: 125.0px;display: inline-block;">
-                        <img src="icon-line.png" width="47px"
-                            style="position: absolute;margin-left: calc(318/1440*100%);margin-top: 123px;display: inline-block;">
+                        <a href="https://www.facebook.com/"> <img src="../asset/Icon_Facebook.png" width="38.2px"
+                            style="position: absolute ;margin-left: calc(184/1440*100%); margin-top: 127.6px;display: inline-block;;"></a>
+                        <a href="https://www.instagram.com/"><img src="../asset/icon-ins.png" width="38.2px"
+                            style="position: absolute ;margin-left: calc(255/1440*100%); margin-top: 127.6px;display: inline-block;"></a>
+                            <a href="https://line.me/zh-hant/"><img src="../asset/icon-line.png" width="47px"
+                            style="position: absolute;margin-left: calc(318/1440*100%);margin-top: 123px;display: inline-block;"></a>
                     </div>
-
+                    
 
                     <div class="text" style="margin-left: calc(389/1440*100%);margin-top: 36px;position: relative;">
                         一群整天跟爸媽哭窮、現在連做期末作品都想趁機向社會大眾要錢花的國家未來棟樑。</div>
@@ -1579,27 +1611,6 @@ color: #000000;
 
         </div>
     </div>
-
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 
