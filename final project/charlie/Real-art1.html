@@ -15,7 +15,7 @@
 
             .iphone8 {
                 width: 100%;
-                background-color: #E5E5E5;
+                background-color: #e3ece7;
                 padding-top: 32px;
             }
 
@@ -280,10 +280,12 @@
 
             .burger-link {
                 text-decoration: none;
-                color: #000;
+                color: #4A5579;
+                font-family: Noto Sans SC;
+                font-style: normal;
                 padding: 5px 10px;
                 background-color: #f0f0f0;
-
+                z-index: 9;
             }
 
             #burger:checked+ul {
@@ -324,7 +326,7 @@
 
             .laptop {
                 width: 100%;
-                background-color: #E5E5E5;
+                background-color: #e3ece7;
                 padding-top: 32px;
             }
 
@@ -442,10 +444,31 @@
                 width: 96px;
                 height: 35px;
                 text-align: end;
-                color: #000000;
+                color: #4A5579;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
                 text-decoration: none;
                 position: absolute;
                 margin-top: 70px;
+                margin-left: calc(62/1440*100%);
+            }
+
+            .menu-head {
+                width: 96px;
+                height: 35px;
+                font-family: Noto Sans SC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 35px;
+                color: #4A5579;
+                cursor: pointer;
+                display: inline-block;
+                margin-left: calc(62/1440*100%);
+                text-decoration: none;
             }
 
             .photo {
@@ -540,32 +563,26 @@
                 margin-right: auto;
             }
 
-            .tag-block {
+            .tag-block{
                 width: 793px;
                 height: 114px;
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .tag {
-                width: 100px;
+            .tag{
+                width: 103px;
                 margin-left: 10px;
                 background: #EDA272;
                 border-radius: 30px;
-                margin-top: 37px;
-                display: inline-block
-            }
+                margin-top:37px;
+                display:inline-block
+                }
 
-            .tag-word {
-                font-size: 16px;
+            .tag-word{
+                font-size: 20px;
                 color: #FFFDFD;
                 text-decoration: none;
-                background: #EDA272;
-                border-radius: 30px;
-                width: 72px;
-                height: 33px;
-                margin-top: 37px;
-                margin-right: 5px;
             }
 
             .bottom {
@@ -695,11 +712,11 @@
             <ul>
                 <li class="burger-link"><a class="burger-link" href="#test">數位專題</a></li>
                 <li class="burger-link"><a class="burger-link"
-                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">即時新聞</a></li>
+                        href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html#news">即時新聞</a></li>
                 <li class="burger-link"><a class="burger-link"
-                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">捐款贊助</a></li>
+                        href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html#donate">捐款贊助</a></li>
                 <li class="burger-link"><a class="burger-link"
-                        href="https://hackmd.io/J_YYk1YUSum1x3fVo75PXA#%E5%9C%96%E7%89%87-ltimggt">關於我們</a></li>
+                        href="https://yihuai0806.github.io/1082NPJ/final%20project/highway/about-NPJ.html">關於我們</a></li>
             </ul>
         </div>
         <div>
@@ -761,17 +778,18 @@
 
         <div style="height:114px">
             <div style="margin-left:31px">
-
-                <a class="tag-word inline-center" href="https://www.w3schools.com">#少女機器</a>
-
-
-                <a class="tag-word inline-center" href="https://www.w3schools.com">#藝文</a>
-
-
-                <a class="tag-word inline-center" href="https://www.w3schools.com">#周曼農</a>
-
+                
+                    <a class="tag-word inline-center" href="https://www.google.com/search?ei=1wTrXpu9IMXomAXhjLagDA&q=%E5%B0%91%E5%A5%B3%E6%A9%9F%E5%99%A8&oq=%E5%B0%91%E5%A5%B3%E6%A9%9F%E5%99%A8&gs_lcp=CgZwc3ktYWIQAzoCCAA6BQgAELEDOgQIABAeOgYIABAFEB46BQgAEM0COgcIABCxAxBDOgQIABBDUK9wWImFAWDXhgFoAnAAeAGAAcIBiAG5D5IBBDEuMTWYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwjbhIfV2YrqAhVFNKYKHWGGDcQQ4dUDCAw&uact=5">#少女機器</a>
+                
+                
+                    <a class="tag-word inline-center" href="https://www.google.com/search?ei=yATrXuj8BM6JmAXl_5SoCg&q=%E8%97%9D%E6%96%87&oq=%E8%97%9D%E6%96%87&gs_lcp=CgZwc3ktYWIQAzIFCAAQsQMyBQgAELEDMgUIABCDATICCAAyBQgAELEDMgIIADICCAAyAggAMgQIABADMgIIADoFCAAQzQJQmGxYpHBg1nJoAHAAeACAAacBiAGQBZIBAzEuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjogNjN2YrqAhXOBKYKHeU_BaUQ4dUDCAw&uact=5">#藝文</a>
+                
+                
+                    <a class="tag-word inline-center" href="https://www.google.com/search?q=%E5%91%A8%E6%9B%BC%E8%BE%B2&oq=%E5%91%A8%E6%9B%BC%E8%BE%B2&aqs=chrome..69i57.303j0j7&sourceid=chrome&ie=UTF-8">#周曼農</a>
+                
             </div>
         </div>
+
         <div style="background-color:#FFFFFF;height: 890px;">
             <h3>
                 <p>延伸閱讀</p>
@@ -816,13 +834,17 @@
 
 
     <div class="laptop desktop-only">
+
         <div style="position: relative;">
-            <img class="logo" src="../asset/NPJ2.png">
-            <a class="bar" style="right: calc(385/1024*100%) "href="https://www.w3schools.com">數位專題</a>
-            <a class="bar" style="right: calc(305/1024*100%) "href="https://www.w3schools.com">即時新聞</a>
-            <a class="bar" style="right: calc(225/1024*100%) "href="https://www.w3schools.com">捐款贊助</a>
-            <a class="bar" style="right: calc(145/1024*100%) "href="https://www.w3schools.com">關於我們</a>
+            <a href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html"><img class="logo" src="../asset/NPJ2.png"></a>
+            <a class="bar" style="right: calc(385/1024*100%) "href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html#digital-story">數位專題</a>
+            <a class="bar" style="right: calc(305/1024*100%) "href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html#news">即時新聞</a>
+            <a class="bar" style="right: calc(225/1024*100%) "href="https://yihuai0806.github.io/1082NPJ/final%20project/yihui/homepage.html#donate">捐款贊助</a>
+            <a class="bar" style="right: calc(145/1024*100%) "href="https://yihuai0806.github.io/1082NPJ/final%20project/highway/about-NPJ.html">關於我們</a>
         </div>
+
+
+        
         <div>
             <h1>
                 實驗劇剖析愛 演譯少女的不可定義
@@ -843,9 +865,9 @@
         </div>
         <!--sticky-->
         <div class="target" style="bottom: 3000px;">
-            <img class="sticky-icon" src="../asset/Icon_Facebook.png">
-            <img class="sticky-icon" src="../asset/icon-ins.png">
-            <img class="sticky-icon" src="../asset/icon-line.png">
+            <a href="https://www.facebook.com/"> <img class="sticky-icon" src="../asset/Icon_Facebook.png"></a>
+            <a href="https://www.instagram.com/"><img class="sticky-icon"  src="../asset/icon-ins.png"></a>
+            <a href="https://line.me/zh-hant/"><img class="sticky-icon"  src="../asset/icon-line.png"></a>
         </div>
 
         <div class="article" style="margin-top: -225px;">
@@ -895,17 +917,19 @@
         <div class="inline-center">
             <div>
                 <div class="tag inline-center">
-                    <a class="tag-word" href="https://www.w3schools.com">#少女機器</a>
+                    <a class="tag-word" href="https://www.google.com/search?ei=1wTrXpu9IMXomAXhjLagDA&q=%E5%B0%91%E5%A5%B3%E6%A9%9F%E5%99%A8&oq=%E5%B0%91%E5%A5%B3%E6%A9%9F%E5%99%A8&gs_lcp=CgZwc3ktYWIQAzoCCAA6BQgAELEDOgQIABAeOgYIABAFEB46BQgAEM0COgcIABCxAxBDOgQIABBDUK9wWImFAWDXhgFoAnAAeAGAAcIBiAG5D5IBBDEuMTWYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwjbhIfV2YrqAhVFNKYKHWGGDcQQ4dUDCAw&uact=5">#少女機器</a>
                 </div>
                 <div class="tag inline-center">
-                    <a class="tag-word" href="https://www.w3schools.com">#藝文</a>
+                    <a class="tag-word" href="https://www.google.com/search?ei=yATrXuj8BM6JmAXl_5SoCg&q=%E8%97%9D%E6%96%87&oq=%E8%97%9D%E6%96%87&gs_lcp=CgZwc3ktYWIQAzIFCAAQsQMyBQgAELEDMgUIABCDATICCAAyBQgAELEDMgIIADICCAAyAggAMgQIABADMgIIADoFCAAQzQJQmGxYpHBg1nJoAHAAeACAAacBiAGQBZIBAzEuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjogNjN2YrqAhXOBKYKHeU_BaUQ4dUDCAw&uact=5">#藝文</a>
                 </div>
                 <div class="tag inline-center">
-                    <a class="tag-word" href="https://www.w3schools.com">#周曼農</a>
+                    <a class="tag-word" href="https://www.google.com/search?q=%E5%91%A8%E6%9B%BC%E8%BE%B2&oq=%E5%91%A8%E6%9B%BC%E8%BE%B2&aqs=chrome..69i57.303j0j7&sourceid=chrome&ie=UTF-8">#周曼農</a>
                 </div>
             </div>
         </div>
     </div>
+
+    
     <div class="laptop desktop-only">
         <!--靠右結束-->
         <div style="background-color:#FFFFFF; height: 433px;">
